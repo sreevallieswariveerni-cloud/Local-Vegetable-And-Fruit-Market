@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>GreenGrove Login</title>
+
+<link rel="stylesheet" href="login.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="form-box">
+  <div class="logo">
+    <a href="index.html" class="logo-link">
+        <div class="logo-title">
+            <i class="fa-solid fa-leaf"></i>
+            <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
+        </div>
+    </a>
+
+    <p>Fresh Fruits & Vegetables</p>
+</div>
+<div class="tab-box">
+
+<button
+class="tab active"
+onclick="loginTab()">
+
+Login
+
+</button>
+
+<button
+class="tab"
+onclick="registerTab()">
+
+Register
+
+</button>
+
+</div>
+
+<!-- Login Form -->
+
+<form id="login">
+
+<h2>
+
+Welcome Back
+
+</h2>
+
+<p>
+
+Login to continue shopping
+
+</p>
+
+<div class="input-box">
+
+<i class="fa-solid fa-envelope"></i>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input
+type="password"
+placeholder="Password"
+id="loginPass"
+required>
+
+<span
+class="eye"
+onclick="showLoginPassword()">
+
+<i class="fa-solid fa-eye"></i>
+
+</span>
+
+</div>
+
+<div class="options">
+
+<label>
+
+<input type="checkbox">
+
+Remember Me
+
+</label>
+
+<a href="#">
+
+Forgot Password?
+
+</a>
+
+</div>
+
+<button
+type="submit"
+class="btn">
+
+Login
+
+</button>
+
+<div class="line">
+
+<span>
+
+OR
+
+</span>
+
+</div>
+
+<button
+type="button"
+class="google">
+
+<i class="fa-brands fa-google"></i>
+
+Continue with Google
+
+</button>
+
+</form>
+
+<!-- Register Form -->
+
+<form
+id="register">
+
+<h2>
+
+Create Account
+
+</h2>
+
+<p>
+
+Join GreenGrove Today
+
+</p>
+
+<div class="input-box">
+
+<i class="fa-solid fa-user"></i>
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-envelope"></i>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-phone"></i>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+</div>
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input
+type="password"
+placeholder="Password"
+id="registerPass"
+required>
+
+<span class="eye"
+onclick="showRegisterPassword()">
+
+<i class="fa-solid fa-eye"></i>
+
+</span>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input
+type="password"
+placeholder="Confirm Password"
+id="confirmPass"
+required>
+
+</div>
+
+<button
+type="submit"
+class="btn">
+
+Create Account
+
+</button>
+
+<div class="line">
+
+<span>OR</span>
+
+</div>
+
+<button
+type="button"
+class="google">
+
+<i class="fa-brands fa-google"></i>
+
+Continue with Google
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>

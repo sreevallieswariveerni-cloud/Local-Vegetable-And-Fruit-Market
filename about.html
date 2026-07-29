@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-leaf"></i>
+        <div class="log0-text">
+            <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
+            <p>Farm Fresh Everyday</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="homepage1.html">Home 1</a></li>
+                    <li><a href="homepage2.html">Home 2</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-icons">
+        <button class="rtl-btn" id="rtl-btn">RTL</button>
+        <button id="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cart-count">0</span>
+        </a>
+        <a href="login.html" class="profile">
+            <i class="fa-regular fa-user"></i>
+        </a>
+        <div class="menu" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+<!-- About-Hero -->
+
+<section class="about-hero" data-aos="zoom-in">
+
+    <div class="about-overlay">
+
+        <h1>About GreenGrove</h1>
+
+        <p>
+            <a href="homepage1.html">Home</a>
+            <span>/</span>
+            About Us
+        </p>
+
+    </div>
+
+</section>
+<!--==============================
+          OUR STORY
+================================-->
+
+<section class="our-story">
+
+    <div class="story-image" data-aos="fade-right">
+
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80"
+         alt="Fresh vegetables from local farm">
+
+
+    </div>
+
+    <div class="story-content"  data-aos="fade-left">
+
+        <span>Who We Are</span>
+
+        <h2>Bringing Freshness From Local Farms To Every Home</h2>
+
+        <p>
+            GreenGrove was founded with a simple vision—to make fresh, healthy,
+            and affordable vegetables, fruits, and leafy greens available to
+            every family. We partner directly with trusted local farmers to
+            deliver quality produce while supporting sustainable farming
+            practices.
+        </p>
+
+        <p>
+            Every order is carefully selected, quality checked, and packed with
+            care before reaching your doorstep. Our commitment is to freshness,
+            transparency, and customer satisfaction.
+        </p>
+
+    </div>
+
+</section>
+<!--==============================
+        MISSION & VISION
+================================-->
+
+<section class="mission-vision">
+
+    <div class="section-title">
+
+        <span>Our Purpose</span>
+
+        <h2>Mission & Vision</h2>
+
+        <p>
+            We are committed to providing fresh, healthy, and affordable produce
+            while building a sustainable future for our farming communities.
+        </p>
+
+    </div>
+
+    <div class="mission-container">
+
+        <!-- Mission -->
+
+        <div class="mission-card" data-aos="zoom-in">
+
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80"
+                 alt="Mission">
+
+            <h3>Our Mission</h3>
+
+            <p>
+    To deliver fresh vegetables, fruits, and leafy greens directly from trusted local farms to every household while ensuring exceptional quality, affordability, and customer satisfaction.
+
+    <span id="missionText" style="display:none;">
+        We also focus on sustainable farming, eco-friendly packaging, and building long-term relationships with local farmers to provide healthy and fresh products every day.
+    </span>
+
+<a href="#" id="missionLink" onclick="toggleMission(); return false;">... Read More</a></p>
+        </div>
+
+        <!-- Vision -->
+
+        <div class="mission-card" data-aos="zoom-in" data-aos-delay="200">
+
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80"
+                 alt="Vision">
+
+            <h3>Our Vision</h3>
+
+            <p>
+    To become the most trusted fresh produce marketplace by promoting healthy living, supporting local farmers, and creating a sustainable food ecosystem.
+
+    <span id="visionText" style="display:none;">
+        Our vision is to expand our services across the country, offering fast delivery, premium quality products, and a seamless shopping experience for every customer.
+    </span>
+
+<a href="#" id="visionLink" onclick="toggleVision(); return false;">... Read More</a></p>
+        </div>
+
+    </div>
+
+</section>
+<!--==============================
+      WHY CHOOSE GREENGROVE
+================================-->
+
+<section class="about-choose">
+
+    <div class="choose-image fade-left" data-aos="fade-right">
+
+        <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=80"
+             alt="Fresh Farm Produce">
+
+    </div>
+
+    <div class="choose-content fade-right"  data-aos="fade-left">
+
+        <span>Why Choose Us</span>
+
+        <h2>Freshness You Can Trust Every Day</h2>
+
+        <p>
+            GreenGrove partners directly with local farmers to bring fresh,
+            healthy, and naturally grown vegetables, fruits, and leafy greens
+            to your home. Every order is carefully selected and quality checked
+            before delivery.
+        </p>
+
+        <div class="choose-list">
+
+            <div class="choose-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Farm Fresh Products</span>
+            </div>
+
+            <div class="choose-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Affordable Prices</span>
+            </div>
+
+            <div class="choose-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Fast Home Delivery</span>
+            </div>
+
+            <div class="choose-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Trusted Local Farmers</span>
+            </div>
+
+        </div>
+
+        <a href="contact.html" class="about-btn">Contact Us</a>
+
+    </div>
+
+</section>
+<!--==============================
+            OUR VALUES
+================================-->
+
+<section class="our-values">
+
+    <div class="section-title" data-aos="fade-up">
+
+        <span>Our Core Values</span>
+
+        <h2>Values That Guide Everything We Do</h2>
+
+        <p>
+            At GreenGrove, our values inspire us to deliver fresh produce,
+            support local farmers, and build lasting relationships with our customers.
+        </p>
+
+    </div>
+
+    <div class="values-container">
+
+        <!-- Value 1 -->
+
+        <div class="value-card" data-aos="fade-up">
+
+            <i class="fa-solid fa-seedling"></i>
+
+            <h3>Freshness</h3>
+
+            <p>
+                We deliver freshly harvested vegetables, fruits, and leafy greens
+                to ensure the highest quality in every order.
+            </p>
+
+        </div>
+
+        <!-- Value 2 -->
+
+        <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <h3>Integrity</h3>
+
+            <p>
+                We believe in honest pricing, transparency, and building trust
+                with both our customers and farming partners.
+            </p>
+
+        </div>
+
+        <!-- Value 3 -->
+
+        <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+
+            <i class="fa-solid fa-earth-asia"></i>
+
+            <h3>Sustainability</h3>
+
+            <p>
+                We support eco-friendly farming practices and work towards
+                protecting the environment for future generations.
+            </p>
+
+        </div>
+
+        <!-- Value 4 -->
+
+        <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Customer First</h3>
+
+            <p>
+                Customer satisfaction is at the heart of everything we do,
+                from sourcing to doorstep delivery.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==============================
+        CALL TO ACTION
+================================-->
+
+<section class="about-cta" data-aos="zoom-in">
+
+    <div class="cta-overlay">
+
+        <span>Fresh • Healthy • Affordable</span>
+
+        <h2>Fresh Produce Delivered Straight From Local Farms</h2>
+
+        <p>
+            Experience the freshness of handpicked vegetables, fruits, and leafy
+            greens sourced directly from trusted farmers. Order today and enjoy
+            healthy living with GreenGrove.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="home1.html" class="cta-btn shop-btn">
+                Shop Now
+            </a>
+
+            <a href="contact.html" class="cta-btn contact-btn">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Company -->
+        <div class="footer-col">
+            <div class="footer-logo">
+                <i class="fa-solid fa-leaf"></i>
+                <h2><span>Green</span>Grove</h2>
+            </div>
+
+            <p>
+                Fresh vegetables and fruits delivered directly
+                to your doorstep with quality and care.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+
+            <a href="homepage1.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+            <h3>Support</h3>
+
+            <a href="helpcenter.html">Help Center</a>
+            <a href="trackorder.html">Track Order</a>
+            <a href="shippingpolicy.html">Shipping Policy</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+
+            <input type="email" placeholder="Your Email">
+            <button>Subscribe</button>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>&copy;2026 GreenGrove. All Rights Reserved.</p>
+
+        <div class="bottom-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
+</script>
+
+<script>
+const themeBtn = document.getElementById("theme-btn");
+
+if(themeBtn){
+
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark");
+        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+
+    themeBtn.addEventListener("click", function(){
+
+        document.body.classList.toggle("dark");
+
+        if(document.body.classList.contains("dark")){
+            themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            localStorage.setItem("theme","dark");
+        }else{
+            themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            localStorage.setItem("theme","light");
+        }
+
+    });
+
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>

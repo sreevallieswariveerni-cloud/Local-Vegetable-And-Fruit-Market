@@ -1,0 +1,67 @@
+/*========================================
+        TERMS & CONDITIONS
+========================================*/
+
+.terms{
+    padding:100px 8%;
+    background:#f8fff8;
+}
+
+.terms-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.terms-card{
+    background:#fff;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.terms-card:hover{
+    transform:translateY(-10px);
+}
+
+.terms-card i{
+    font-size:45px;
+    color:#28a745;
+    margin-bottom:20px;
+}
+
+.terms-card h3{
+    color:#222;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.terms-card p{
+    color:#666;
+    line-height:28px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .terms-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:576px){
+
+    .terms{
+        padding:70px 5%;
+    }
+
+    .terms-container{
+        grid-template-columns:1fr;
+    }
+
+}

@@ -1,0 +1,64 @@
+/*========================================
+          SHIPPING POLICY
+========================================*/
+
+.shipping{
+    padding:100px 8%;
+    background:#f8fff8;
+}
+
+.shipping-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.shipping-card{
+    background:#fff;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.shipping-card:hover{
+    transform:translateY(-10px);
+}
+
+.shipping-card i{
+    font-size:45px;
+    color:#28a745;
+    margin-bottom:20px;
+}
+
+.shipping-card h3{
+    color:#222;
+    margin-bottom:15px;
+}
+
+.shipping-card p{
+    color:#666;
+    line-height:28px;
+}
+
+@media(max-width:992px){
+
+    .shipping-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:576px){
+
+    .shipping{
+        padding:70px 5%;
+    }
+
+    .shipping-container{
+        grid-template-columns:1fr;
+    }
+
+}

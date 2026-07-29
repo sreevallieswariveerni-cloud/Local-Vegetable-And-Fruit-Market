@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+<header>
+    
+    <div class="logo">
+        <i class="fa-solid fa-leaf"></i>
+        <div class="log0-text">
+            <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
+            <p>Farm Fresh Everyday</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="homepage1.html">Home 1</a></li>
+                    <li><a href="homepage2.html">Home 2</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-icons">
+        <button class="rtl-btn" id="rtl-btn">RTL</button>
+        <button id="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cart-count">0</span>
+        </a>
+        <a href="login.html" class="profile">
+            <i class="fa-regular fa-user"></i>
+        </a>
+        <div class="menu" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+<!--==============================
+            BLOG HERO
+================================-->
+
+<section class="blog-hero">
+
+    <div class="blog-overlay">
+
+        <h1 data-aos="zoom-in">Our Blog</h1>
+
+        <p data-aos="fade-up">
+            <a href="homepage1.html">Home</a>
+            <span>/</span>
+            Blog
+        </p>
+
+    </div>
+
+</section>
+<!--==============================
+        FEATURED BLOG
+================================-->
+
+<section class="featured-blog">
+
+    <div class="featured-container">
+
+        <div class="featured-image" data-aos="fade-right">
+
+            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=900&q=80"
+            alt="Fresh Vegetables">
+
+        </div>
+
+        <div class="featured-content" data-aos="fade-left">
+
+            <span>Featured Article</span>
+
+            <h2>Why Eating Fresh Vegetables Every Day Improves Your Health</h2>
+
+            <p>
+                Discover how farm-fresh vegetables and fruits provide essential
+                nutrients, boost immunity, and support a healthier lifestyle.
+                Learn simple ways to include more fresh produce in your daily meals.
+            </p>
+
+            <a href="blog-details.html" class="read-btn">
+                Read More
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==============================
+        LATEST ARTICLES
+================================-->
+
+<section class="latest-articles">
+
+    <div class="section-title" data-aos="fade-up">
+
+        <span>Latest Articles</span>
+
+        <h2>Fresh Insights & Healthy Living Tips</h2>
+
+        <p>
+            Stay updated with useful tips, healthy recipes, farming insights,
+            and nutrition advice from GreenGrove.
+        </p>
+
+    </div>
+
+    <div class="articles-container">
+
+        <!-- Article 1 -->
+
+        <div class="article-card" data-aos="fade-up">
+
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Fresh Vegetables">
+
+            <div class="article-content">
+
+                <div class="article-info">
+
+                    <span><i class="fa-solid fa-calendar"></i> July 20, 2026</span>
+
+                    <span><i class="fa-solid fa-user"></i> Admin</span>
+
+                </div>
+
+                <h3>5 Benefits of Eating Fresh Vegetables Every Day</h3>
+
+                <p>
+                    Discover how fresh vegetables improve your immunity,
+                    digestion, and overall health.
+                </p>
+
+                <a href="blog-details.html">Read More →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Article 2 -->
+
+        <div class="article-card" data-aos="fade-up" data-aos-delay="100">
+
+            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=800&q=80" alt="Fresh Fruits">
+
+            <div class="article-content">
+
+                <div class="article-info">
+
+                    <span><i class="fa-solid fa-calendar"></i> July 18, 2026</span>
+
+                    <span><i class="fa-solid fa-user"></i> Admin</span>
+
+                </div>
+
+                <h3>Seasonal Fruits You Should Never Miss</h3>
+
+                <p>
+                    Explore delicious seasonal fruits packed with vitamins
+                    and antioxidants.
+                </p>
+
+                <a href="blog-details.html">Read More →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Article 3 -->
+
+        <div class="article-card" data-aos="fade-up" data-aos-delay="200">
+
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Healthy Salad">
+
+            <div class="article-content">
+
+                <div class="article-info">
+
+                    <span><i class="fa-solid fa-calendar"></i> July 15, 2026</span>
+
+                    <span><i class="fa-solid fa-user"></i> Admin</span>
+
+                </div>
+
+                <h3>Healthy Salad Recipes for Every Season</h3>
+
+                <p>
+                    Easy recipes made with fresh vegetables and fruits
+                    that everyone will enjoy.
+                </p>
+
+                <a href="blog-details.html">Read More →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Article 4 -->
+
+        <div class="article-card" data-aos="fade-up">
+
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80" alt="Organic Farming">
+
+            <div class="article-content">
+
+                <div class="article-info">
+
+                    <span><i class="fa-solid fa-calendar"></i> July 12, 2026</span>
+
+                    <span><i class="fa-solid fa-user"></i> Admin</span>
+
+                </div>
+
+                <h3>How Organic Farming Protects Our Environment</h3>
+
+                <p>
+                    Learn how sustainable farming practices create healthier
+                    food and a healthier planet.
+                </p>
+
+                <a href="blog-details.html">Read More →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Article 5 -->
+
+        <div class="article-card" data-aos="fade-up" data-aos-delay="100">
+
+            <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=800&q=80" alt="Leafy Greens">
+
+            <div class="article-content">
+
+                <div class="article-info">
+
+                    <span><i class="fa-solid fa-calendar"></i> July 10, 2026</span>
+
+                    <span><i class="fa-solid fa-user"></i> Admin</span>
+
+                </div>
+
+                <h3>Why Leafy Greens Should Be Part of Every Meal</h3>
+
+                <p>
+                    Discover the nutritional benefits of spinach,
+                    lettuce, kale, and other leafy greens.
+                </p>
+
+                <a href="blog-details.html">Read More →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Article 6 -->
+
+        <div class="article-card" data-aos="fade-up" data-aos-delay="200">
+
+            <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=80" alt="Farm Fresh">
+
+            <div class="article-content">
+
+                <div class="article-info">
+
+                    <span><i class="fa-solid fa-calendar"></i> July 08, 2026</span>
+
+                    <span><i class="fa-solid fa-user"></i> Admin</span>
+
+                </div>
+
+                <h3>From Farm to Table: Our Freshness Promise</h3>
+
+                <p>
+                    Take a closer look at how GreenGrove delivers
+                    quality produce directly from local farms.
+                </p>
+
+                <a href="blog-details.html">Read More →</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==============================
+        BLOG CATEGORIES
+================================-->
+
+<section class="blog-categories">
+
+    <div class="section-title" data-aos="fade-up">
+
+        <span>Browse Topics</span>
+
+        <h2>Explore Blog Categories</h2>
+
+        <p>
+            Discover articles across different categories to learn more about
+            healthy eating, farming, nutrition, and fresh produce.
+        </p>
+
+    </div>
+
+    <div class="categories-container">
+
+        <a href="#" class="category-card" data-aos="zoom-in">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <h3>Healthy Living</h3>
+
+            <span>12 Articles</span>
+
+        </a>
+
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="100">
+
+            <i class="fa-solid fa-apple-whole"></i>
+
+            <h3>Nutrition</h3>
+
+            <span>9 Articles</span>
+
+        </a>
+
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="200">
+
+            <i class="fa-solid fa-utensils"></i>
+
+            <h3>Recipes</h3>
+
+            <span>15 Articles</span>
+
+        </a>
+
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="300">
+
+            <i class="fa-solid fa-seedling"></i>
+
+            <h3>Organic Farming</h3>
+
+            <span>10 Articles</span>
+
+        </a>
+
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="400">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h3>Seasonal Produce</h3>
+
+            <span>8 Articles</span>
+
+        </a>
+
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="500">
+
+            <i class="fa-solid fa-tree"></i>
+
+            <h3>Gardening Tips</h3>
+
+            <span>6 Articles</span>
+
+        </a>
+
+    </div>
+
+</section>
+<!--==============================
+        NEWSLETTER
+================================-->
+
+<section class="newsletter">
+
+    <div class="newsletter-content" data-aos="zoom-in">
+
+        <span>Stay Connected</span>
+
+        <h2>Subscribe To Our Newsletter</h2>
+
+        <p>
+            Get the latest healthy recipes, seasonal offers, fresh arrivals,
+            and farming tips delivered straight to your inbox.
+        </p>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Company -->
+        <div class="footer-col">
+            <div class="footer-logo">
+                <i class="fa-solid fa-leaf"></i>
+                <h2><span>Green</span>Grove</h2>
+            </div>
+
+            <p>
+                Fresh vegetables and fruits delivered directly
+                to your doorstep with quality and care.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+
+            <a href="homepage1.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+            <h3>Support</h3>
+
+            <a href="helpcenter.html">Help Center</a>
+            <a href="trackorder.html">Track Order</a>
+            <a href="shippingpolicy.html">Shipping Policy</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+
+            <input type="email" placeholder="Your Email">
+            <button>Subscribe</button>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>&copy;2026 GreenGrove. All Rights Reserved.</p>
+
+        <div class="bottom-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+<script src="script.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
+</script>
+
+<script>
+const themeBtn = document.getElementById("theme-btn");
+
+if(themeBtn){
+
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark");
+        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+
+    themeBtn.addEventListener("click", function(){
+
+        document.body.classList.toggle("dark");
+
+        if(document.body.classList.contains("dark")){
+            themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            localStorage.setItem("theme","dark");
+        }else{
+            themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            localStorage.setItem("theme","light");
+        }
+
+    });
+
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGrove</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-leaf"></i>
+        <div class="log0-text">
+            <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
+            <p>Farm Fresh Everyday</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="active">Home <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="homepage1.html">Home 1</a></li>
+                    <li><a href="homepage2.html">Home 2</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-icons">
+        <button class="rtl-btn" id="rtl-btn">RTL</button>
+        <button id="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cart-count">0</span>
+        </a>
+        <a href="login.html" class="profile">
+            <i class="fa-regular fa-user"></i>
+        </a>
+        <div class="menu" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-container">
+
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+
+            <!-- <span class="hero-badge">
+                🍃 100% Fresh & Organic
+            </span> -->
+
+            <h1>
+                Farm Fresh <br>
+                Fruits & Vegetables
+                <span>Delivered to Your Doorstep</span>
+            </h1>
+
+            <p>
+                Handpicked directly from farms. Fresh vegetables, fruits and groceries delivered to your doorstep with premium quality and affordable prices.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="shop.html" class="shop-btn">Shop Now</a>
+                <a href="explore.html" class="explore-btn">Explore Products</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!--Shop By Categories -->
+<class="categories">
+    <div class="section-title">
+        <span>Our Categories</span>
+        <h2>Shop By Categories</h2>
+        <p>Choose from our wide range of fresh and high-quality grocery products.</p>
+    </div>
+    <div class="category-container">
+    <div class="category-card" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmVnZXRhYmxlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Vegetables">
+        <h3>Fresh Vegetables</h3>
+        <!-- <p>120+ Products</p> -->
+    </div>
+    <div class="category-card" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJ1aXRzfGVufDB8fDB8fHww" alt="Fruits">
+        <h3>Fresh Fruits</h3>
+        <!-- <p>80+ Products</p> -->
+    </div>
+    <div class="category-card" data-aos="zoom-in">
+        <img src="https://upload.wikimedia.org/wikipedia/te/thumb/8/84/Aaku_kuralu.JPG/1280px-Aaku_kuralu.JPG" alt="Leafy Greens">
+        <h3>Leafy Greens</h3>
+        <!-- <p>45+ Products</p> -->
+    </div>
+    <div class="category-card" data-aos="zoom-in">
+        <img src="https://www.fruitsmith.com/pub/media/mageplaza/blog/post/e/x/exotic_fruits_you_might_not_know_about.jpg" alt="Exotic Fruits">
+        <h3>Exotic Fruits</h3>
+        <!-- <p></p> -->
+    </div>
+</div>
+</section>
+<!--SUMMER SPECIALS-->
+<section class="summer-specials">
+    <div class="summer-content"  data-aos="fade-right">
+        <span class="summer-tag" data-aos="zoom-in" data-aos-delay="100">🍉 Fresh & Seasonal</span>
+        <h2 data-aos="fade-up" data-aos-delay="200">Summer Specials</h2>
+        <p data-aos="fade-up" data-aos-delay="300">
+            Beat the summer heat with our farm-fresh seasonal fruits and vegetables.
+            Enjoy juicy mangoes, refreshing watermelons, cucumbers, leafy greens,
+            and many more at the best prices.
+        </p>
+        <div class="summer-features" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature">
+                <i class="fa-solid fa-seedling"></i>
+                <span>100% Fresh</span>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Fast Delivery</span>
+            </div>
+        </div>
+        <a href="summer-shop.html" class="summer-btn">
+            Shop Summer Collection
+        </a>
+    </div>
+    <div class="summer-image" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1673010960635-d0d1ad81b90a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFuZ298ZW58MHx8MHx8fDA%3D"
+        alt="Summer Fruits">
+    </div>
+</section>
+<!-- Why Choose Us -->
+<section class="why-choose">
+    <div class="section-title">
+        <span>Why Choose Us</span>
+        <h2>Why Shop With GreenGrove?</h2>
+        <p>
+            We bring farm-fresh vegetables, fruits, and leafy greens directly to your doorstep with quality you can trust.
+        </p>
+    </div>
+    <div class="choose-container">
+        <div class="choose-card" data-aos="fade-up">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Farm Fresh</h3>
+            <p>Freshly harvested produce sourced directly from local farmers every day.</p>
+        </div>
+        <div class="choose-card" data-aos="fade-up">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p>Quick and reliable delivery so your groceries arrive fresh and on time.</p>
+        </div>
+        <div class="choose-card" data-aos="fade-up">
+            <i class="fa-solid fa-medal"></i>
+            <h3>Premium Quality</h3>
+            <p>Every product is carefully selected to ensure the highest quality standards.</p>
+        </div>
+        <div class="choose-card" data-aos="fade-up">
+            <i class="fa-solid fa-tags"></i>
+            <h3>Best Prices</h3>
+            <p>Affordable pricing with exciting seasonal offers and daily savings.</p>
+        </div>
+    </div>
+</section>
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="section-title">
+        <span>Testimonials</span>
+        <h2>What Our Customers Say</h2>
+        <p>
+            Hear from our happy customers who trust GreenGrove for fresh vegetables, fruits, and leafy greens.
+        </p>
+    </div>
+    <div class="testimonial-container">
+        <div class="testimonial-card" data-aos="fade-up">
+            <img src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29uc3xlbnwwfHwwfHx8MA%3D%3D" alt="Customer">
+            <h3>Rahul Kumar</h3>
+            <span>Rajahmundry</span>
+            <div class="stars">
+                ★★★★★
+            </div>
+            <p>
+                The vegetables are always fresh and delivered on time.
+                The quality is excellent, and the prices are very reasonable.
+            </p>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up">
+            <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uc3xlbnwwfHwwfHx8MA%3D%3D" alt="Customer">
+            <h3>Priya Reddy</h3>
+            <span>Kakinada</span>
+            <div class="stars">
+                ★★★★★
+            </div>
+            <p>
+                I love ordering fruits from GreenGrove.
+                Everything arrives fresh and neatly packed.
+            </p>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbnN8ZW58MHx8MHx8fDA%3D" alt="Customer">
+            <h3>Suresh Kumar</h3>
+            <span>Vijayawada</span>
+            <div class="stars">
+                ★★★★★
+            </div>
+            <p>
+                Excellent service and very fast delivery.
+                Their leafy greens are always fresh and healthy.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- About -->
+<section class="about" id="about">
+    <div class="about-image" data-aos="fade-right">
+        <img src="https://images.unsplash.com/photo-1575218823251-f9d243b6f720?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHZlZ2V0YWJsZXMlMjBhbiUyMGZyaXRzfGVufDB8fDB8fHww" alt="About GreenGrove">
+    </div>
+    <div class="about-content" data-aos="fade-left">
+        <span class="section-title">About Us</span>
+        <h2>Fresh From Farm To Your Home</h2>
+        <p>
+            GreenGrove is committed to providing fresh vegetables, fruits,
+            and grocery essentials directly from trusted farmers. Our mission
+            is to deliver healthy food with quality, affordability, and speed.
+        </p>
+        <div class="about-features">
+            <div class="feature-box" data-aos="zoom-in">
+                <i class="fa-solid fa-seedling"></i>
+                <h4>100% Organic</h4>
+            </div>
+            <div class="feature-box" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h4>Fast Delivery</h4>
+            </div>
+            <div class="feature-box" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fa-solid fa-award"></i>
+                <h4>Premium Quality</h4>
+            </div>
+        </div>
+        <a href="about.html" class="about-btn"  data-aos="fade-up" data-aos-delay="300">Learn More</a>
+    </div>
+</section>
+<section class="services">
+    <div class="section-heading">
+        <span>Our Services</span>
+        <h2>What We Offer</h2>
+        <p>We provide fresh groceries with quality, speed, and affordable prices.</p>
+    </div>
+    <div class="service-container">
+        <div class="service-card"  data-aos="zoom-in">
+            <i class="fa-solid fa-carrot"></i>
+            <h3>Fresh Vegetables</h3>
+            <p>Farm-fresh vegetables delivered directly to your doorstep.</p>
+        </div>
+        <div class="service-card"  data-aos="zoom-in">
+            <i class="fa-solid fa-apple-whole"></i>
+            <h3>Fresh Fruits</h3>
+            <p>Premium quality seasonal fruits packed with freshness.</p>
+        </div>
+        <div class="service-card"  data-aos="zoom-in">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <h3>Daily Grocery</h3>
+            <p>Everything you need for your everyday household shopping.</p>
+        </div>
+        <div class="service-card"  data-aos="zoom-in">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p>Quick and safe delivery within a few hours.</p>
+        </div>
+        <div class="service-card"  data-aos="zoom-in">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h3>Quality Assurance</h3>
+            <p>Every product is carefully checked before delivery.</p>
+        </div>
+        <div class="service-card"  data-aos="zoom-in">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Friendly customer support whenever you need assistance.</p>
+        </div>
+    </div>
+</section>
+<section class="pricing">
+    <div class="section-heading">
+        <span>Pricing</span>
+        <h2>Choose Your Membership</h2>
+        <p>Become a GreenGrove member and enjoy exclusive benefits.</p>
+    </div>
+    <div class="pricing-container">
+        <div class="price-card" data-aos="flip-left">
+            <h3>Basic</h3>
+            <h1>Free</h1>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> Browse Products</li>
+                <li><i class="fa-solid fa-check"></i> Standard Delivery</li>
+                <li><i class="fa-solid fa-check"></i> Email Support</li>
+            </ul>
+            <a href="#" class="price-btn">Get Started</a>
+        </div>
+        <div class="price-card popular" data-aos="flip-left">
+            <span class="badge">Most Popular</span>
+            <h3>Premium</h3>
+            <h1>₹299<span>/month</span></h1>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> Free Delivery</li>
+                <li><i class="fa-solid fa-check"></i> Exclusive Discounts</li>
+                <li><i class="fa-solid fa-check"></i> Priority Support</li>
+                <li><i class="fa-solid fa-check"></i> Early Access to Offers</li>
+            </ul>
+            <a href="#" class="price-btn">Choose Plan</a>
+        </div>
+        <div class="price-card" data-aos="flip-left">
+            <h3>Business</h3>
+            <h1>₹999<span>/month</span></h1>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> Bulk Orders</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated Manager</li>
+                <li><i class="fa-solid fa-check"></i> Fast Delivery</li>
+                <li><i class="fa-solid fa-check"></i> Wholesale Pricing</li>
+            </ul>
+            <a href="contact.html" class="price-btn">Contact Us</a>
+        </div>
+    </div>
+</section>
+<section class="blog">
+    <div class="section-heading">
+        <span>Latest Blog</span>
+        <h2>Healthy Living Tips</h2>
+        <p>Stay updated with healthy eating habits, farming insights, and grocery tips.</p>
+    </div>
+    <div class="blog-container">
+        <div class="blog-card"  data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Vegetables">
+            <div class="blog-content">
+                <span>15 July 2026</span>
+                <h3>5 Benefits of Eating Fresh Vegetables</h3>
+                <p>
+                    Fresh vegetables provide essential vitamins, minerals,
+                    and nutrients that help maintain a healthy lifestyle.
+                </p>
+                <a href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="blog-card"  data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80" alt="Fruits">
+            <div class="blog-content">
+                <span>20 July 2026</span>
+                <h3>How Organic Fruits Improve Your Health</h3>
+                <p>
+                    Organic fruits are rich in nutrients and free from
+                    harmful chemicals, making them a healthier choice.
+                </p>
+                <a href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="blog-card"  data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=600&q=80" alt="Farmer">
+            <div class="blog-content">
+                <span>25 July 2026</span>
+                <h3>Supporting Local Farmers Matters</h3>
+                <p>
+                    Buying directly from local farmers helps communities,
+                    promotes sustainability, ensures fresh produce.
+                </p>
+                <a href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <div class="section-heading">
+        <span>Contact Us</span>
+        <h2>Get In Touch</h2>
+        <p>Have questions or need assistance? We'd love to hear from you.</p>
+    </div>
+    <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+            <h3>Contact Information</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Rajahmundry, Andhra Pradesh</p>
+            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fa-solid fa-envelope"></i> support@greengrove.com</p>
+            <p><i class="fa-solid fa-clock"></i> Mon - Sun : 8:00 AM - 8:00 PM</p>
+        </div>
+        <div class="contact-form" data-aos="fade-left">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="6" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Company -->
+        <div class="footer-col">
+            <div class="footer-logo">
+                <i class="fa-solid fa-leaf"></i>
+                <h2><span>Green</span>Grove</h2>
+            </div>
+
+            <p>
+                Fresh vegetables and fruits delivered directly
+                to your doorstep with quality and care.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+ <div class="footer-col">
+            <h3>Quick Links</h3>
+
+            <a href="homepage1.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+            <h3>Support</h3>
+
+            <a href="helpcenter.html">Help Center</a>
+            <a href="trackorder.html">Track Order</a>
+            <a href="shippingpolicy.html">Shipping Policy</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+
+            <input type="email" placeholder="Your Email">
+            <button>Subscribe</button>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>&copy;2026 GreenGrove. All Rights Reserved.</p>
+
+        <div class="bottom-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
+</script>
+<script>
+const themeBtn = document.getElementById("theme-btn");
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark");
+    themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+}
+themeBtn.addEventListener("click", function(){
+    document.body.classList.toggle("dark");
+    if(document.body.classList.contains("dark")){
+        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        localStorage.setItem("theme","dark");
+    }else{
+        themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        localStorage.setItem("theme","light");
+    }
+});
+function subscribe(){
+    alert("Subscribed successfully!..");
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>

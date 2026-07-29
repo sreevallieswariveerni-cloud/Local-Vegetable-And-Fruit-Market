@@ -1,0 +1,439 @@
+
+.pricing-hero{
+    width:100%;
+    height:600px;
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://plus.unsplash.com/premium_photo-1686840551986-54b832f9f5c7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJ1aXQlMjBtYXJrZXR8ZW58MHx8MHx8fDA%3D");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    margin-top: 90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.pricing-overlay{
+    text-align:center;
+    color:#fff;
+}
+
+.pricing-overlay h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.pricing-overlay p{
+    font-size:18px;
+}
+
+.pricing-overlay a{
+    color:#28a745;
+    text-decoration:none;
+}
+.pricing{
+    padding:100px 8%;
+    background:#f8fff7;
+}
+
+.pricing-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    margin-top:60px;
+    align-items:center;
+}
+
+.pricing-card{
+    background:#fff;
+    border-radius:20px;
+    padding:45px 35px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    position:relative;
+}
+
+.pricing-card:hover{
+    transform:translateY(-10px);
+}
+
+.pricing-card h3{
+    font-size:30px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.pricing-card h1{
+    font-size:55px;
+    color:#28a745;
+    margin-bottom:10px;
+}
+
+.pricing-card h1 span{
+    font-size:22px;
+    font-weight:500;
+}
+
+.plan-text{
+    color:#666;
+    margin:20px 0 30px;
+    line-height:1.7;
+}
+
+.pricing-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.pricing-card ul li{
+    padding:12px 0;
+    color:#555;
+    border-bottom:1px solid #eee;
+}
+
+.pricing-card ul li:last-child{
+    border-bottom:none;
+}
+
+.pricing-card .fa-check{
+    color:#28a745;
+    margin-right:10px;
+}
+
+.pricing-card .fa-xmark{
+    color:#e53935;
+    margin-right:10px;
+}
+
+.price-btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 40px;
+    background:#28a745;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.price-btn:hover{
+    background:#1d7d34;
+}
+
+/*==============================
+      PREMIUM CARD
+==============================*/
+
+.pricing-card.active{
+    background:#28a745;
+    color:#fff;
+    transform:scale(1.08);
+}
+
+.pricing-card.active:hover{
+    transform:scale(1.08) translateY(-8px);
+}
+
+.pricing-card.active h3,
+.pricing-card.active h1,
+.pricing-card.active h1 span,
+.pricing-card.active .plan-text,
+.pricing-card.active ul li{
+    color:#fff;
+}
+
+.pricing-card.active .fa-check{
+    color:#fff;
+}
+
+.pricing-card.active .fa-xmark{
+    color:#ffd4d4;
+}
+
+.pricing-card.active .price-btn{
+    background:#fff;
+    color:#28a745;
+}
+
+.pricing-card.active .price-btn:hover{
+    background:#f5f5f5;
+}
+
+/*==============================
+      POPULAR BADGE
+==============================*/
+
+.popular{
+    position:absolute;
+    top:-15px;
+    right:25px;
+    background:#ff8c42;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+/*==============================
+      TABLE
+==============================*/
+
+.plan-comparison{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.table-responsive{
+    overflow:auto;
+    margin-top:50px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+thead{
+    background:#28a745;
+    color:#fff;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+td:first-child{
+    text-align:left;
+    font-weight:600;
+}
+
+tbody tr:hover{
+    background:#f8fff7;
+}
+
+.fa-check{
+    color:#28a745;
+    font-size:20px;
+}
+
+.fa-xmark{
+    color:#e53935;
+    font-size:20px;
+}
+
+/*==============================
+      FAQ
+==============================*/
+
+.pricing-faq{
+    padding:100px 8%;
+    background:#f8fff7;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#fff;
+    margin-bottom:20px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.faq-question{
+    width:100%;
+    background:none;
+    border:none;
+    padding:22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+}
+
+.faq-question i{
+    color:#28a745;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.faq-item.active .faq-answer{
+    max-height:200px;
+}
+
+.faq-answer p{
+    padding:0 22px 22px;
+    color:#666;
+}
+
+/*==============================
+      CTA
+==============================*/
+
+.pricing-cta{
+    margin:100px 8%;
+    padding:100px 8%;
+    border-radius:25px;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1585590853943-67022b1d8fe8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHZlZ2V0YWJsZXMlMjBhbmQlMjBmcnVpdHMlMjBpbWFnZXMlMjB3aXRoJTIwcHJpY2luZ3xlbnwwfHwwfHx8MA%3D%3D");
+    background-size:cover;
+}
+
+.pricing-cta-content{
+    color:#fff;
+}
+
+.pricing-cta-content span{
+    color:#FFD54F;
+    font-size:18px;
+}
+
+.pricing-cta-content h2{
+    font-size:48px;
+    margin:20px 0;
+}
+
+.pricing-cta-content p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.pricing-cta-buttons{
+    margin-top:40px;
+}
+
+.pricing-btn-primary,
+.pricing-btn-secondary{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    margin:10px;
+    font-weight:600;
+}
+
+.pricing-btn-primary{
+    background:#28a745;
+    color:#fff;
+}
+
+.pricing-btn-secondary{
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.pricing-btn-primary:hover{
+    background:#1d7d34;
+}
+
+.pricing-btn-secondary:hover{
+    background:#fff;
+    color:#28a745;
+}
+
+/*==============================
+      RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.pricing-container{
+    grid-template-columns:1fr;
+}
+
+.pricing-card.active{
+    transform:none;
+}
+
+.pricing-card.active:hover{
+    transform:translateY(-10px);
+}
+
+.pricing-cta h2{
+    font-size:34px;
+}
+
+table{
+    min-width:700px;
+}
+
+}
+/* ===== DARK MODE ===== */
+
+body.dark .pricing{
+    background:#181818;
+}
+
+body.dark .pricing-card{
+    background:#1f1f1f;
+}
+
+body.dark .pricing-card h3,
+body.dark .pricing-card h1,
+body.dark .pricing-card .plan-text,
+body.dark .pricing-card ul li{
+    color:#ffffff;
+}
+
+body.dark .plan-comparison{
+    background:#181818;
+}
+
+body.dark table{
+    background:#1f1f1f;
+    color:#ffffff;
+}
+
+body.dark th{
+    background:#28a745;
+    color:#ffffff;
+}
+
+body.dark td{
+    background:#1f1f1f;
+    color:#d1d5db;
+    border-color:#333;
+}
+
+body.dark tbody tr:hover{
+    background:#2b2b2b;
+}
+
+body.dark .pricing-faq{
+    background:#181818;
+}
+
+body.dark .faq-item{
+    background:#1f1f1f;
+}
+
+body.dark .faq-question{
+    color:#ffffff;
+}
+
+body.dark .faq-answer p{
+    color:#d1d5db;
+}
