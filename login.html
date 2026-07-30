@@ -18,6 +18,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 </head>
 
 <body>
+    <div class="top-actions">
+    <button class="rtl-btn" id="rtl-btn">RTL</button>
+
+    <button id="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+</div>
 
 <div class="container">
 
@@ -29,8 +36,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
         </div>
     </a>
-
-    <p>Fresh Fruits & Vegetables</p>
 </div>
 <div class="tab-box">
 
@@ -79,41 +84,32 @@ required>
 
 </div>
 
-<div class="input-box">
+<div class="password-row">
 
-<i class="fa-solid fa-lock"></i>
+    <div class="input-box">
+        <i class="fa-solid fa-lock"></i>
 
-<input
-type="password"
-placeholder="Password"
-id="loginPass"
-required>
+        <input
+            type="password"
+            placeholder="Password"
+            id="registerPass"
+            required>
 
-<span
-class="eye"
-onclick="showLoginPassword()">
+        <span class="eye"
+        onclick="showRegisterPassword()">
+            <i class="fa-solid fa-eye"></i>
+        </span>
+    </div>
 
-<i class="fa-solid fa-eye"></i>
+    <div class="input-box">
+        <i class="fa-solid fa-lock"></i>
 
-</span>
-
-</div>
-
-<div class="options">
-
-<label>
-
-<input type="checkbox">
-
-Remember Me
-
-</label>
-
-<a href="#">
-
-Forgot Password?
-
-</a>
+        <input
+            type="password"
+            placeholder="Confirm Password"
+            id="confirmPass"
+            required>
+    </div>
 
 </div>
 
@@ -135,15 +131,19 @@ OR
 
 </div>
 
-<button
-type="button"
-class="google">
+<div class="social-login">
 
+<button type="button" class="google">
 <i class="fa-brands fa-google"></i>
-
 Continue with Google
-
 </button>
+
+<button type="button" class="google">
+<i class="fa-brands fa-apple"></i>
+Continue with Apple
+</button>
+
+</div>
 
 </form>
 
@@ -196,34 +196,32 @@ placeholder="Phone Number"
 required>
 
 </div>
-<div class="input-box">
+<div class="password-row">
 
-<i class="fa-solid fa-lock"></i>
+    <div class="input-box">
+        <i class="fa-solid fa-lock"></i>
 
-<input
-type="password"
-placeholder="Password"
-id="registerPass"
-required>
+        <input
+            type="password"
+            placeholder="Password"
+            id="registerPass"
+            required>
 
-<span class="eye"
-onclick="showRegisterPassword()">
+        <span class="eye"
+        onclick="showRegisterPassword()">
+            <i class="fa-solid fa-eye"></i>
+        </span>
+    </div>
 
-<i class="fa-solid fa-eye"></i>
+    <div class="input-box">
+        <i class="fa-solid fa-lock"></i>
 
-</span>
-
-</div>
-
-<div class="input-box">
-
-<i class="fa-solid fa-lock"></i>
-
-<input
-type="password"
-placeholder="Confirm Password"
-id="confirmPass"
-required>
+        <input
+            type="password"
+            placeholder="Confirm Password"
+            id="confirmPass"
+            required>
+    </div>
 
 </div>
 
@@ -241,15 +239,19 @@ Create Account
 
 </div>
 
-<button
-type="button"
-class="google">
+<div class="social-login">
 
+<button type="button" class="google">
 <i class="fa-brands fa-google"></i>
-
 Continue with Google
-
 </button>
+
+<button type="button" class="google">
+<i class="fa-brands fa-apple"></i>
+Continue with Apple
+</button>
+
+</div>
 
 </form>
 

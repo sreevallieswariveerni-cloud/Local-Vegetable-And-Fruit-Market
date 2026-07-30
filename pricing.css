@@ -1,14 +1,15 @@
 
 .pricing-hero{
     width:100%;
-    height:600px;
+    height:630px;
     background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("https://plus.unsplash.com/premium_photo-1686840551986-54b832f9f5c7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJ1aXQlMjBtYXJrZXR8ZW58MHx8MHx8fDA%3D");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    margin-top: 90px;
+    margin-top:0;
+    padding-top:78px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -33,15 +34,15 @@
     text-decoration:none;
 }
 .pricing{
-    padding:100px 8%;
+    padding:60px 8%;
     background:#f8fff7;
 }
 
 .pricing-container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:35px;
-    margin-top:60px;
+    gap:25px;
+    margin-top:40px;
     align-items:center;
 }
 
@@ -184,13 +185,13 @@
 ==============================*/
 
 .plan-comparison{
-    padding:100px 8%;
+    padding:60px 8%;
     background:#fff;
 }
 
 .table-responsive{
     overflow:auto;
-    margin-top:50px;
+    margin-top:35px;
 }
 
 table{
@@ -238,7 +239,7 @@ tbody tr:hover{
 ==============================*/
 
 .pricing-faq{
-    padding:100px 8%;
+    padding:60px 8%;
     background:#f8fff7;
 }
 
@@ -292,8 +293,9 @@ tbody tr:hover{
 ==============================*/
 
 .pricing-cta{
-    margin:100px 8%;
-    padding:100px 8%;
+     max-width:1100px;
+    margin:60px auto;
+    padding:70px 50px;
     border-radius:25px;
     text-align:center;
     background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),

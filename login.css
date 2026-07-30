@@ -9,35 +9,56 @@
 }
 
 body{
-    margin: 0;
-    width: 100%;
-    /* height: 100%; */
+    margin:0;
+    width:100%;
+    min-height:100vh;
     background:#f4f8f4;
     display:flex;
     justify-content:center;
     align-items:center;
-    /* overflow: hidden; */
-    /* min-height:100vh; */
-    padding:10px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:15px;
+}
+.top-actions{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    z-index: 1000;
 }
 
+.top-actions button{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #0aa84f;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+#rtl-btn{
+    width: 60px;
+    border-radius: 25px;
+}
 .container{
-    width:560px;
-    /* max-width:420px; */
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    width:540px;
+    padding:10px;
+    margin:20px 0;
 }
-
 .form-box{
     background:#fff;
     border-radius:20px;
-    padding: 18px;
+  padding:16px 22px;
     box-shadow:0 10px 40px rgba(0,0,0,.12);
 }
 .logo{
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .logo-title{
@@ -91,7 +112,7 @@ body{
 
 .tab-box{
     display:flex;
-    margin-bottom:20px;
+    margin-bottom:15px;
     border-radius:10px;
     overflow:hidden;
     background:#f1f1f1;
@@ -118,14 +139,14 @@ body{
 h2{
     text-align:center;
     color:#222;
-    margin-bottom:5px;
+    margin-bottom:2px;
 }
 
 form p{
     text-align:center;
     color:#777;
     margin-bottom:15px;
-    font-size:15px;
+    font-size:10px;
 }
 
 /* Input */
@@ -144,7 +165,7 @@ form p{
 
 .input-box input{
     width:100%;
-    height:45px;
+    height:44px;
     padding-left:45px;
     padding-right:45px;
     border:1px solid #ddd;
@@ -294,9 +315,20 @@ form{
     }
 
 }
+.password-row{
+    display:flex;
+    gap:15px;
+}
+
+.password-row .input-box{
+    flex:1;
+}
 /* Responsive */
 
 @media(max-width:768px){
+.password-row{
+    flex-direction:column;
+}
 
 .form-box{
 
@@ -335,7 +367,14 @@ h2{
     height:48px;
 
 }
+.social-login{
+    display:flex;
+    gap:12px;
+}
 
+.social-login .google{
+    width:50%;
+}
 .options{
 
     flex-direction:column;
@@ -345,4 +384,34 @@ h2{
 
 }
 
+}
+/* DARK MODE */
+
+body.dark{
+    background:#121212;
+}
+
+body.dark .form-box{
+    background:#1f1f1f;
+}
+
+body.dark h2,
+body.dark p{
+    color:#fff;
+}
+
+body.dark .tab-box{
+    background:#2b2b2b;
+}
+
+body.dark .input-box input{
+    background:#2b2b2b;
+    color:#fff;
+    border-color:#444;
+}
+
+body.dark .google{
+    background:#2b2b2b;
+    color:#fff;
+    border-color:#444;
 }

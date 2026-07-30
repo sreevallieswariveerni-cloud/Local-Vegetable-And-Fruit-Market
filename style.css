@@ -25,19 +25,18 @@ body {
 .logo i{
     color: #34D399;
 }
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 8%;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(18px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #ffffff;          /* Pure white */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    z-index: 1000;
 }
 .header-icons{
     display:flex;
@@ -263,12 +262,12 @@ nav ul li a.active::after{
     width:100%;
     /* height:85vh; */
     min-height:600px;
-    background:url("https://images.openai.com/static-rsc-4/S9q23W1zUWbBI_BATT_800nQgGucXcj-CDgeOmTXJib7ueUtx89fI6iRb79scIVMs38Jqyf7MlUwMti_drfHwu7bh4EfDcHZJ0MM0VIRV06CgTsw-cYv60j0gAQWCGsMLCaH3h6q-1Mdf2ImpHhjACBW8SaVMl9gmcmH7yCC1R95IeufVGiUwF4tek62cdAT?purpose=fullsize") center center/cover no-repeat;
+    background:url("hero_image.jpg") center center/cover no-repeat;
     position:relative;
     display:flex;
     align-items:center;
-    top: 80px;
-    margin-top: 0;
+    top: 0;
+    margin-top: 78px;
 }
 
 .hero-overlay{
@@ -448,14 +447,14 @@ nav ul li a.active::after{
 }
 /* Shop by Categories */
 .categories {
-  padding: 100px 8%;
+  padding: 70px 8%;
 
   background: #ffffff;
 }
 
 .section-title {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 60px;
 }
 
@@ -488,7 +487,7 @@ nav ul li a.active::after{
 
   grid-template-columns: repeat(4, 1fr);
 
-  gap: 35px;
+  gap: 25px;
 
   margin-top: 50px;
 }
@@ -497,8 +496,8 @@ nav ul li a.active::after{
   background: #fff;
 
   border-radius: 30px;
-
-  padding: 35px;
+  width: 280px;
+  padding: 24px;
 
   text-align: center;
 
@@ -515,10 +514,10 @@ nav ul li a.active::after{
 }
 
 .category-card img {
-  width: 180px;
+  width: 170px;
 
-  height: 180px;
-  border-radius: 50px;
+  height: 170px;
+  border-radius: 30px;
 
   object-fit: cover;
   display: block;
@@ -546,163 +545,175 @@ nav ul li a.active::after{
     grid-template-columns: 1fr;
   }
 }
-/* Summer Specials */
 
-.summer-specials {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/*==========================
+    Seasonal Specials
+==========================*/
 
-  gap: 70px;
+.seasonal-specials{
 
-  padding: 100px 8%;
+    padding:70px 8%;
+    background:#f7fff8;
 
-  background: linear-gradient(135deg, #f8fff8, #ecfff0);
-
-  border-radius: 30px;
-
-  margin: 100px 8%;
-
-  overflow: hidden;
 }
 
-.summer-content {
-  flex: 1;
+.section-heading{
+
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+
 }
 
-.summer-tag {
-  display: inline-block;
+.section-heading span{
 
-  padding: 10px 22px;
+    color:#00a651;
+    font-weight:600;
+    letter-spacing:1px;
 
-  background: #dff7e5;
-
-  color: #28a745;
-
-  border-radius: 30px;
-
-  font-weight: 600;
-
-  margin-bottom: 20px;
 }
 
-.summer-content h2 {
-  font-size: 55px;
+.section-heading h2{
 
-  color: #222;
+    font-size:50px;
+    margin:15px 0;
 
-  margin-bottom: 20px;
 }
 
-.summer-content p {
-  color: #666;
+.section-heading p{
 
-  font-size: 18px;
+    color:#666;
+    line-height:1.8;
 
-  line-height: 32px;
-
-  margin-bottom: 35px;
 }
 
-.summer-features {
-  display: flex;
+.season-grid{
 
-  gap: 25px;
+    margin-top:70px;
 
-  flex-wrap: wrap;
+    display:grid;
 
-  margin-bottom: 40px;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+.season-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.4s;
 }
 
-.feature {
-  display: flex;
+.season-card:hover{
 
-  align-items: center;
+    transform:translateY(-10px);
 
-  gap: 10px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 
-  background: #fff;
-
-  padding: 12px 20px;
-
-  border-radius: 50px;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.feature i {
-  color: #28a745;
+.season-card img{
 
-  font-size: 18px;
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
 }
 
-.feature span {
-  font-weight: 600;
+.season-content{
 
-  color: #333;
+    padding:18px;
+
+    text-align:center;
+
 }
 
-.summer-btn {
-  display: inline-block;
+.season-content h3{
 
-  text-decoration: none;
+    color:#222;
 
-  padding: 16px 36px;
+    font-size:23px;
 
-  background: #28a745;
+    margin-bottom:10px;
 
-  color: #fff;
-
-  border-radius: 50px;
-
-  font-weight: 600;
-
-  transition: 0.4s;
 }
 
-.summer-btn:hover {
-  background: #1d8738;
+.season-content p{
 
-  transform: translateY(-5px);
+    color:#666;
+
 }
 
-.summer-image {
-  flex: 1;
+.season-btn{
 
-  text-align: center;
+    text-align:center;
+
+    margin-top:60px;
+
 }
 
-.summer-image img {
-  width: 100%;
+.seasonal-btn{
 
-  max-width: 550px;
+    display:inline-block;
 
-  border-radius: 30px;
+    background:#00a651;
 
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    color:#fff;
 
-  transition: 0.5s;
+    text-decoration:none;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    transition:.4s;
+
 }
 
-.summer-image img:hover {
-  transform: scale(1.05);
+.seasonal-btn:hover{
+
+    background:#008c45;
+
+    transform:translateY(-5px);
+
 }
 
-@media (max-width: 992px) {
-  .summer-specials {
-    flex-direction: column;
+@media(max-width:991px){
 
-    text-align: center;
-  }
+.season-grid{
 
-  .summer-features {
-    justify-content: center;
-  }
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.season-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-heading h2{
+
+font-size:38px;
+
+}
+
 }
 /* Farm Sourcing */
 .farm-sourcing{
 
-    padding:100px 8%;
+    padding:70px 8%;
 
     display:flex;
 
@@ -710,7 +721,7 @@ nav ul li a.active::after{
 
     align-items:center;
 
-    gap:60px;
+    gap:50px;
 
     background:#f8fff7;
 
@@ -724,10 +735,11 @@ nav ul li a.active::after{
 
 .farm-image img{
 
-    width:100%;
-    height: 600px;
+    width:480px;
+    height: 500px;
+    object-fit:cover;
 
-    border-radius:20px;
+    border-radius:24px;
 
     box-shadow:0 15px 40px rgba(0,0,0,.12);
 
@@ -751,21 +763,22 @@ nav ul li a.active::after{
 
 .farm-content h2{
 
-    font-size:42px;
+    font-size:18px;
 
-    margin:15px 0 25px;
+    margin:12px 0 20px;
 
     color:#222;
-
+    
 }
 
 .farm-content p{
 
     color:#666;
 
-    line-height:1.8;
+    line-height:1.7;
 
     margin-bottom:35px;
+    max-width: 520px;
 
 }
 
@@ -797,8 +810,8 @@ nav ul li a.active::after{
 
 .feature-box:hover{
 
-    transform:translateY(-8px);
-
+  transform: translateY(-12px) scale(1.05) !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
 .feature-box i{
@@ -838,7 +851,7 @@ nav ul li a.active::after{
 
 .delivery{
 
-    padding:100px 8%;
+    padding: 70px 8%;
     background:#ffffff;
 
 }
@@ -891,7 +904,7 @@ nav ul li a.active::after{
 /* Bulk Order */
 .bulk-order{
 
-    padding:100px 8%;
+    padding:70px 8%;
 
     background:#28a745;
 
@@ -1050,7 +1063,7 @@ nav ul li a.active::after{
 /* Why Choose Us */
 
 .why-choose {
-  padding: 100px 8%;
+  padding: 70px 8%;
   background: #f8fff7;
 }
 .choose-container{
@@ -1096,7 +1109,7 @@ nav ul li a.active::after{
 /* Testimonials */
 
 .testimonials {
-  padding: 100px 8%;
+  padding: 70px 8%;
   background: #ffffff;
 }
 
@@ -1156,7 +1169,7 @@ nav ul li a.active::after{
 /* Services */
 
 .services {
-  padding: 100px 8%;
+  padding: 70px 8%;
   background: #f8fff8;
 }
 
@@ -1229,7 +1242,7 @@ nav ul li a.active::after{
 /* Contact */
 
 .contact {
-  padding: 100px 8%;
+  padding: 70px 8%;
 
   background: #fff;
 }
@@ -1555,8 +1568,13 @@ body.dark nav a {
 }
 
 /* Hero */
-body.dark .hero {
-  background: #181818;
+body.dark .hero{
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("hero_image.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 body.dark .hero h1,
@@ -1895,3 +1913,157 @@ body.dark .feature-box p{
     color:#ffffff;
 }
 
+body.dark .seasonal-specials{
+    background:#181818;
+}
+
+body.dark .season-card{
+    background:#242424;
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+}
+
+body.dark .season-content h3{
+    color:#ffffff;
+}
+
+body.dark .season-content p{
+    color:#cfcfcf;
+}
+
+body.dark .section-heading h2{
+    color:#ffffff;
+}
+
+body.dark .section-heading p{
+    color:#cfcfcf;
+}
+
+body.dark .section-heading span{
+    color:#22c55e;
+}
+
+body.dark .why-choose,
+body.dark .services,
+body.dark .farm-sourcing{
+    background:#181818;
+}
+
+body.dark .delivery,
+body.dark .testimonials,
+body.dark .contact{
+    background:#121212;
+}
+
+body.dark .choose-card,
+body.dark .service-card,
+body.dark .delivery-card,
+body.dark .testimonial-card,
+body.dark .feature-box{
+    background:#242424;
+}
+
+body.dark h2,
+body.dark h3{
+    color:#ffffff;
+}
+
+body.dark p{
+    color:#cfcfcf;
+}
+/* ===========================
+   DARK MODE TEXT FIX
+=========================== */
+
+/* Categories */
+body.dark .category-card{
+    background:#2a2a2a;
+}
+
+body.dark .category-card h3{
+    color:#ffffff !important;
+}
+
+body.dark .category-card p{
+    color:#d1d5db !important;
+}
+
+/* Why Choose */
+body.dark .choose-card{
+    background:#2a2a2a;
+}
+
+body.dark .choose-card h3{
+    color:#ffffff !important;
+}
+
+body.dark .choose-card p{
+    color:#d1d5db !important;
+}
+
+/* Testimonials */
+body.dark .testimonial-card{
+    background:#2a2a2a;
+}
+
+body.dark .testimonial-card h3{
+    color:#ffffff !important;
+}
+
+body.dark .testimonial-card span{
+    color:#d1d5db !important;
+}
+
+body.dark .testimonial-card p{
+    color:#d1d5db !important;
+}
+
+/* Services */
+body.dark .service-card{
+    background:#2a2a2a;
+}
+
+body.dark .service-card h3{
+    color:#ffffff !important;
+}
+
+body.dark .service-card p{
+    color:#d1d5db !important;
+}
+
+/* Delivery */
+body.dark .delivery-card{
+    background:#2a2a2a;
+}
+
+body.dark .delivery-card h3{
+    color:#ffffff !important;
+}
+
+body.dark .delivery-card p{
+    color:#d1d5db !important;
+}
+
+/* Farm Features */
+body.dark .feature-box{
+    background:#2a2a2a;
+}
+
+body.dark .feature-box h4{
+    color:#ffffff !important;
+}
+
+/* Section Headings */
+body.dark .section-title h2,
+body.dark .section-heading h2{
+    color:#ffffff !important;
+}
+
+body.dark .section-title p,
+body.dark .section-heading p{
+    color:#d1d5db !important;
+}
+
+body.dark .section-title span,
+body.dark .section-heading span{
+    color:#22c55e !important;
+}

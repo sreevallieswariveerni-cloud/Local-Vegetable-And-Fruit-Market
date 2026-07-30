@@ -5,8 +5,10 @@
 .services-hero{
 
     width:100%;
-    height:550px;
-    margin-top: 90px;
+    height:632px;
+    margin-top:0;
+    padding-top:78px;
+
     background:
     linear-gradient(rgba(0,0,0,.55),
     rgba(0,0,0,.55)),
@@ -60,7 +62,7 @@
 
 .featured-services{
 
-    padding:100px 8%;
+    padding:60px 8%;
     background:#fff;
 
 }
@@ -69,8 +71,8 @@
 
     display:flex;
     align-items:center;
-    gap:70px;
-    margin-top:80px;
+    gap:45px;
+    margin-top:50px;
 
 }
 
@@ -242,7 +244,7 @@ color:#fff;
 
 .journey{
 
-padding:100px 8%;
+padding:70px 8%;
 background:#f8fff7;
 
 }
@@ -475,9 +477,9 @@ right:auto;
 
 .service-cta{
 
-    padding:120px 8%;
+    padding:80px 8%;
 
-    margin:100px 8%;
+    margin:70px 8%;
 
     border-radius:25px;
 
@@ -520,7 +522,7 @@ right:auto;
 
 .cta-content h2{
 
-    font-size:48px;
+    font-size:40px;
 
     margin:20px 0;
 
@@ -530,14 +532,13 @@ right:auto;
 
 .cta-content p{
 
-    font-size:18px;
+    font-size:17px;
 
-    line-height:1.9;
+    line-height:1.7;
 
     color:#f5f5f5;
 
-    margin-bottom:40px;
-
+        margin-bottom:30px;
 }
 
 .cta-buttons{

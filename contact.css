@@ -61,29 +61,36 @@
   background: #fff;
 }
 
-.contact-container {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 50px;
-
-  margin-top: 60px;
+.contact-container{
+    display: grid;
+    grid-template-columns: 32% 68%;
+    gap: 30px;
+    align-items: start;
+    margin-top: 50px;
+}
+.contact-info{
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    height: fit-content;
 }
 
-.contact-info h3 {
-  font-size: 30px;
-
-  margin-bottom: 30px;
+.contact-info h3{
+    font-size: 32px;
+    margin-bottom: 25px;
 }
 
-.contact-info p {
-  margin: 20px 0;
-
-  color: #555;
-
-  font-size: 17px;
+.contact-info p{
+    font-size: 17px;
+    margin: 22px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #555;
 }
+
+
 
 .contact-info i {
   color: #28a745;

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fff8;
+}
+
+.season-hero{
+    background:linear-gradient(135deg,#2e7d32,#4caf50);
+    color:#fff;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.season-hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.season-hero p{
+    font-size:18px;
+}
+
+.season-section{
+    padding:80px 8%;
+}
+
+.season-section h2{
+    text-align:center;
+    font-size:36px;
+    color:#2e7d32;
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    text-align:center;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    margin-top:18px;
+    font-size:22px;
+}
+
+.product-card p{
+    color:#666;
+    padding:10px 15px 20px;
+}
+
+@media(max-width:992px){
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .season-hero h1{
+        font-size:36px;
+    }
+
+    .season-section h2{
+        font-size:30px;
+    }
+}
+/*=========================
+      DARK MODE
+=========================*/
+
+body.dark{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* Hero */
+body.dark .season-hero{
+    background:linear-gradient(135deg,#14532d,#166534);
+}
+
+/* Sections */
+body.dark .season-section{
+    background:#0f172a;
+}
+
+/* Section Heading */
+body.dark .season-section h2{
+    color:#22c55e;
+}
+
+/* Product Card */
+body.dark .product-card{
+    background:#1e293b;
+    border:1px solid #334155;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+/* Product Name */
+body.dark .product-card h3{
+    color:#ffffff !important;
+}
+
+/* Product Description */
+body.dark .product-card p{
+    color:#cbd5e1 !important;
+}

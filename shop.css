@@ -397,3 +397,130 @@ body{
 #go-cart-btn:hover{
     background: darkgreen;
 }
+/*=========================
+      DARK MODE
+=========================*/
+
+body.dark{
+    background:#0f172a;
+    color:#f8fafc;
+}
+
+/* Shop Section */
+body.dark .shop{
+    background:#0f172a;
+}
+
+/* Header */
+body.dark header{
+    background:#111827;
+    border-bottom:1px solid #374151;
+}
+
+/* Shop Heading */
+body.dark .shop-header h1{
+    color:#22c55e;
+}
+
+body.dark .shop-header p{
+    color:#cbd5e1;
+}
+
+/* Product Card */
+body.dark .product-card{
+    background:#1e293b;
+    border:1px solid #334155;
+}
+
+body.dark .product-card:hover{
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+}
+
+/* Product Name */
+body.dark .product-details h3{
+    color:#f8fafc;
+}
+
+/* Price */
+body.dark .price{
+    color:#4ade80;
+}
+
+/* Weight Dropdown */
+body.dark .weight-select{
+    background:#334155;
+    color:#fff;
+    border-color:#475569;
+}
+
+/* ADD Button */
+body.dark .add-btn{
+    background:#16a34a;
+    color:#fff;
+    border-color:#16a34a;
+}
+
+body.dark .add-btn:hover{
+    background:#15803d;
+}
+
+/* Quantity Box */
+body.dark .quantity-box{
+    background:#15803d;
+}
+
+body.dark .minus,
+body.dark .plus{
+    background:#fff;
+    color:#15803d;
+}
+
+/* Cart Popup */
+body.dark .cart-popup{
+    background:#1e293b;
+    color:#fff;
+}
+
+body.dark .popup-body p{
+    color:#cbd5e1;
+}
+
+body.dark #go-cart-btn{
+    background:#16a34a;
+}
+
+/* Footer */
+body.dark .footer{
+    background:#111827;
+}
+
+body.dark .footer p,
+body.dark .footer a{
+    color:#e5e7eb;
+}
+
+body.dark .footer h3{
+    color:#22c55e;
+}
+/* Product Name */
+body.dark .product-details h3{
+    color:#ffffff !important;
+}
+
+/* Price */
+body.dark .price{
+    color:#4ade80 !important;
+}
+
+/* Dropdown */
+body.dark .weight-select{
+    background:#334155;
+    color:#ffffff;
+    border:1px solid #475569;
+}
+
+/* Product Card */
+body.dark .product-card{
+    background:#1e293b;
+    border-color:#334155;
+}

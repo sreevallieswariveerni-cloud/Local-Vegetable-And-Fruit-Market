@@ -1,0 +1,627 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+body{
+background:#f7faf7;
+color:#333;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+/* HERO */
+
+.hero{
+
+height:90vh;
+
+background:
+linear-gradient(rgba(0,0,0,.45),
+rgba(0,0,0,.45)),
+url(https://images.pexels.com/photos/4975353/pexels-photo-4975353.jpeg?_gl=1*krb7cz*_ga*NjY1NzM0MDA0LjE3ODUwMDU5MTU.*_ga_8JE65Q40S6*czE3ODUxODk1ODIkbzMkZzEkdDE3ODUxODk4NzYkajI2JGwwJGgw);
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+border-radius:0 0 40px 40px;
+
+}
+
+.hero-content{
+
+max-width:800px;
+color:white;
+
+}
+
+.hero h1{
+
+font-size:65px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#2e7d32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+transition:.4s;
+
+}
+
+.hero-btn:hover{
+
+background:#1b5e20;
+
+transform:translateY(-5px);
+
+}
+
+/* SECTION */
+
+section{
+
+padding:90px 0;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:42px;
+
+color:#2e7d32;
+
+margin-bottom:15px;
+
+}
+
+.section-sub{
+
+text-align:center;
+
+color:#666;
+
+max-width:700px;
+
+margin:auto auto 60px;
+
+line-height:1.8;
+
+}
+
+/* CATEGORY */
+
+.category-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+}
+
+.category{
+
+position:relative;
+
+height:280px;
+
+overflow:hidden;
+
+border-radius:25px;
+
+cursor:pointer;
+
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.category img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.6s;
+
+}
+
+.category:hover img{
+
+transform:scale(1.1);
+
+}
+
+.overlay{
+
+position:absolute;
+
+left:0;
+top:0;
+
+width:100%;
+height:100%;
+
+background:linear-gradient(transparent,rgba(0,0,0,.7));
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-end;
+
+padding:30px;
+
+color:white;
+
+}
+
+.overlay i{
+
+font-size:38px;
+
+margin-bottom:15px;
+
+}
+
+.overlay h3{
+
+font-size:30px;
+
+margin-bottom:10px;
+
+}
+
+.overlay p{
+
+line-height:1.7;
+
+opacity:.9;
+
+}
+/* JOURNEY */
+
+.journey{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:45px;
+    align-items:center;
+    padding:70px 5%;
+}
+
+.journey-img img{
+    width:100%;
+    max-width:560px;
+    height:380px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.tag{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#e8f5e9;
+
+color:#2e7d32;
+
+border-radius:30px;
+
+margin-bottom:20px;
+
+font-weight:bold;
+
+}
+
+.journey-content h2{
+    font-size:38px;
+    line-height:1.2;
+    margin-bottom:18px;
+    color:#2e7d32;
+}
+.journey-content p{
+    font-size:17px;
+    line-height:1.7;
+    color:#666;
+    margin-bottom:25px;
+}
+
+
+.steps{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.step{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+.step h3{
+    font-size:28px;
+    margin-bottom:6px;
+}
+.step p{
+    font-size:16px;
+    line-height:1.5;
+}
+.step-icon{
+
+width:58px;
+
+height:58px;
+
+border-radius:50%;
+
+background:#2e7d32;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:22px;
+
+}
+
+/* HIGHLIGHT */
+
+.highlight{
+
+margin:90px auto;
+
+width:90%;
+
+max-width:1300px;
+
+border-radius:30px;
+
+overflow:hidden;
+
+background:
+
+linear-gradient(rgba(0,0,0,.45),
+
+rgba(0,0,0,.45)),
+
+url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGiGeR2szYGPIfuBWXJqscsDqozYBDGUywCmSIUw-rg&s=10);
+
+background-size:cover;
+
+background-position:center;
+
+padding:120px 50px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.highlight h2{
+
+font-size:50px;
+
+margin-bottom:20px;
+
+}
+
+.highlight p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+.highlight a{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:white;
+
+color:#2e7d32;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:bold;
+
+transition:.4s;
+
+}
+
+.highlight a:hover{
+
+transform:translateY(-5px);
+
+}
+
+@media(max-width:768px){
+
+.journey{
+
+grid-template-columns:1fr;
+
+}
+
+.journey-content{
+
+margin-top:30px;
+
+}
+
+.highlight{
+
+padding:70px 25px;
+
+}
+
+.highlight h2{
+
+font-size:35px;
+
+}
+
+}
+/* PRODUCTS */
+
+.product-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:35px;
+
+}
+
+.product-card{
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.product-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.product-card img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.product-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.product-content{
+
+padding:25px;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:8px 16px;
+
+background:#e8f5e9;
+
+color:#2e7d32;
+
+border-radius:30px;
+
+font-size:14px;
+
+margin-bottom:15px;
+
+}
+
+.product-content h3{
+
+margin-bottom:15px;
+
+color:#2e7d32;
+
+}
+
+.product-content p{
+
+color:#666;
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+.product-bottom{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.price{
+
+font-size:22px;
+
+font-weight:bold;
+
+color:#2e7d32;
+
+}
+
+.product-bottom a{
+
+text-decoration:none;
+
+background:#2e7d32;
+
+color:white;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+}
+
+
+
+/* GALLERY */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+transition:.5s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+@media(max-width:768px){
+
+.product-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+}
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.category-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
