@@ -37,25 +37,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         </div>
     </a>
 </div>
-<div class="tab-box">
 
-<button
-class="tab active"
-onclick="loginTab()">
-
-Login
-
-</button>
-
-<button
-class="tab"
-onclick="registerTab()">
-
-Register
-
-</button>
-
-</div>
 
 <!-- Login Form -->
 
@@ -90,27 +72,14 @@ required>
         <i class="fa-solid fa-lock"></i>
 
         <input
-            type="password"
-            placeholder="Password"
-            id="registerPass"
-            required>
+    type="password"
+    placeholder="Password"
+    id="loginPass"
+    required>
 
-        <span class="eye"
-        onclick="showRegisterPassword()">
-            <i class="fa-solid fa-eye"></i>
-        </span>
+<span class="eye"
+onclick="showLoginPassword()">
     </div>
-
-    <div class="input-box">
-        <i class="fa-solid fa-lock"></i>
-
-        <input
-            type="password"
-            placeholder="Confirm Password"
-            id="confirmPass"
-            required>
-    </div>
-
 </div>
 
 <button
@@ -120,6 +89,10 @@ class="btn">
 Login
 
 </button>
+<p class="register-link">
+    Don't have an account?
+    <a href="register.html">Register</a>
+</p>
 
 <div class="line">
 
@@ -147,120 +120,9 @@ Continue with Apple
 
 </form>
 
-<!-- Register Form -->
-
-<form
-id="register">
-
-<h2>
-
-Create Account
-
-</h2>
-
-<p>
-
-Join GreenGrove Today
-
-</p>
-
-<div class="input-box">
-
-<i class="fa-solid fa-user"></i>
-
-<input
-type="text"
-placeholder="Full Name"
-required>
 
 </div>
-
-<div class="input-box">
-
-<i class="fa-solid fa-envelope"></i>
-
-<input
-type="email"
-placeholder="Email Address"
-required>
-
 </div>
-
-<div class="input-box">
-
-<i class="fa-solid fa-phone"></i>
-
-<input
-type="tel"
-placeholder="Phone Number"
-required>
-
-</div>
-<div class="password-row">
-
-    <div class="input-box">
-        <i class="fa-solid fa-lock"></i>
-
-        <input
-            type="password"
-            placeholder="Password"
-            id="registerPass"
-            required>
-
-        <span class="eye"
-        onclick="showRegisterPassword()">
-            <i class="fa-solid fa-eye"></i>
-        </span>
-    </div>
-
-    <div class="input-box">
-        <i class="fa-solid fa-lock"></i>
-
-        <input
-            type="password"
-            placeholder="Confirm Password"
-            id="confirmPass"
-            required>
-    </div>
-
-</div>
-
-<button
-type="submit"
-class="btn">
-
-Create Account
-
-</button>
-
-<div class="line">
-
-<span>OR</span>
-
-</div>
-
-<div class="social-login">
-
-<button type="button" class="google">
-<i class="fa-brands fa-google"></i>
-Continue with Google
-</button>
-
-<button type="button" class="google">
-<i class="fa-brands fa-apple"></i>
-Continue with Apple
-</button>
-
-</div>
-
-</form>
-
-</div>
-
-</div>
-
 <script src="login.js"></script>
-
 </body>
-
 </html>

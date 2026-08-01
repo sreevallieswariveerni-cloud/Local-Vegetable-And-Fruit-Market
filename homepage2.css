@@ -1,20 +1,14 @@
-/*==========================================
-        GOOGLE FONT
-==========================================*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 
-/*==========================================
-            ROOT
-==========================================*/
-
 :root{
 
-    --primary:#154212;
-    --secondary:#713700;
+    --primary:#2E7D32;
+    --secondary:#4CAF50;
     --white:#ffffff;
-    --light:#f8f7f2;
+    --light:#F8FFF8;
     --text:#666;
     --heading:#222;
 
@@ -23,11 +17,6 @@
     --radius:20px;
 
 }
-
-
-/*==========================================
-            RESET
-==========================================*/
 
 *{
 
@@ -72,9 +61,7 @@ section{
 }
 
 
-/*==========================================
-        COMMON HEADING
-==========================================*/
+
 
 .section-heading{
 
@@ -120,9 +107,6 @@ section{
 
 
 
-/*==========================================
-                HERO
-==========================================*/
 
 .hero2{
 
@@ -134,7 +118,7 @@ section{
 
     position:relative;
 
-    background:linear-gradient(135deg,#154212,#1f5d1b);
+    background:linear-gradient(135deg,#2E7D32,#66BB6A);
 
     overflow:hidden;
 
@@ -202,8 +186,7 @@ section{
 
 .hero-left h1 span{
 
-    color:#ffc857;
-
+color:#A5D6A7;
 }
 
 .hero-left p{
@@ -269,12 +252,6 @@ section{
     color:var(--primary);
 
 }
-
-
-
-/*==========================================
-            HERO RIGHT
-==========================================*/
 
 .hero-right{
 
@@ -388,10 +365,6 @@ section{
 
 
 
-/*==========================================
-        FLOATING STATS
-==========================================*/
-
 .floating-stats{
 
     margin-top:-70px;
@@ -457,11 +430,6 @@ section{
 }
 
 
-
-/*==========================================
-        RESPONSIVE
-==========================================*/
-
 @media(max-width:991px){
 
 .hero-container{
@@ -525,12 +493,6 @@ grid-template-columns:1fr;
 }
 
 }
-
-
-
-/*==========================================
-            FARM STORY
-==========================================*/
 
 .farm-story{
 
@@ -656,8 +618,7 @@ grid-template-columns:1fr;
 
     border-radius:50%;
 
-    background:rgba(113,55,0,.10);
-
+background:rgba(76,175,80,.12);
     color:var(--secondary);
 
     font-size:24px;
@@ -708,11 +669,6 @@ grid-template-columns:1fr;
 
 }
 
-
-
-/*==========================================
-        RESPONSIVE
-==========================================*/
 
 @media(max-width:991px){
 
@@ -783,9 +739,6 @@ grid-template-columns:1fr;
 }
 
 }
-/*==========================================
-            JOURNEY TIMELINE
-==========================================*/
 
 .journey{
 
@@ -835,24 +788,22 @@ grid-template-columns:1fr;
 
     position:relative;
 
-    padding:25px 50px;
+    padding:25px 35px;
 
 }
 
 .timeline-item.left{
-
     left:0;
-
     text-align:right;
-
+    padding-right:35px;
+    padding-left:15px;
 }
 
 .timeline-item.right{
-
     left:50%;
-
+    padding-left:35px;
+    padding-right:15px;
 }
-
 .timeline-card{
 
     background:#fff;
@@ -917,7 +868,7 @@ grid-template-columns:1fr;
 
     position:absolute;
 
-    right:-12px;
+    right:-11px;
 
     top:55px;
 
@@ -931,8 +882,7 @@ grid-template-columns:1fr;
 
     border-radius:50%;
 
-    box-shadow:0 0 0 4px rgba(113,55,0,.15);
-
+box-shadow:0 0 0 4px rgba(76,175,80,.20);
 }
 
 .timeline-item.right::after{
@@ -941,7 +891,7 @@ grid-template-columns:1fr;
 
     position:absolute;
 
-    left:-10px;
+    left:-11px;
 
     top:55px;
 
@@ -961,9 +911,7 @@ grid-template-columns:1fr;
 
 
 
-/*==========================================
-            OUR PROCESS
-==========================================*/
+
 
 .journey-section{
 
@@ -1059,9 +1007,6 @@ grid-template-columns:1fr;
 
 
 
-/*==========================================
-            RESPONSIVE
-==========================================*/
 
 @media(max-width:991px){
 
@@ -1130,9 +1075,6 @@ font-size:21px;
 }
 
 }
-/*==========================================
-        WHY CHOOSE US
-==========================================*/
 
 .why-premium{
 
@@ -1227,10 +1169,6 @@ font-size:21px;
 
 
 
-/*==========================================
-        DELIVERY
-==========================================*/
-
 .delivery-premium{
 
     background:#f8f7f2;
@@ -1252,7 +1190,7 @@ font-size:21px;
     padding:35px 30px;
     text-align:center;
     transition:.4s;
-    box-shadow:0 12px 30px rgba(0,0,0,.07);
+background:rgba(76,175,80,.12);
 
 }
 
@@ -1293,12 +1231,6 @@ font-size:21px;
     line-height:1.8;
 
 }
-
-
-
-/*==========================================
-        SEASONAL PICKS
-==========================================*/
 
 .seasonal-picks{
 
@@ -1383,13 +1315,6 @@ font-size:21px;
     background:var(--secondary);
 
 }
-
-
-
-/*==========================================
-        RESPONSIVE
-==========================================*/
-
 @media(max-width:991px){
 
 .why-premium{
@@ -1441,10 +1366,6 @@ height:190px;
 }
 
 
-
-/*==========================================
-        TESTIMONIALS
-==========================================*/
 
 .testimonials{
 
@@ -1522,9 +1443,6 @@ height:190px;
 }
 
 
-/*==========================================
-            CTA
-==========================================*/
 
 .premium-cta{
 
@@ -1568,6 +1486,61 @@ height:190px;
 
 .cta-btn:hover{
 
-    background:#ffd45c;
+    background:#4CAF50;
+color:#fff;
 
+}
+
+
+body.dark{
+    background:#121212;
+    color:#d1d5db;
+}
+
+body.dark section{
+    background:#121212 !important;
+}
+
+body.dark .farm-story,
+body.dark .journey-section,
+body.dark .delivery-premium,
+body.dark .seasonal-picks,
+body.dark .testimonials,
+body.dark .why-premium,
+body.dark .journey{
+    background:#121212 !important;
+}
+
+body.dark .stats-box,
+body.dark .farm-features div,
+body.dark .timeline-card,
+body.dark .journey-box,
+body.dark .delivery-card,
+body.dark .season-card,
+body.dark .testimonial-card{
+    background:#1f1f1f;
+    color:#eee;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4{
+    color:#fff;
+}
+
+body.dark p,
+body.dark span,
+body.dark li{
+    color:#cfcfcf;
+}
+
+body.dark .section-heading h2,
+body.dark .farm-content h2,
+body.dark .why-content h2{
+    color:#fff;
+}
+
+body.dark .premium-cta{
+    background:linear-gradient(135deg,#1b5e20,#2e7d32);
 }

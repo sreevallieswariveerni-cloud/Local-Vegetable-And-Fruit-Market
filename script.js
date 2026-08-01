@@ -228,3 +228,23 @@ if (menuBtn && nav) {
         nav.classList.toggle("active");
     });
 }
+
+// Mobile Dropdown
+
+const dropdowns = document.querySelectorAll(".dropdown > a");
+
+dropdowns.forEach(item => {
+
+    item.addEventListener("click", function(e){
+
+        if(window.innerWidth <= 992){
+
+            e.preventDefault();
+
+            this.parentElement.classList.toggle("active");
+
+        }
+
+    });
+
+});

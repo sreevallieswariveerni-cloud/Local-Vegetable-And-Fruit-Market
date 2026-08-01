@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <header>
-    <div class="logo">
-        <i class="fa-solid fa-leaf"></i>
-        <div class="logo-text">
-            <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
-        </div>
+<header>
+    <a href="index.html" class="logo">
+    <i class="fa-solid fa-leaf"></i>
+    <div class="logo-text">
+        <h2>
+            <span class="green">Green</span>
+            <span class="grove">Grove</span>
+        </h2>
     </div>
+</a>
     <nav>
         <ul>
             <li class="dropdown">
@@ -31,6 +34,7 @@
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="mobile-login">Login</a></li>
         </ul>
     </nav>
     <div class="header-icons">
@@ -42,491 +46,435 @@
         <i class="fa-solid fa-cart-shopping"></i>
         <span class="cart-count" id="cart-count">0</span>
         </a>
-        <a href="login.html" class="profile">
-            <i class="fa-regular fa-user"></i>
-        </a>
+        <a href="login.html" class="login-btn">Login</a>
         <div class="menu" id="menu-btn">
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
 </header>
-<!-- ==========================
-      SERVICE BANNER
-========================== -->
+<section class="service-hero">
 
-<section class="service-banner">
+    <div class="service-overlay"></div>
 
-    <div class="service-banner-overlay"></div>
+    <div class="service-hero-content">
 
-    <div class="service-banner-container">
+        <span>OUR PREMIUM SERVICE</span>
 
-        <div class="service-banner-breadcrumb" data-aos="fade-down">
-            <a href="homepage1.html">Home</a>
-            <i class="fa-solid fa-angle-right"></i>
-            <a href="services.html">Services</a>
-            <i class="fa-solid fa-angle-right"></i>
-            <span>Farm Fresh Collection</span>
-        </div>
-
-        <div class="service-banner-content">
-
-            <span class="service-banner-tag"
-                  data-aos="zoom-in"
-                  data-aos-delay="100">
-                🌿 Fresh • Organic • Healthy
-            </span>
-
-            <h1 data-aos="fade-up"
-                data-aos-delay="250">
-                Farm Fresh <br>
-                Fruits & Vegetables
-            </h1>
-
-            <p data-aos="fade-up"
-               data-aos-delay="400">
-
-                Discover naturally grown vegetables, seasonal fruits and
-                farm fresh produce sourced directly from trusted local
-                farmers and delivered to your doorstep with unmatched
-                freshness.
-
-            </p>
-
-            <div class="service-banner-buttons"
-                 data-aos="fade-up"
-                 data-aos-delay="550">
-
-                <a href="shop.html" class="service-primary-btn">
-                    Shop Now
-                </a>
-
-                <a href="contact.html" class="service-secondary-btn">
-                    Contact Us
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ==========================
-      SERVICE OVERVIEW
-========================== -->
-
-<section class="service-overview-section">
-
-    <div class="service-overview-wrapper">
-
-        <div class="service-overview-image"
-             data-aos="fade-right">
-
-            <img src="images/service-overview.jpg" alt="Farm Fresh">
-
-            <div class="service-overview-badge">
-
-                <h2>10+</h2>
-
-                <span>Years Experience</span>
-
-            </div>
-
-        </div>
-
-
-        <div class="service-overview-info"
-             data-aos="fade-left">
-
-            <span class="service-overview-subtitle">
-
-                ABOUT OUR SERVICE
-
-            </span>
-
-            <h2>
-
-                Fresh Produce Directly From Trusted Local Farmers
-
-            </h2>
-
-            <p>
-
-                GreenGrove connects customers with local farmers to
-                deliver naturally grown vegetables, fruits and leafy
-                greens. Every order is carefully selected, hygienically
-                packed and delivered fresh to your doorstep.
-
-            </p>
-
-
-            <div class="service-overview-grid">
-
-                <div class="service-overview-card">
-
-                    <i class="fa-solid fa-seedling"></i>
-
-                    <div>
-
-                        <h4>Farm Direct</h4>
-
-                        <p>Products sourced directly from farms.</p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="service-overview-card">
-
-                    <i class="fa-solid fa-leaf"></i>
-
-                    <div>
-
-                        <h4>100% Organic</h4>
-
-                        <p>No harmful chemicals or preservatives.</p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="service-overview-card">
-
-                    <i class="fa-solid fa-box-open"></i>
-
-                    <div>
-
-                        <h4>Safe Packing</h4>
-
-                        <p>Freshly packed with hygiene standards.</p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="service-overview-card">
-
-                    <i class="fa-solid fa-truck-fast"></i>
-
-                    <div>
-
-                        <h4>Fast Delivery</h4>
-
-                        <p>Quick doorstep delivery every day.</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!--====================================
-        PREMIUM FEATURES
-=====================================-->
-
-<section class="service-feature-section">
-
-    <div class="service-feature-heading" data-aos="fade-up">
-
-        <span>OUR ADVANTAGES</span>
-
-        <h2>Why Customers Love GreenGrove</h2>
+        <h1>Farm Fresh Collection</h1>
 
         <p>
-            We provide fresh farm produce with premium quality,
-            affordable pricing and reliable doorstep delivery.
+            We bring farm-fresh vegetables and fruits directly from trusted
+            local farmers, ensuring freshness, nutrition and premium quality
+            in every order.
         </p>
 
     </div>
 
+</section>
+<section class="farm-fresh">
 
-    <div class="service-feature-grid">
+    <div class="section-title">
+        <span>Our Premium Service</span>
+        <h2>Farm Fresh Collection</h2>
+        <p>
+            We bring farm-fresh vegetables and fruits directly from trusted local
+            farmers, ensuring freshness, nutrition, and premium quality in every order.
+        </p>
+    </div>
 
-        <!-- Card 1 -->
+    <div class="farm-container">
 
-        <div class="service-feature-box"
-             data-aos="zoom-in"
-             data-aos-delay="100">
-
-            <div class="service-feature-icon">
-
-                <i class="fa-solid fa-seedling"></i>
-
-            </div>
-
-            <h3>Farm Fresh</h3>
-
-            <p>
-                Directly sourced from trusted local farmers every day.
-            </p>
-
+        <!-- Left Side -->
+        <div class="farm-image">
+            <img src="https://images.stockcake.com/public/1/f/6/1f61da9c-3b60-4e8d-bb27-17a9b5aea20b_large/farmers-market-display-stockcake.jpg" alt="Farm Fresh Collection">
         </div>
 
+        <!-- Right Side -->
+        <div class="farm-content">
 
-        <!-- Card 2 -->
+            <div class="feature-card">
+                <i class="fa-solid fa-seedling"></i>
 
-        <div class="service-feature-box"
-             data-aos="zoom-in"
-             data-aos-delay="200">
+                <div>
+                    <h3>100% Farm Fresh</h3>
+                    <p>
+                        Harvested every morning and delivered with maximum freshness.
+                    </p>
+                </div>
+            </div>
 
-            <div class="service-feature-icon">
+            <div class="feature-card">
+                <i class="fa-solid fa-tractor"></i>
 
+                <div>
+                    <h3>Direct From Farmers</h3>
+                    <p>
+                        Supporting local farmers while providing the best produce.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-box-open"></i>
+
+                <div>
+                    <h3>Safe Packaging</h3>
+                    <p>
+                        Hygienically packed to preserve freshness and quality.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-card">
                 <i class="fa-solid fa-award"></i>
 
+                <div>
+                    <h3>Premium Quality</h3>
+                    <p>
+                        Every product undergoes strict quality inspection before delivery.
+                    </p>
+                </div>
             </div>
-
-            <h3>Premium Quality</h3>
-
-            <p>
-                Every product passes strict freshness inspections.
-            </p>
 
         </div>
 
+    </div>
 
-        <!-- Card 3 -->
+</section>
+<section class="process">
 
-        <div class="service-feature-box"
-             data-aos="zoom-in"
-             data-aos-delay="300">
+    <div class="section-title">
+        <h2>Our Freshness Process</h2>
+        <p>From farm to your doorstep in just a few simple steps.</p>
+    </div>
 
-            <div class="service-feature-icon">
+    <div class="process-container">
 
-                <i class="fa-solid fa-truck-fast"></i>
-
-            </div>
-
-            <h3>Fast Delivery</h3>
-
-            <p>
-                Same-day delivery for maximum freshness.
-            </p>
-
+        <div class="step">
+            <i class="fa-solid fa-tractor"></i>
+            <h3>Farm</h3>
         </div>
 
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
 
-        <!-- Card 4 -->
+        <div class="step">
+            <i class="fa-solid fa-scissors"></i>
+            <h3>Harvest</h3>
+        </div>
 
-        <div class="service-feature-box"
-             data-aos="zoom-in"
-             data-aos-delay="400">
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
 
-            <div class="service-feature-icon">
+        <div class="step">
+            <i class="fa-solid fa-box-open"></i>
+            <h3>Pack</h3>
+        </div>
 
-                <i class="fa-solid fa-wallet"></i>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
 
-            </div>
+        <div class="step">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Deliver</h3>
+        </div>
 
+    </div>
+
+</section>
+<section class="benefits">
+
+    <div class="section-title">
+        <h2>Why Choose Our Farm Fresh Collection?</h2>
+    </div>
+
+    <div class="benefit-grid">
+
+        <div class="benefit-card">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Natural Freshness</h3>
+            <p>Healthy produce with exceptional taste and nutrition.</p>
+        </div>
+
+        <div class="benefit-card">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Healthy Lifestyle</h3>
+            <p>Nutritious vegetables and fruits for your family.</p>
+        </div>
+
+        <div class="benefit-card">
+            <i class="fa-solid fa-tags"></i>
             <h3>Affordable Prices</h3>
-
-            <p>
-                Premium vegetables and fruits at reasonable prices.
-            </p>
-
+            <p>Premium quality at budget-friendly prices.</p>
         </div>
 
-
-        <!-- Card 5 -->
-
-        <div class="service-feature-box"
-             data-aos="zoom-in"
-             data-aos-delay="500">
-
-            <div class="service-feature-icon">
-
-                <i class="fa-solid fa-box-open"></i>
-
-            </div>
-
-            <h3>Safe Packaging</h3>
-
-            <p>
-                Hygienically packed to maintain freshness.
-            </p>
-
-        </div>
-
-
-        <!-- Card 6 -->
-
-        <div class="service-feature-box"
-             data-aos="zoom-in"
-             data-aos-delay="600">
-
-            <div class="service-feature-icon">
-
-                <i class="fa-solid fa-headset"></i>
-
-            </div>
-
-            <h3>24/7 Support</h3>
-
-            <p>
-                Friendly customer support whenever you need us.
-            </p>
-
+        <div class="benefit-card">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Trusted Farmers</h3>
+            <p>Building strong relationships with local farming communities.</p>
         </div>
 
     </div>
 
 </section>
-<!--=====================================
-        HOW IT WORKS
-======================================-->
+<section class="delivery">
 
-<section class="service-process-section">
-
-    <div class="service-process-heading" data-aos="fade-up">
-
-        <span>HOW IT WORKS</span>
-
-        <h2>From Farm to Your Doorstep</h2>
-
+    <div class="section-title">
+        <span>Reliable Service</span>
+        <h2>Fast Home Delivery</h2>
         <p>
-            We follow a simple yet efficient process to ensure every
-            fruit and vegetable reaches your home fresh and full of
-            natural goodness.
+            Get your groceries delivered safely and quickly with our efficient
+            home delivery service. We ensure freshness from our store to your doorstep.
         </p>
+    </div>
+
+    <div class="delivery-container">
+
+        <div class="delivery-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>30–60 Min Delivery</h3>
+            <p>
+                Receive your groceries within 30–60 minutes in selected service areas.
+            </p>
+        </div>
+
+        <div class="delivery-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Live Order Tracking</h3>
+            <p>
+                Stay updated with your order status from dispatch to delivery.
+            </p>
+        </div>
+
+        <div class="delivery-card">
+            <i class="fa-solid fa-box"></i>
+            <h3>Safe Packaging</h3>
+            <p>
+                Every order is securely packed to maintain freshness and quality.
+            </p>
+        </div>
+
+        <div class="delivery-card">
+            <i class="fa-solid fa-credit-card"></i>
+            <h3>Easy Payments</h3>
+            <p>
+                Pay using UPI, Cards, Net Banking or Cash on Delivery.
+            </p>
+        </div>
 
     </div>
 
+</section>
+<section class="delivery-process">
 
-    <div class="service-process-wrapper">
+    <div class="section-title">
+        <h2>Delivery Process</h2>
+        <p>Simple steps to get fresh groceries at your doorstep.</p>
+    </div>
 
-        <!-- Step 1 -->
+    <div class="timeline">
 
-        <div class="service-process-card"
-             data-aos="fade-up"
-             data-aos-delay="100">
-
-            <div class="service-process-number">
-                01
-            </div>
-
-            <div class="service-process-icon">
-
-                <i class="fa-solid fa-seedling"></i>
-
-            </div>
-
-            <h3>Harvest Fresh</h3>
-
-            <p>
-                Our trusted farmers harvest fresh vegetables and fruits
-                every morning.
-            </p>
-
+        <div class="timeline-item">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h3>Place Order</h3>
         </div>
 
+        <div class="timeline-line"></div>
 
-        <!-- Step 2 -->
-
-        <div class="service-process-card"
-             data-aos="fade-up"
-             data-aos-delay="250">
-
-            <div class="service-process-number">
-                02
-            </div>
-
-            <div class="service-process-icon">
-
-                <i class="fa-solid fa-box-open"></i>
-
-            </div>
-
-            <h3>Quality Check</h3>
-
-            <p>
-                Every product is carefully inspected and hygienically
-                packed before dispatch.
-            </p>
-
+        <div class="timeline-item">
+            <i class="fa-solid fa-box-open"></i>
+            <h3>Packing</h3>
         </div>
 
+        <div class="timeline-line"></div>
 
-        <!-- Step 3 -->
-
-        <div class="service-process-card"
-             data-aos="fade-up"
-             data-aos-delay="400">
-
-            <div class="service-process-number">
-                03
-            </div>
-
-            <div class="service-process-icon">
-
-                <i class="fa-solid fa-truck-fast"></i>
-
-            </div>
-
-            <h3>Fast Delivery</h3>
-
-            <p>
-                Your order is delivered quickly while maintaining
-                freshness and quality.
-            </p>
-
+        <div class="timeline-item">
+            <i class="fa-solid fa-motorcycle"></i>
+            <h3>Out For Delivery</h3>
         </div>
 
+        <div class="timeline-line"></div>
 
-        <!-- Step 4 -->
+        <div class="timeline-item">
+            <i class="fa-solid fa-house"></i>
+            <h3>Delivered</h3>
+        </div>
 
-        <div class="service-process-card"
-             data-aos="fade-up"
-             data-aos-delay="550">
+    </div>
 
-            <div class="service-process-number">
-                04
+</section>
+<section class="delivery-benefits">
+
+    <div class="section-title">
+        <h2>Why Choose Our Delivery?</h2>
+    </div>
+
+    <div class="benefit-grid">
+
+        <div class="benefit-card">
+            <i class="fa-regular fa-clock"></i>
+            <h3>On-Time Delivery</h3>
+            <p>Your groceries arrive exactly when promised.</p>
+        </div>
+
+        <div class="benefit-card">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h3>Freshness Guaranteed</h3>
+            <p>Quality maintained throughout the delivery process.</p>
+        </div>
+
+        <div class="benefit-card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>Customer Support</h3>
+            <p>Our support team is ready to help with your orders.</p>
+        </div>
+
+        <div class="benefit-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Easy Online Ordering</h3>
+            <p>Place your order anytime using our website.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="bulk-service">
+
+    <div class="section-title">
+        <span>Business Solutions</span>
+        <h2>Bulk & Business Supply</h2>
+        <p>
+            GreenGrove provides reliable bulk supply services for hotels,
+            restaurants, supermarkets, catering businesses, and corporate
+            organizations with consistent quality and timely delivery.
+        </p>
+    </div>
+
+    <div class="bulk-container">
+
+        <div class="bulk-image">
+            <img src="https://img.magnific.com/premium-photo/vibrant-view-fresh-produce-aisle-supermarket_1198884-54331.jpg" alt="Bulk Supply">
+        </div>
+
+        <div class="bulk-content">
+
+            <div class="business-card">
+                <i class="fa-solid fa-hotel"></i>
+
+                <div>
+                    <h3>Hotels & Resorts</h3>
+                    <p>
+                        Fresh vegetables and fruits supplied daily for hotels
+                        and luxury resorts.
+                    </p>
+                </div>
             </div>
 
-            <div class="service-process-icon">
+            <div class="business-card">
+                <i class="fa-solid fa-utensils"></i>
 
-                <i class="fa-solid fa-face-smile"></i>
-
+                <div>
+                    <h3>Restaurants</h3>
+                    <p>
+                        Premium quality ingredients for restaurants and cafes.
+                    </p>
+                </div>
             </div>
 
-            <h3>Enjoy Freshness</h3>
+            <div class="business-card">
+                <i class="fa-solid fa-store"></i>
 
-            <p>
-                Cook healthy meals with naturally fresh farm products
-                delivered right to your doorstep.
-            </p>
+                <div>
+                    <h3>Supermarkets</h3>
+                    <p>
+                        Reliable wholesale supply with competitive pricing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="business-card">
+                <i class="fa-solid fa-bell-concierge"></i>
+
+                <div>
+                    <h3>Catering Services</h3>
+                    <p>
+                        Fresh produce delivered for weddings, events and catering.
+                    </p>
+                </div>
+            </div>
 
         </div>
 
     </div>
 
 </section>
+<section class="business-benefits">
 
+    <div class="section-title">
+        <h2>Why Businesses Choose GreenGrove</h2>
+    </div>
 
+    <div class="benefit-grid">
 
+        <div class="benefit-card">
+            <i class="fa-solid fa-tags"></i>
+            <h3>Wholesale Pricing</h3>
+            <p>Special pricing for bulk and recurring orders.</p>
+        </div>
 
+        <div class="benefit-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Scheduled Deliveries</h3>
+            <p>Daily, weekly and custom delivery schedules.</p>
+        </div>
 
+        <div class="benefit-card">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <h3>Large Quantity Supply</h3>
+            <p>Bulk quantities available without compromising quality.</p>
+        </div>
 
+        <div class="benefit-card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>Dedicated Support</h3>
+            <p>Priority assistance for all business customers.</p>
+        </div>
 
+    </div>
+
+</section>
+<section class="business-cta">
+
+    <h2>Need Fresh Produce for Your Business?</h2>
+
+    <p>
+        Partner with GreenGrove for reliable wholesale supply,
+        premium quality products and on-time delivery.
+    </p>
+
+    <a href="contact.html" class="btn">
+        <i class="fa-solid fa-paper-plane"></i>
+        Request a Quote
+    </a>
+
+</section>
 
 
 
 
 <footer class="footer">
-
     <div class="footer-container">
 
-        <!-- Company -->
+        <!-- Logo -->
         <div class="footer-col">
             <div class="footer-logo">
                 <i class="fa-solid fa-leaf"></i>
-                <h2><span>Green</span>Grove</h2>
+                <h2>
+                    <span class="green">Green</span><span class="grove">Grove</span>
+                </h2>
             </div>
 
             <p>
@@ -545,7 +493,6 @@
         <!-- Quick Links -->
         <div class="footer-col">
             <h3>Quick Links</h3>
-
             <a href="homepage1.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
@@ -556,34 +503,66 @@
         <!-- Support -->
         <div class="footer-col">
             <h3>Support</h3>
-
             <a href="helpcenter.html">Help Center</a>
             <a href="trackorder.html">Track Order</a>
             <a href="shippingpolicy.html">Shipping Policy</a>
         </div>
 
-        <!-- Newsletter -->
+        <!-- Additional Pages -->
         <div class="footer-col">
-            <h3>Newsletter</h3>
+            <h3>Additional Pages</h3>
 
-            <input type="email" placeholder="Your Email">
-            <button>Subscribe</button>
+            <a href="404.html">404</a>
+            <a href="maintenance.html">Maintenance</a>
+
+            <!-- <div class="footer-contact">
+                <h4>Contact Info</h4>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    123 MG Road, Bengaluru, India
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 9876543210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@greengrove.com
+                </p>
+            </div> -->
         </div>
 
     </div>
 
     <div class="footer-bottom">
-
-        <p>&copy;2026 GreenGrove. All Rights Reserved.</p>
+        <p>&copy; 2026 GreenGrove. All Rights Reserved.</p>
 
         <div class="bottom-links">
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms & Conditions</a>
         </div>
-
     </div>
-
 </footer>
-    
+    <script>
+const themeBtn = document.getElementById("theme-btn");
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark");
+    themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+}
+themeBtn.addEventListener("click", function(){
+    document.body.classList.toggle("dark");
+    if(document.body.classList.contains("dark")){
+        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        localStorage.setItem("theme","dark");
+    }else{
+        themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        localStorage.setItem("theme","light");
+    }
+});
+</script>
+<script src="script.js"></script>
 </body>
 </html>

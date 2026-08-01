@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenGrove Register</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div class="top-actions">
+    <button class="rtl-btn" id="rtl-btn">RTL</button>
+
+    <button id="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+</div>
+
+<div class="container">
+
+<div class="form-box">
+
+<div class="logo">
+    <a href="index.html" class="logo-link">
+        <div class="logo-title">
+            <i class="fa-solid fa-leaf"></i>
+
+            <h2>
+                <span class="green">Green</span>
+                <span class="grove">Grove</span>
+            </h2>
+        </div>
+    </a>
+</div>
+
+<form>
+
+<h2>Create Account</h2>
+
+<p>Join GreenGrove Today</p>
+
+<div class="input-box">
+    <i class="fa-solid fa-user"></i>
+    <input
+        type="text"
+        placeholder="Full Name"
+        required>
+</div>
+
+<div class="input-box">
+    <i class="fa-solid fa-envelope"></i>
+    <input
+        type="email"
+        placeholder="Email Address"
+        required>
+</div>
+
+<div class="input-box">
+    <i class="fa-solid fa-phone"></i>
+    <input
+        type="tel"
+        placeholder="Phone Number"
+        required>
+</div>
+
+<div class="password-row">
+
+<div class="input-box">
+    <i class="fa-solid fa-lock"></i>
+
+    <input
+        type="password"
+        placeholder="Password"
+        id="registerPass"
+        required>
+
+    <span class="eye"
+    onclick="showRegisterPassword()">
+        <i class="fa-solid fa-eye"></i>
+    </span>
+</div>
+
+<div class="input-box">
+    <i class="fa-solid fa-lock"></i>
+
+    <input
+        type="password"
+        placeholder="Confirm Password"
+        required>
+</div>
+
+</div>
+
+<button
+type="submit"
+class="btn">
+Create Account
+</button>
+
+<p class="register-link">
+    Already have an account?
+    <a href="login.html">Login</a>
+</p>
+
+<div class="line">
+    <span>OR</span>
+</div>
+
+<div class="social-login">
+
+<button
+type="button"
+class="google">
+<i class="fa-brands fa-google"></i>
+Continue with Google
+</button>
+
+<button
+type="button"
+class="google">
+<i class="fa-brands fa-apple"></i>
+Continue with Apple
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

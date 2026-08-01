@@ -37,23 +37,81 @@
 
 }
 
-.blog-overlay p{
+.blog-overlay{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    color:#fff;
+}
 
+.blog-overlay h1{
+    font-size:58px;
+    margin-bottom:25px;
+}
+
+.blog-tags{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.blog-tag{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 22px;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50px;
+    backdrop-filter:blur(8px);
+    transition:.3s;
+}
+
+.blog-tag:hover{
+    background:#28a745;
+    transform:translateY(-5px);
+}
+
+.blog-tag i{
+    color:#7CFF9A;
     font-size:18px;
-
 }
 
-.blog-overlay a{
-
-    color:#28a745;
-
-    text-decoration:none;
-
+.blog-tag span{
+    color:#fff;
+    font-size:16px;
+    font-weight:500;
 }
 
-.blog-overlay span{
+.blog-description{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#f5f5f5;
+}
 
-    margin:0 10px;
+@media(max-width:768px){
+
+    .blog-overlay h1{
+        font-size:42px;
+    }
+
+    .blog-tags{
+        gap:12px;
+    }
+
+    .blog-tag{
+        width:100%;
+        justify-content:center;
+    }
+
+    .blog-description{
+        font-size:16px;
+    }
 
 }
 /*==============================
@@ -402,177 +460,101 @@ body.dark .blog-card span,
 body.dark .blog-card a{
     color: #fff;
 }
-/*==============================
-        NEWSLETTER
-==============================*/
+/*=================================
+            BLOG CTA
+=================================*/
 
-.newsletter{
-
-    padding:120px 8%;
-
-    margin:100px 8%;
-
+.blog-cta{
+    max-width:1200px;
+    margin:100px auto;
+    padding:80px 40px;
     border-radius:25px;
-
-    background:
-    linear-gradient(rgba(0,0,0,.60),
-    rgba(0,0,0,.60)),
-    url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1600&q=80");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-repeat:no-repeat;
-
     text-align:center;
-
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
 }
 
-.newsletter-content{
-
+.blog-cta-content{
     max-width:750px;
-
     margin:auto;
-
     color:#fff;
-
 }
 
-.newsletter-content span{
-
-    color:#FFD54F;
-
+.blog-cta-content span{
+    color:#16a34a;
     font-size:18px;
-
     font-weight:600;
-
-    letter-spacing:1px;
-
+    text-transform:uppercase;
+    letter-spacing:2px;
 }
 
-.newsletter-content h2{
-
+.blog-cta-content h2{
     font-size:48px;
-
     margin:20px 0;
-
     line-height:1.3;
-
 }
 
-.newsletter-content p{
-
+.blog-cta-content p{
     font-size:18px;
-
-    line-height:1.9;
-
-    color:#f5f5f5;
-
-    margin-bottom:40px;
-
+    line-height:1.8;
+    margin-bottom:35px;
 }
 
-.newsletter-form{
-
+.blog-cta-buttons{
     display:flex;
-
     justify-content:center;
-
-    gap:15px;
-
+    gap:20px;
     flex-wrap:wrap;
-
 }
 
-.newsletter-form input{
-
-    width:450px;
-
-    max-width:100%;
-
-    padding:18px 25px;
-
-    border:none;
-
-    outline:none;
-
+.blog-btn-primary,
+.blog-btn-secondary{
+    text-decoration:none;
+    padding:15px 35px;
     border-radius:50px;
-
-    font-size:16px;
-
-}
-
-.newsletter-form button{
-
-    padding:18px 40px;
-
-    border:none;
-
-    border-radius:50px;
-
-    background:#28a745;
-
-    color:#fff;
-
-    font-size:16px;
-
     font-weight:600;
-
-    cursor:pointer;
-
     transition:.3s;
-
 }
 
-.newsletter-form button:hover{
+.blog-btn-primary{
+    background:#16a34a;
+    color:#fff;
+}
 
-    background:#1f8a39;
+.blog-btn-primary:hover{
+    background:#14532d;
+}
 
-    transform:translateY(-4px);
+.blog-btn-secondary{
+    border:2px solid #fff;
+    color:#fff;
+}
 
-    box-shadow:0 15px 30px rgba(40,167,69,.35);
-
+.blog-btn-secondary:hover{
+    background:#fff;
+    color:#16a34a;
 }
 
 @media(max-width:768px){
 
-    .newsletter{
-
-        margin:60px 5%;
-
-        padding:80px 5%;
-
+    .blog-cta{
+        margin:60px 20px;
+        padding:60px 25px;
     }
 
-    .newsletter-content h2{
-
+    .blog-cta-content h2{
         font-size:34px;
-
     }
 
-    .newsletter-content p{
-
+    .blog-cta-content p{
         font-size:16px;
-
     }
 
-    .newsletter-form{
-
+    .blog-cta-buttons{
         flex-direction:column;
-
-    }
-
-    .newsletter-form input{
-
-        width:100%;
-
-    }
-
-    .newsletter-form button{
-
-        width:100%;
-
     }
 
 }

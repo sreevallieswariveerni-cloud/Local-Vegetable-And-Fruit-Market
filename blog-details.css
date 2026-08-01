@@ -1,6 +1,76 @@
-/*==============================
-        BLOCK QUOTE
-==============================*/
+/*==================================
+        BLOG DETAILS HERO
+==================================*/
+
+.blog-details-hero{
+    width:100%;
+    height:650px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url(https://img.magnific.com/premium-photo/vibrant-view-fresh-produce-aisle-supermarket_1198884-54331.jpg);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.blog-details-overlay{
+    max-width:850px;
+    color:#fff;
+    padding:20px;
+}
+
+.blog-details-overlay span:first-child{
+    display:inline-block;
+    color:#16a34a;
+    font-size:18px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
+
+.blog-details-overlay h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:25px;
+    color:#fff;
+}
+
+.blog-meta{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.blog-meta span{
+    color:#fff;
+    font-size:16px;
+}
+
+.blog-meta i{
+    color:#16a34a;
+    margin-right:8px;
+}
+@media(max-width:768px){
+
+.blog-details-hero{
+    height:55vh;
+}
+
+.blog-details-overlay h1{
+    font-size:38px;
+}
+
+.blog-meta{
+    gap:15px;
+}
+
+}
 
 .blog-quote{
 
@@ -57,9 +127,7 @@
     font-weight:600;
 
 }
-/*==============================
-        TAGS & SHARE
-==============================*/
+
 
 .blog-tags{
 
@@ -141,9 +209,7 @@
     color:#fff;
 
 }
-/*==============================
-        RELATED ARTICLES
-==============================*/
+
 
 .related-blogs{
 
@@ -216,9 +282,7 @@
     font-weight:600;
 
 }
-/*==============================
-        COMMENT FORM
-==============================*/
+
 
 .comment-section{
 
@@ -298,10 +362,12 @@ body.dark header{
     background:#1e1e1e;
 }
 
-body.dark section{
+body.dark .blog-quote,
+body.dark .blog-tags,
+body.dark .related-blogs,
+body.dark .comment-section{
     background:#181818;
 }
-
 body.dark footer{
     background:#111;
 }
@@ -321,4 +387,67 @@ body.dark .blog-card,
 body.dark .pricing-card{
     background:#2b2b2b;
     color:#fff;
+}
+/*==================================
+        BLOG DETAILS DARK MODE
+==================================*/
+
+body.dark .quote-box{
+    background:#1f1f1f;
+    border-left:6px solid #16a34a;
+}
+
+body.dark .quote-box h3{
+    color:#fff;
+}
+
+body.dark .quote-box span{
+    color:#16a34a;
+}
+
+body.dark .tags a{
+    background:#16a34a;
+    color:#fff;
+}
+
+body.dark .share a{
+    background:#2b2b2b;
+    color:#16a34a;
+}
+
+body.dark .share a:hover{
+    background:#16a34a;
+    color:#fff;
+}
+
+body.dark .related-blogs{
+    background:#181818;
+}
+
+body.dark .related-card{
+    background:#2b2b2b;
+}
+
+body.dark .related-content h3{
+    color:#fff;
+}
+
+body.dark .related-content a{
+    color:#16a34a;
+}
+
+body.dark .comment-section{
+    background:#181818;
+}
+
+body.dark .comment-form input,
+body.dark .comment-form textarea{
+    background:#2b2b2b;
+    color:#fff;
+    border:1px solid #444;
+}
+
+body.dark .comment-form input::placeholder,
+body.dark .comment-form textarea::placeholder{
+    color:#bbb;
 }

@@ -12,16 +12,19 @@
 </head>
 <body>
 <header>
-    <div class="logo">
-        <i class="fa-solid fa-leaf"></i>
-        <div class="log0-text">
-            <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
-        </div>
+    <a href="index.html" class="logo">
+    <i class="fa-solid fa-leaf"></i>
+    <div class="logo-text">
+        <h2>
+            <span class="green">Green</span>
+            <span class="grove">Grove</span>
+        </h2>
     </div>
+</a>
     <nav>
         <ul>
             <li class="dropdown">
-                <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#" >Home <i class="fa-solid fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="homepage1.html">Home 1</a></li>
                     <li><a href="homepage2.html">Home 2</a></li>
@@ -32,6 +35,7 @@
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="mobile-login">Login</a></li>
         </ul>
     </nav>
     <div class="header-icons">
@@ -43,17 +47,14 @@
         <i class="fa-solid fa-cart-shopping"></i>
         <span class="cart-count" id="cart-count">0</span>
         </a>
-        <a href="login.html" class="profile">
-            <i class="fa-regular fa-user"></i>
-        </a>
+        <a href="login.html" class="login-btn">Login</a>
         <div class="menu" id="menu-btn">
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
 </header>
-<!--==============================
-        SERVICES HERO
-================================-->
+
+<!-- SERVICES HERO-->
 
 <section class="services-hero">
 
@@ -61,18 +62,34 @@
 
         <h1 data-aos="zoom-in">Our Services</h1>
 
-        <p data-aos="fade-up">
-            <a href="homepage1.html">Home</a>
-            <span>/</span>
-            Services
-        </p>
+<div class="service-tags" data-aos="fade-up">
+
+    <div class="tag">
+        <i class="fa-solid fa-seedling"></i>
+        <span>Farm Fresh Collection</span>
+    </div>
+
+    <div class="tag">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>Fast Home Delivery</span>
+    </div>
+
+    <div class="tag">
+        <i class="fa-solid fa-boxes-stacked"></i>
+        <span>Bulk Business Supply</span>
+    </div>
+
+</div>
+
+<p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+    Fresh produce, reliable delivery, and wholesale supply —
+    everything you need, all in one place.
+</p>
 
     </div>
 
 </section>
-<!--=================================
-        FEATURED SERVICES
-==================================-->
+
 
 <section class="featured-services">
 
@@ -90,7 +107,7 @@
     <div class="service-row">
 
         <div class="service-image" data-aos="fade-right">
-            <img src="https://png.pngtree.com/thumb_back/fh260/background/20250116/pngtree-a-well-stocked-supermarket-produce-aisle-with-variety-of-fruits-and-image_16926227.jpg" alt="">
+            <img src="https://media.istockphoto.com/id/453963935/photo/fruits-and-vegetables-at-city-market-in-riga.jpg?s=612x612&w=0&k=20&c=YLdfhKvGlc6woYVN93OfCVzEUbDdgnqODsvypz3aBvc=" alt="">
         </div>
 
         <div class="service-content" data-aos="fade-left">
@@ -143,8 +160,8 @@
                 <li><i class="fa-solid fa-circle-check"></i> Live Order Updates</li>
             </ul>
 
-            <a href="#" class="service-btn">
-                Order Now
+            <a href="service-details.html" class="service-btn">
+                Learn More
             </a>
 
         </div>
@@ -176,8 +193,8 @@
                 <li><i class="fa-solid fa-circle-check"></i> Wholesale Orders</li>
             </ul>
 
-            <a href="#" class="service-btn">
-                Get Quote
+            <a href="service-details.html" class="service-btn">
+                Learn More
             </a>
 
         </div>
@@ -448,14 +465,15 @@
 
 </section>
 <footer class="footer">
-
     <div class="footer-container">
 
-        <!-- Company -->
+        <!-- Logo -->
         <div class="footer-col">
             <div class="footer-logo">
                 <i class="fa-solid fa-leaf"></i>
-                <h2><span>Green</span>Grove</h2>
+                <h2>
+                    <span class="green">Green</span><span class="grove">Grove</span>
+                </h2>
             </div>
 
             <p>
@@ -470,9 +488,10 @@
                 <a href="#"><i class="fab fa-x-twitter"></i></a>
             </div>
         </div>
- <div class="footer-col">
-            <h3>Quick Links</h3>
 
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
             <a href="homepage1.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
@@ -483,33 +502,48 @@
         <!-- Support -->
         <div class="footer-col">
             <h3>Support</h3>
-
             <a href="helpcenter.html">Help Center</a>
             <a href="trackorder.html">Track Order</a>
             <a href="shippingpolicy.html">Shipping Policy</a>
         </div>
 
-        <!-- Newsletter -->
+        <!-- Additional Pages -->
         <div class="footer-col">
-            <h3>Newsletter</h3>
+            <h3>Additional Pages</h3>
 
-            <input type="email" placeholder="Your Email">
-            <button>Subscribe</button>
+            <a href="404.html">404</a>
+            <a href="maintenance.html">Maintenance</a>
+
+            <!-- <div class="footer-contact">
+                <h4>Contact Info</h4>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    123 MG Road, Bengaluru, India
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 9876543210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@greengrove.com
+                </p>
+            </div> -->
         </div>
 
     </div>
 
     <div class="footer-bottom">
-
-        <p>&copy;2026 GreenGrove. All Rights Reserved.</p>
+        <p>&copy; 2026 GreenGrove. All Rights Reserved.</p>
 
         <div class="bottom-links">
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms & Conditions</a>
         </div>
-
     </div>
-
 </footer>
 <script src="script.js"></script>
 

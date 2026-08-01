@@ -11,17 +11,19 @@
 </head>
 <body>
 <header>
-    
-    <div class="logo">
-        <i class="fa-solid fa-leaf"></i>
-        <div class="log0-text">
-            <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
-        </div>
+    <a href="index.html" class="logo">
+    <i class="fa-solid fa-leaf"></i>
+    <div class="logo-text">
+        <h2>
+            <span class="green">Green</span>
+            <span class="grove">Grove</span>
+        </h2>
     </div>
+</a>
     <nav>
         <ul>
             <li class="dropdown">
-                <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#" class="active">Home <i class="fa-solid fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="homepage1.html">Home 1</a></li>
                     <li><a href="homepage2.html">Home 2</a></li>
@@ -32,6 +34,7 @@
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="mobile-login">Login</a></li>
         </ul>
     </nav>
     <div class="header-icons">
@@ -43,17 +46,28 @@
         <i class="fa-solid fa-cart-shopping"></i>
         <span class="cart-count" id="cart-count">0</span>
         </a>
-        <a href="login.html" class="profile">
-            <i class="fa-regular fa-user"></i>
-        </a>
+        <a href="login.html" class="login-btn">Login</a>
         <div class="menu" id="menu-btn">
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
 </header>
-<!--==============================
-        BLOCK QUOTE
-================================-->
+<section class="blog-details-hero">
+
+    <div class="blog-details-overlay">
+
+        <span>Healthy Living</span>
+
+        <h1>Why Eating Fresh Vegetables Every Day Improves Your Health</h1>
+
+        <div class="blog-meta">
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <section class="blog-quote">
 
@@ -71,9 +85,6 @@
     </div>
 
 </section>
-<!--==============================
-        TAGS & SHARE
-================================-->
 
 <section class="blog-tags">
 
@@ -110,9 +121,7 @@
     </div>
 
 </section>
-<!--==============================
-        RELATED ARTICLES
-================================-->
+
 
 <section class="related-blogs">
 
@@ -171,9 +180,7 @@
     </div>
 
 </section>
-<!--==============================
-        COMMENT FORM
-================================-->
+
 
 <section class="comment-section">
 
@@ -201,14 +208,15 @@
 
 </section>
 <footer class="footer">
-
     <div class="footer-container">
 
-        <!-- Company -->
+        <!-- Logo -->
         <div class="footer-col">
             <div class="footer-logo">
                 <i class="fa-solid fa-leaf"></i>
-                <h2><span>Green</span>Grove</h2>
+                <h2>
+                    <span class="green">Green</span><span class="grove">Grove</span>
+                </h2>
             </div>
 
             <p>
@@ -227,44 +235,58 @@
         <!-- Quick Links -->
         <div class="footer-col">
             <h3>Quick Links</h3>
-
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Pricing</a>
-            <a href="#">Blog</a>
+            <a href="homepage1.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
         </div>
 
         <!-- Support -->
         <div class="footer-col">
             <h3>Support</h3>
-
-            <a href="#">Help Center</a>
-            <a href="#">Track Order</a>
-            <a href="#">Shipping Policy</a>
+            <a href="helpcenter.html">Help Center</a>
+            <a href="trackorder.html">Track Order</a>
+            <a href="shippingpolicy.html">Shipping Policy</a>
         </div>
 
-        <!-- Newsletter -->
+        <!-- Additional Pages -->
         <div class="footer-col">
-            <h3>Newsletter</h3>
+            <h3>Additional Pages</h3>
 
-            <input type="email" placeholder="Your Email">
-            <button>Subscribe</button>
+            <a href="404.html">404</a>
+            <a href="maintenance.html">Maintenance</a>
+
+            <!-- <div class="footer-contact">
+                <h4>Contact Info</h4>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    123 MG Road, Bengaluru, India
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 9876543210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@greengrove.com
+                </p>
+            </div> -->
         </div>
 
     </div>
 
     <div class="footer-bottom">
-
-        <p>&copy;2026 GreenGrove. All Rights Reserved.</p>
+        <p>&copy; 2026 GreenGrove. All Rights Reserved.</p>
 
         <div class="bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
         </div>
-
     </div>
-
 </footer>
 <script src="script.js"></script>
 

@@ -1,6 +1,4 @@
-/*==============================
-        ABOUT HERO
-==============================*/
+
 
 .about-hero{
 
@@ -23,39 +21,36 @@
 }
 
 .about-overlay{
-
-    text-align:center;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
     color:#fff;
-
+    text-align:left;
 }
 
 .about-overlay h1{
-
-    font-size:55px;
+    font-size:30px;
     margin-bottom:20px;
+    line-height:1.2;
+}
+@media(max-width:768px){
+
+    .about-overlay{
+        text-align:center;
+    }
+
+    .hero-description{
+        margin:20px auto 0;
+    }
 
 }
-
-.about-overlay p{
-
+.hero-description{
+    max-width:600px;
+    margin-top:20px;
     font-size:18px;
-
+    line-height:1.8;
+    color:#f5f5f5;
 }
-
-.about-overlay a{
-
-    color:#28a745;
-    text-decoration:none;
-
-}
-
-.about-overlay span{
-
-    margin:0 10px;
-
-}
-
-
 .our-story{
 
     padding:70px 8%;
@@ -195,16 +190,9 @@
     color:#666;
 
     line-height:1.8;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 
 }
-
-#missionText,
-#visionText{
-    font: inherit;
-    color: inherit;
-}
-
 
 .about-choose{
 

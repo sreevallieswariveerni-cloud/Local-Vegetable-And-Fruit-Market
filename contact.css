@@ -35,22 +35,81 @@
 
 }
 
-.contact-overlay p{
+.contact-overlay{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    color:#fff;
+}
 
+.contact-overlay h1{
+    font-size:58px;
+    margin-bottom:25px;
+}
+
+.contact-quick-info{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 22px;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50px;
+    backdrop-filter:blur(8px);
+    transition:.3s;
+}
+
+.contact-item:hover{
+    background:#28a745;
+    transform:translateY(-5px);
+}
+
+.contact-item i{
+    color:#7CFF9A;
     font-size:18px;
-
 }
 
-.contact-overlay a{
-
-    color:#28a745;
-    text-decoration:none;
-
+.contact-item span{
+    color:#fff;
+    font-size:16px;
+    font-weight:500;
 }
 
-.contact-overlay span{
+.contact-description{
+    max-width:700px;
+    margin:auto;
+    color:#f5f5f5;
+    font-size:18px;
+    line-height:1.8;
+}
 
-    margin:0 10px;
+@media(max-width:768px){
+
+    .contact-overlay h1{
+        font-size:42px;
+    }
+
+    .contact-quick-info{
+        gap:12px;
+    }
+
+    .contact-item{
+        width:100%;
+        justify-content:center;
+    }
+
+    .contact-description{
+        font-size:16px;
+    }
 
 }
 /*============== CONTACT ==============*/

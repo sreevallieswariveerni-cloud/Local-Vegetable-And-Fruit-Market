@@ -25,13 +25,82 @@
     margin-bottom:20px;
 }
 
-.pricing-overlay p{
+.pricing-overlay{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    color:#fff;
+}
+
+.pricing-overlay h1{
+    font-size:58px;
+    margin-bottom:25px;
+}
+
+.pricing-highlights{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.highlight{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 22px;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50px;
+    backdrop-filter:blur(8px);
+    transition:.3s;
+}
+
+.highlight:hover{
+    background:#28a745;
+    transform:translateY(-5px);
+}
+
+.highlight i{
+    color:#7CFF9A;
     font-size:18px;
 }
 
-.pricing-overlay a{
-    color:#28a745;
-    text-decoration:none;
+.highlight span{
+    color:#fff;
+    font-size:16px;
+    font-weight:500;
+}
+
+.pricing-description{
+    max-width:700px;
+    margin:auto;
+    color:#f5f5f5;
+    font-size:18px;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .pricing-overlay h1{
+        font-size:42px;
+    }
+
+    .pricing-highlights{
+        gap:12px;
+    }
+
+    .highlight{
+        width:100%;
+        justify-content:center;
+    }
+
+    .pricing-description{
+        font-size:16px;
+    }
+
 }
 .pricing{
     padding:60px 8%;
@@ -130,25 +199,32 @@
 ==============================*/
 
 .pricing-card.active{
-    background:#28a745;
-    color:#fff;
-    transform:scale(1.08);
+    background:#fff;
+    border:3px solid #16a34a;
+    color:#222;
+    transform:scale(1.05);
 }
 
 .pricing-card.active:hover{
     transform:scale(1.08) translateY(-8px);
 }
 
-.pricing-card.active h3,
+.pricing-card.active h3{
+    color:#222;
+}
+
 .pricing-card.active h1,
-.pricing-card.active h1 span,
+.pricing-card.active h1 span{
+    color:#16a34a;
+}
+
 .pricing-card.active .plan-text,
 .pricing-card.active ul li{
-    color:#fff;
+    color:#555;
 }
 
 .pricing-card.active .fa-check{
-    color:#fff;
+    color:#16a34a;
 }
 
 .pricing-card.active .fa-xmark{
@@ -156,14 +232,13 @@
 }
 
 .pricing-card.active .price-btn{
-    background:#fff;
-    color:#28a745;
+    background:#16a34a;
+    color:#fff;
 }
 
 .pricing-card.active .price-btn:hover{
-    background:#f5f5f5;
+    background:#14532d;
 }
-
 /*==============================
       POPULAR BADGE
 ==============================*/
@@ -172,7 +247,7 @@
     position:absolute;
     top:-15px;
     right:25px;
-    background:#ff8c42;
+    background:#16a34a;
     color:#fff;
     padding:10px 20px;
     border-radius:30px;
