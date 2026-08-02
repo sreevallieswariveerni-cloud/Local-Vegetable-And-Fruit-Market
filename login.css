@@ -406,13 +406,19 @@ h2{
 
 }
 
-}  */
+} 
 /* DARK MODE */
-
 body.dark{
-    background:#121212;
+    background:#000 !important;
 }
 
+body.dark .container{
+    background:transparent !important;
+}
+
+body.dark .form-box{
+    background:#1f1f1f !important;
+}
 body.dark .form-box{
     background:#1f1f1f;
 }

@@ -845,66 +845,107 @@ body.dark .pricing-card{
     background:#2b2b2b;
     color:#fff;
 }
-/*==================================
-        BLOG DETAILS DARK MODE
-==================================*/
 
-body.dark .quote-box{
+/* Main Blog Area */
+body.dark .blog-content{
+    background:#121212;
+}
+
+/* Left Content */
+body.dark .blog-left{
+    background:#121212;
+}
+
+body.dark .blog-left h2{
+    color:#fff;
+}
+
+body.dark .blog-left p,
+body.dark .blog-list li{
+    color:#cfcfcf;
+}
+
+/* Sidebar */
+body.dark .sidebar-card{
     background:#1f1f1f;
-    border-left:6px solid #16a34a;
+    box-shadow:none;
 }
 
-body.dark .quote-box h3{
-    color:#fff;
+body.dark .sidebar-card h3{
+    color:#22c55e;
 }
 
-body.dark .quote-box span{
-    color:#16a34a;
+body.dark .sidebar-card a,
+body.dark .sidebar-card li{
+    color:#d1d5db;
 }
 
-body.dark .tags a{
-    background:#16a34a;
-    color:#fff;
-}
-
-body.dark .share a{
-    background:#2b2b2b;
-    color:#16a34a;
-}
-
-body.dark .share a:hover{
-    background:#16a34a;
-    color:#fff;
-}
-
-body.dark .related-blogs{
-    background:#181818;
-}
-
-body.dark .related-card{
-    background:#2b2b2b;
-}
-
-body.dark .related-content h3{
-    color:#fff;
-}
-
-body.dark .related-content a{
-    color:#16a34a;
-}
-
-body.dark .comment-section{
-    background:#181818;
-}
-
-body.dark .comment-form input,
-body.dark .comment-form textarea{
+body.dark .sidebar-card input{
     background:#2b2b2b;
     color:#fff;
     border:1px solid #444;
 }
 
-body.dark .comment-form input::placeholder,
-body.dark .comment-form textarea::placeholder{
-    color:#bbb;
+body.dark .sidebar-card input::placeholder{
+    color:#999;
 }
+
+/* Highlight Box */
+body.dark .highlight-box{
+    background:#1b2b1d;
+    border-left:5px solid #22c55e;
+}
+
+body.dark .highlight-box h4,
+body.dark .highlight-box p{
+    color:#fff;
+}
+/* Quote */
+body.dark .quote-box{
+    background:#1f1f1f;
+}
+
+body.dark .quote-box h3,
+body.dark .quote-box p,
+body.dark .quote-box span{
+    color:#fff;
+}
+
+/* Author */
+body.dark .author-card{
+    background:#1f1f1f;
+}
+
+body.dark .author-content h2,
+body.dark .author-content p{
+    color:#fff;
+}
+
+/* Previous / Next */
+body.dark .nav-card{
+    background:#1f1f1f;
+}
+
+body.dark .nav-card h3{
+    color:#fff;
+}
+
+body.dark .nav-card span{
+    color:#22c55e;
+}
+
+/* Related Blogs */
+body.dark .related-card{
+    background:#1f1f1f;
+}
+
+body.dark .related-content h3,
+body.dark .related-content p{
+    color:#fff;
+}
+
+body.dark .related-content span,
+body.dark .related-content a{
+    color:#22c55e;
+}
+
