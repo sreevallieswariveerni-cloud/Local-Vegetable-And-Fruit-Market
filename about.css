@@ -597,6 +597,57 @@
     }
 
 }
+@media (max-width:360px){
+
+    .mission-container{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .mission-card{
+        width:100%;
+        max-width:100%;
+        margin:0;
+    }
+
+    .mission-card img{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+        display:block;
+    }
+
+    .mission-card h3{
+        font-size:24px;
+    }
+
+    .mission-card p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+}
+@media (max-width:1024px){
+
+    .values-container{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+    .value-card{
+        width:100%;
+        max-width:100%;
+    }
+
+    .value-card:last-child{
+        grid-column:auto;
+        justify-self:stretch;
+        max-width:100%;
+    }
+
+}
 body.dark{
     background:#121212;
     color:#fff;
@@ -662,4 +713,12 @@ body.dark .mission-card h3{
 
 body.dark .mission-card p{
     color:#d1d5db;
+}
+html,
+body{
+    overflow-x:hidden;
+}
+
+*{
+    max-width:100%;
 }

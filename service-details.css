@@ -135,10 +135,12 @@
     box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.3s;
     min-height:100px;
+    
 }
 
 .feature-card:hover{
     transform:translateY(-8px);
+    border: 1px solid #166534;
 }
 .feature-card i{
     width:60px;
@@ -233,10 +235,13 @@
     text-align:center;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.3s;
+    border: 1px solid #166534;
+    
 }
 
 .benefit-card:hover{
     transform:translateY(-8px);
+    
 }
 
 .benefit-card i{
@@ -329,6 +334,7 @@
     box-shadow:0 8px 25px rgba(0,0,0,.08);
     transition:.3s;
     text-align:center;
+    border: 1px solid #166534;
 }
 
 .delivery-card:hover{
@@ -511,6 +517,7 @@
 .business-card:hover{
     transform:translateY(-8px);
     box-shadow:0 15px 35px rgba(0,0,0,.12);
+    border: 1px solid #166534;
 }
 
 .business-card i{
