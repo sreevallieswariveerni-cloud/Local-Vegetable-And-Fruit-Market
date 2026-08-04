@@ -3,126 +3,131 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GreenGrove Login</title>
+    <title>GreenGrove Login</title>
 
-<link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
     <div class="top-actions">
-    <button class="rtl-btn" id="rtl-btn">RTL</button>
+        <button class="rtl-btn" id="rtl-btn">RTL</button>
 
-    <button id="theme-btn">
-        <i class="fa-solid fa-moon"></i>
-    </button>
+        <button id="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
+
+    <div class="container">
+
+        <div class="form-box">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-title">
+                        <i class="fa-solid fa-leaf"></i>
+                        <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
+                    </div>
+                </a>
+            </div>
+
+
+            <!-- Login Form -->
+
+            <form id="login">
+
+                <h2>
+
+                    Welcome Back
+
+                </h2>
+
+                <p>
+
+                    Login to continue shopping
+
+                </p>
+
+               <div class="form-group">
+
+    <label>EMAIL ADDRESS</label>
+
+    <div class="input-box">
+        <i class="fa-solid fa-envelope"></i>
+        <input
+            type="email"
+            placeholder="Email Address"
+            required>
+    </div>
+
 </div>
 
-<div class="container">
+                <div class="form-group">
 
-<div class="form-box">
-  <div class="logo">
-    <a href="index.html" class="logo-link">
-        <div class="logo-title">
-            <i class="fa-solid fa-leaf"></i>
-            <h2><span class="green">Green</span><span class="grove">Grove</span></h2>
-        </div>
-    </a>
-</div>
-
-
-<!-- Login Form -->
-
-<form id="login">
-
-<h2>
-
-Welcome Back
-
-</h2>
-
-<p>
-
-Login to continue shopping
-
-</p>
-
-<div class="input-box">
-
-<i class="fa-solid fa-envelope"></i>
-
-<input
-type="email"
-placeholder="Email Address"
-required>
-
-</div>
-
-<div class="password-row">
+    <label>PASSWORD</label>
 
     <div class="input-box">
         <i class="fa-solid fa-lock"></i>
 
         <input
-    type="password"
-    placeholder="Password"
-    id="loginPass"
-    required>
+            type="password"
+            placeholder="Password"
+            id="loginPass"
+            required>
 
-<span class="eye"
-onclick="showLoginPassword()">
+        <span class="eye" onclick="showLoginPassword()">
+            <i class="fa-solid fa-eye"></i>
+        </span>
+
     </div>
-</div>
-
-<button
-type="submit"
-class="btn">
-
-Login
-
-</button>
-<p class="register-link">
-    Don't have an account?
-    <a href="register.html">Register</a>
-</p>
-
-<div class="line">
-
-<span>
-
-OR
-
-</span>
 
 </div>
 
-<div class="social-login">
+                <button type="submit" class="btn">
 
-<button type="button" class="google">
-<i class="fa-brands fa-google"></i>
-Continue with Google
-</button>
+                    Login
 
-<button type="button" class="google">
-<i class="fa-brands fa-apple"></i>
-Continue with Apple
-</button>
+                </button>
+                <p class="register-link">
+                    Don't have an account?
+                    <a href="register.html">Register</a>
+                </p>
 
-</div>
+                <div class="line">
 
-</form>
+                    <span>
+
+                        OR
+
+                    </span>
+
+                </div>
+
+                <div class="social-login">
+
+                    <button type="button" class="google">
+                        <i class="fa-brands fa-google"></i>
+                        Continue with Google
+                    </button>
+
+                    <button type="button" class="google">
+                        <i class="fa-brands fa-apple"></i>
+                        Continue with Apple
+                    </button>
+
+                </div>
+
+            </form>
 
 
-</div>
-</div>
-<script src="login.js"></script>
+        </div>
+    </div>
+    <script src="login.js"></script>
 </body>
+
 </html>

@@ -1642,3 +1642,16 @@ body.dark .why-content h2{
 body.dark .premium-cta{
     background:linear-gradient(135deg,#1b5e20,#2e7d32);
 }
+.logo svg,
+.stat svg,
+.farm-features svg,
+.why-content ul li svg,
+.delivery-card svg,
+.icon svg,
+.testimonial-card svg{
+    width:30px;
+    height:30px;
+    stroke-width:2;
+    color:#00C853;
+    flex-shrink:0;
+}

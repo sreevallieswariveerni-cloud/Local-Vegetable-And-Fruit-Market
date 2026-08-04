@@ -1,16 +1,21 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap'); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 body {
   background: #f8fff8;
 }
 
-/* ================= HEADER ================= */
+/* HEADER  */
 
 header{
     position: fixed;
@@ -18,26 +23,31 @@ header{
     left:0;
     width:100%;
     background:#fff;
-    padding:18px 8%;
+    padding:18px 5%;
     display:flex;
     align-items:center;
     box-shadow:0 2px 12px rgba(0,0,0,.08);
     z-index:1000;
+    justify-content:space-between;
+gap:30px;
 }
 
 /* Logo */
 
 .logo{
-    flex:1;
+    flex:0 0 auto;
     display:flex;
     align-items:center;
     gap:10px;
     text-decoration:none;
+    margin-right:80px;
 }
 
 .logo i{
-    font-size:32px;
-    color: #00C853;
+    font-size:30px;     /* icon size */
+    color:#00C853;
+    line-height:1;
+    flex-shrink:0;
 }
 
 .logo-text{
@@ -62,20 +72,27 @@ header{
 .logo .grove{
     color:#166534;
 }
-
+.cart-icon svg{
+    width: 22px;
+    height: 22px;
+    stroke-width: 2.2;
+}
 /* Navigation */
 
 nav{
-    flex:2;
+    flex:1;
     display:flex;
     justify-content:center;
+    min-width:0;
 }
 
 nav ul{
     display:flex;
     align-items:center;
-    gap:35px;
+    justify-content:center;
+    gap:28px;
     list-style:none;
+    flex-wrap:nowrap;
 }
 
 nav ul li{
@@ -89,8 +106,18 @@ nav ul li a{
     font-size:15px;
     font-weight:500;
     transition:.3s;
+    display:flex;
+    align-items:center;
+    gap:3px;
+    white-space:nowrap;
 }
-
+nav ul li a svg{
+    width:16px;
+    height:16px;
+    margin-left:2px;
+    vertical-align:middle;
+    flex-shrink:0;
+}
 nav ul li a:hover,
 nav ul li a.active{
     color:#28a745;
@@ -137,11 +164,11 @@ nav ul li a.active::after{
 /* Header Icons */
 
 .header-icons{
-    flex:1;
+    flex:0 0 auto;
     display:flex;
-    justify-content:flex-end;
     align-items:center;
     gap:14px;
+    margin-left:20px;
 }
 
 .header-icons button{
@@ -202,7 +229,7 @@ nav ul li a.active::after{
 
 /* Menu Icon */
 
-.menu{
+.menu svg{
     display:none;
     font-size:28px;
     color:#28a745;
@@ -220,11 +247,11 @@ nav ul li a.active::after{
 
 .hero{
     width:100%;
-    min-height:600px;
+    min-height:500px;
     background:url("hero_image.jpg") center center/cover no-repeat;
     position:relative;
     display:flex;
-align-items:flex-start;
+    align-items:flex-start;
     top: 0;
     margin-top: 78px;
 }
@@ -261,9 +288,9 @@ align-items:flex-start;
 }
 
 .hero-content h1{
-    font-size:52px;
-    line-height:1.15;
-    margin-bottom:18px;
+    font-size:44px;
+    line-height:1.2;
+    margin-bottom:15px;
     font-weight:700;
 }
 
@@ -271,9 +298,9 @@ align-items:flex-start;
     display:block;
     color:#8FE04F;
     /* font-family:cursive; */
-    font-size:46px;
+    font-size:36px;
     margin-top:8px;
-    font-weight:500;
+    font-weight:600;
 }
 
 .hero-content p{
@@ -739,7 +766,7 @@ font-size:38px;
   border: 1px solid #166534;
 }
 
-.feature-box i{
+.feature-box svg{
 
     font-size:35px;
 
@@ -792,7 +819,7 @@ font-size:38px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-.delivery-card i{
+.delivery-card svg{
 
     font-size:40px;
     color:#28a745;
@@ -899,7 +926,7 @@ font-size:38px;
 
 }
 
-.bulk-item i{
+.bulk-item svg{
 
     font-size:40px;
 
@@ -987,11 +1014,10 @@ font-size:38px;
   background: #f8fff7;
 }
 .choose-container{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-  margin-top:60px;
-  overflow:visible;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    margin-top:60px;
 }
 
 .choose-card{
@@ -1010,7 +1036,7 @@ font-size:38px;
   transform: translateY(-12px) scale(1.05) !important;
   box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
-.choose-card i {
+.choose-card svg {
   font-size: 45px;
   color: #28a745;
   margin-bottom: 20px;
@@ -1143,7 +1169,7 @@ font-size:38px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-.service-card i {
+.service-card svg {
   font-size: 55px;
   color: #28a745;
   margin-bottom: 25px;
@@ -1191,7 +1217,7 @@ font-size:38px;
   font-size: 17px;
 }
 
-.contact-info i {
+.contact-info svg{
   color: #28a745;
 
   margin-right: 10px;
@@ -1260,8 +1286,10 @@ font-size:38px;
 }
 
 .footer-logo i{
+    font-size:30px;     /* icon size */
     color:#00C853;
-    font-size:28px;
+    line-height:1;
+    flex-shrink:0;
 }
 
 .footer-logo h2{
@@ -1307,7 +1335,17 @@ font-size:38px;
     display:flex;
     gap:15px;
 }
+.social-icons a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
+.social-icons svg{
+    width:20px;
+    height:20px;
+    stroke-width:2;
+}
 .social-icons a{
     width:45px;
     height:45px;
@@ -1365,7 +1403,11 @@ font-size:38px;
     flex-wrap:wrap;
     gap:20px;
 }
-
+#theme-btn svg{
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.2;
+}
 .footer-bottom p{
     color:#374151;
 }
@@ -2264,4 +2306,61 @@ nav{
         transform: none !important;
     }
 
+}
+/* RTL Header */
+
+body.rtl header{
+    flex-direction: row-reverse;
+}
+
+body.rtl .logo{
+    order: 3;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    margin-left: auto;
+    direction: ltr;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+body.rtl .logo h2{
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+body.rtl .logo .green{
+    order: 1;
+}
+
+body.rtl .logo .grove{
+    order: 2;
+}
+body.rtl nav{
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+body.rtl nav ul{
+    flex-direction: row-reverse;
+}
+
+body.rtl .header-icons{
+    order: 1;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+}
+
+body.rtl .dropdown-menu{
+    left: auto;
+    right: 0;
+}
+
+body.rtl .cart-count{
+    right: auto;
+    left: -5px;
 }

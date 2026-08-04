@@ -54,8 +54,22 @@ body{
 #rtl-btn{
     width:55px;
 }
+    .form-row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .form-row label{
+        width:100%;
+    }
+
+    .form-row .input-box{
+        width:100%;
+    }
 
 }
+
 #rtl-btn{
     width: 60px;
     border-radius: 25px;
@@ -145,6 +159,19 @@ form p{
 .input-box{
     position: relative;
     margin-bottom: 10px;
+}
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    font-size:12px;
+    font-weight:600;
+    color:#888;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:8px;
 }
 
 .input-box i:first-child{
@@ -405,8 +432,33 @@ h2{
     margin-bottom: 15px;
 
 }
+.password-row{
+    flex-direction:column;
+}
+}
+.form-group{
+    margin-bottom:18px;
+}
 
-} 
+.form-group label,
+.password-field label{
+    display:block;
+    font-size:12px;
+    font-weight:600;
+    color:#888;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+
+.password-row{
+    display:flex;
+    gap:15px;
+}
+
+.password-field{
+    flex:1;
+}
 /* DARK MODE */
 body.dark{
     background:#000 !important;

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenGrove</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
@@ -23,9 +26,9 @@
     <nav>
         <ul>
             <li class="dropdown">
-                <a href="#" class="active">Home <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#" class="active">Home <i data-lucide="chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="homepage1.html"  class="active">Home 1</a></li>
+                    <li><a href="homepage1.html">Home 1</a></li>
                     <li><a href="homepage2.html">Home 2</a></li>
                 </ul>
             </li>
@@ -40,48 +43,39 @@
     <div class="header-icons">
         <button class="rtl-btn" id="rtl-btn">RTL</button>
         <button id="theme-btn">
-            <i class="fa-solid fa-moon"></i>
+            <i data-lucide="moon"></i>
         </button>
         <a href="cart.html" class="cart-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i data-lucide="shopping-cart"></i>
         <span class="cart-count" id="cart-count">0</span>
         </a>
         <a href="login.html" class="login-btn">Login</a>
         <div class="menu" id="menu-btn">
-            <i class="fa-solid fa-bars"></i>
+            <i data-lucide="menu"></i>
         </div>
     </div>
 </header>
 <section class="hero">
-
     <div class="hero-overlay"></div>
-
     <div class="hero-container">
-
         <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-
-
             <h1>
                 Farm Fresh <br>
                 Fruits & Vegetables
                 <span>Delivered to Your Doorstep</span>
             </h1>
-
             <p>
                 Handpicked directly from farms. Fresh vegetables, fruits and groceries delivered to your doorstep with premium quality and affordable prices.
             </p>
-
             <div class="hero-buttons">
                 <a href="shop.html" class="shop-btn">Shop Now</a>
                 <a href="explore.html" class="explore-btn">Explore Products</a>
             </div>
         </div>
-
     </div>
-
 </section>
 <!--Shop By Categories -->
-<class="categories">
+<section class="categories">
     <div class="section-title">
         <span>Our Categories</span>
         <h2>Shop By Categories</h2>
@@ -110,252 +104,171 @@
     </div>
 </div>
 </section>
-<!--SUMMER SPECIALS-->
-<!-- <section class="summer-specials">
-    <div class="summer-content"  data-aos="fade-right">
-        <span class="summer-tag" data-aos="zoom-in" data-aos-delay="100">🍉 Fresh & Seasonal</span>
-        <h2 data-aos="fade-up" data-aos-delay="200">Summer Specials</h2>
-        <p data-aos="fade-up" data-aos-delay="300">
-            Beat the summer heat with our farm-fresh seasonal fruits and vegetables.
-            Enjoy juicy mangoes, refreshing watermelons, cucumbers, leafy greens,
-            and many more at the best prices.
-        </p>
-        <div class="summer-features" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature">
-                <i class="fa-solid fa-seedling"></i>
-                <span>100% Fresh</span>
-            </div>
-            <div class="feature">
-                <i class="fa-solid fa-truck-fast"></i>
-                <span>Fast Delivery</span>
-            </div>
-        </div>
-        <a href="summer-shop.html" class="summer-btn">
-            Shop Summer Collection
-        </a>
-    </div>
-    <div class="summer-image" data-aos="fade-left">
-        <img src="https://images.unsplash.com/photo-1673010960635-d0d1ad81b90a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFuZ298ZW58MHx8MHx8fDA%3D"
-        alt="Summer Fruits">
-    </div>
-</section> -->
-<!-- Seasonal Specials -->
-<!--==============================
-        SEASONAL SPECIALS
-================================-->
 
+<!-- Seasonal specials  -->
 <section class="seasonal-specials">
-
     <div class="section-heading">
-        <span>Fresh Throughout The Year</span>
-        <h2>Seasonal Specials</h2>
-        <p>
+        <span data-aos="fade-up" data-aos-duration="800">Fresh Throughout The Year</span>
+        <h2  data-aos="fade-up" data-aos-delay="150" data-aos-duration="900">Seasonal Specials</h2>
+        <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
             Discover the freshest fruits and vegetables available in every season.
             Explore handpicked produce grown at the perfect time of the year.
         </p>
     </div>
-
     <div class="season-grid">
-
-        <a href="seasonal-specials.html#summer" class="season-card">
+        <a href="seasonal-specials.html#summer" class="season-card"  data-aos="zoom-in-up"
+     data-aos-duration="900">
             <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=800" alt="">
             <div class="season-content">
                 <h3> Summer</h3>
                 <p>Sweet & Juicy Fruits</p>
             </div>
         </a>
-
-        <a href="seasonal-specials.html#winter" class="season-card">
+        <a href="seasonal-specials.html#winter" class="season-card" data-aos="zoom-in-up"
+     data-aos-delay="150"
+     data-aos-duration="900">
             <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=800" alt="">
             <div class="season-content">
                 <h3> Winter</h3>
                 <p>Healthy Winter Picks</p>
             </div>
         </a>
-
-        <a href="seasonal-specials.html#rainy" class="season-card">
+        <a href="seasonal-specials.html#rainy" class="season-card"  data-aos="zoom-in-up"
+     data-aos-delay="300"
+     data-aos-duration="900">
             <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=800" alt="">
             <div class="season-content">
                 <h3> Rainy</h3>
                 <p>Fresh Rain Harvest</p>
             </div>
         </a>
-
-        <a href="seasonal-specials.html#autumn" class="season-card">
+        <a href="seasonal-specials.html#autumn" class="season-card" data-aos="zoom-in-up"
+     data-aos-delay="450"
+     data-aos-duration="900">
             <img src="https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?w=800" alt="">
             <div class="season-content">
-                <h3> Autumn</h3>
+                <h3>Autumn</h3>
                 <p>Farm Fresh Selection</p>
             </div>
         </a>
-
     </div>
-
-    <div class="season-btn">
+    <div class="season-btn" data-aos="fade-up"
+     data-aos-delay="600"
+     data-aos-duration="900">
         <a href="seasonal-special.html" class="seasonal-btn">
             Explore Seasonal Collection →
         </a>
     </div>
-
 </section>
-
 <!-- Farm Sourcing -->
-
 <section class="farm-sourcing">
-
     <div class="farm-image"  data-aos="fade-right">
-
         <img src="https://plus.unsplash.com/premium_photo-1675798983878-604c09f6d154?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVnZXRhYmxlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Farm Fresh Vegetables">
-
     </div>
-
     <div class="farm-content">
-
         <span>Farm to Table</span>
-
         <h2>Freshly Sourced From Local Farms</h2>
-
         <p>
             At GreenGrove, we work closely with trusted local farmers to bring
             you the freshest vegetables, fruits, and leafy greens. Every product
             is carefully harvested, inspected, and delivered to ensure premium
             quality and freshness.
         </p>
-
         <div class="farm-features">
-
             <div class="feature-box" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fa-solid fa-seedling"></i>
+                <i data-lucide="sprout"></i>
                 <h4>100% Fresh Harvest</h4>
             </div>
-
             <div class="feature-box" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fa-solid fa-leaf"></i>
+                <i data-lucide="leaf"></i>
                 <h4>Natural Farming</h4>
             </div>
-
             <div class="feature-box" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fa-solid fa-handshake"></i>
+                <i data-lucide="handshake"></i>
                 <h4>Support Local Farmers</h4>
             </div>
-
             <div class="feature-box" data-aos="zoom-in" data-aos-delay="400">
-                <i class="fa-solid fa-truck-fast"></i>
+                <i data-lucide="truck"></i>
                 <h4>Delivered Fresh Daily</h4>
             </div>
-
         </div>
-
     </div>
-
 </section>
 <!-- Delivery Coverage -->
-
 <section class="delivery">
-
     <div class="section-title" data-aos="fade-up">
-
         <span>Our Delivery Network</span>
-
         <h2>Delivery Coverage</h2>
-
         <p>
             We deliver fresh vegetables, fruits, and leafy greens to nearby cities with fast and reliable service.
         </p>
-
     </div>
-
     <div class="delivery-container">
-
         <div class="delivery-card" data-aos="fade-up">
-            <i class="fa-solid fa-location-dot"></i>
+            <i data-lucide="map-pin"></i>
             <h3>Rajahmundry</h3>
             <p>Same Day Delivery</p>
         </div>
-
         <div class="delivery-card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-solid fa-location-dot"></i>
+            <i data-lucide="map-pin"></i>
             <h3>Kakinada</h3>
             <p>Within 24 Hours</p>
         </div>
-
         <div class="delivery-card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-location-dot"></i>
+            <i data-lucide="map-pin"></i>
             <h3>Amalapuram</h3>
             <p>Within 24 Hours</p>
         </div>
-
         <div class="delivery-card" data-aos="fade-up" data-aos-delay="300">
-            <i class="fa-solid fa-location-dot"></i>
+            <i data-lucide="map-pin"></i>
             <h3>Kovvur</h3>
             <p>Same Day Delivery</p>
         </div>
-
         <div class="delivery-card" data-aos="fade-up" data-aos-delay="400">
-            <i class="fa-solid fa-location-dot"></i>
+            <i data-lucide="map-pin"></i>
             <h3>Nidadavole</h3>
             <p>Within 24 Hours</p>
         </div>
-
         <div class="delivery-card" data-aos="fade-up" data-aos-delay="500">
-            <i class="fa-solid fa-clock"></i>
+            <i data-lucide="clock-3"></i>
             <h3>Delivery Time</h3>
             <p>8:00 AM - 8:00 PM</p>
         </div>
-
     </div>
-
 </section>
 <!-- Bulk Order -->
-
 <section class="bulk-order">
-
     <div class="bulk-content" data-aos="fade-up">
-
         <span>Business Orders</span>
-
         <h2>Bulk Order Enquiry</h2>
-
         <p>
             Looking for fresh vegetables, fruits, or leafy greens in bulk?
             We supply premium-quality produce to hotels, restaurants,
             supermarkets, hostels, and catering services at competitive prices.
         </p>
-
         <div class="bulk-services">
-
             <div class="bulk-item" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fa-solid fa-hotel"></i>
+                <i data-lucide="hotel"></i>
                 <h4>Hotels</h4>
             </div>
-
             <div class="bulk-item" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fa-solid fa-utensils"></i>
+                <i data-lucide="utensils"></i>
                 <h4>Restaurants</h4>
             </div>
-
             <div class="bulk-item" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fa-solid fa-store"></i>
+                <i data-lucide="store"></i>
                 <h4>Retail Stores</h4>
             </div>
-
             <div class="bulk-item" data-aos="zoom-in" data-aos-delay="400">
-                <i class="fa-solid fa-users"></i>
+                <i data-lucide="users"></i>
                 <h4>Catering Services</h4>
             </div>
-
         </div>
-
         <div class="bulk-buttons" data-aos="fade-up" data-aos-delay="500">
-
             <a href="contact.html" class="quote-btn">Request a Quote</a>
-
             <a href="contact.html" class="contact-btn">Contact Sales</a>
-
         </div>
-
     </div>
-
 </section>
 <!-- Why Choose Us -->
 <section class="why-choose">
@@ -368,22 +281,22 @@
     </div>
     <div class="choose-container">
         <div class="choose-card" data-aos="fade-up">
-            <i class="fa-solid fa-seedling"></i>
+            <i data-lucide="sprout"></i>
             <h3>Farm Fresh</h3>
             <p>Freshly harvested produce sourced directly from local farmers every day.</p>
         </div>
         <div class="choose-card" data-aos="fade-up">
-            <i class="fa-solid fa-truck-fast"></i>
+                <i data-lucide="truck"></i>
             <h3>Fast Delivery</h3>
             <p>Quick and reliable delivery so your groceries arrive fresh and on time.</p>
         </div>
         <div class="choose-card" data-aos="fade-up">
-            <i class="fa-solid fa-medal"></i>
+            <i data-lucide="badge-check"></i>
             <h3>Premium Quality</h3>
             <p>Every product is carefully selected to ensure the highest quality standards.</p>
         </div>
         <div class="choose-card" data-aos="fade-up">
-            <i class="fa-solid fa-tags"></i>
+            <i data-lucide="tags"></i>
             <h3>Best Prices</h3>
             <p>Affordable pricing with exciting seasonal offers and daily savings.</p>
         </div>
@@ -446,32 +359,32 @@
     </div>
     <div class="service-container">
         <div class="service-card"  data-aos="zoom-in">
-            <i class="fa-solid fa-carrot"></i>
+            <i data-lucide="carrot"></i>
             <h3>Fresh Vegetables</h3>
             <p>Farm-fresh vegetables delivered directly to your doorstep.</p>
         </div>
         <div class="service-card"  data-aos="zoom-in">
-            <i class="fa-solid fa-apple-whole"></i>
+            <i data-lucide="apple"></i>
             <h3>Fresh Fruits</h3>
             <p>Premium quality seasonal fruits packed with freshness.</p>
         </div>
         <div class="service-card"  data-aos="zoom-in">
-            <i class="fa-solid fa-basket-shopping"></i>
+            <i data-lucide="shopping-basket"></i>
             <h3>Daily Grocery</h3>
             <p>Everything you need for your everyday household shopping.</p>
         </div>
         <div class="service-card"  data-aos="zoom-in">
-            <i class="fa-solid fa-truck-fast"></i>
+            <i data-lucide="truck"></i>
             <h3>Fast Delivery</h3>
             <p>Quick and safe delivery within a few hours.</p>
         </div>
         <div class="service-card"  data-aos="zoom-in">
-            <i class="fa-solid fa-shield-heart"></i>
+            <i data-lucide="shield-check"></i>
             <h3>Quality Assurance</h3>
             <p>Every product is carefully checked before delivery.</p>
         </div>
         <div class="service-card"  data-aos="zoom-in">
-            <i class="fa-solid fa-headset"></i>
+            <i data-lucide="headset"></i>
             <h3>24/7 Support</h3>
             <p>Friendly customer support whenever you need assistance.</p>
         </div>
@@ -488,10 +401,10 @@
     <div class="contact-container">
         <div class="contact-info" data-aos="fade-right">
             <h3>Contact Information</h3>
-            <p><i class="fa-solid fa-location-dot"></i> Rajahmundry, Andhra Pradesh</p>
-            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
-            <p><i class="fa-solid fa-envelope"></i> support@greengrove.com</p>
-            <p><i class="fa-solid fa-clock"></i> Mon - Sun : 8:00 AM - 8:00 PM</p>
+            <p><i data-lucide="map-pin"></i> Rajahmundry, Andhra Pradesh</p>
+            <p><i data-lucide="phone"></i> +91 98765 43210</p>
+            <p><i data-lucide="mail"></i> support@greengrove.com</p>
+            <p><i data-lucide="clock"></i> Mon - Sun : 8:00 AM - 8:00 PM</p>
         </div>
         <div class="contact-form" data-aos="fade-left">
             <form>
@@ -510,7 +423,7 @@
         <!-- Logo -->
         <div class="footer-col">
             <div class="footer-logo">
-                <i class="fa-solid fa-leaf"></i>
+                    <i class="fa-solid fa-leaf"></i>
                 <h2>
                     <span class="green">Green</span><span class="grove">Grove</span>
                 </h2>
@@ -522,11 +435,11 @@
             </p>
 
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-x-twitter"></i></a>
-            </div>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+</div>
         </div>
 
         <!-- Quick Links -->
@@ -537,6 +450,7 @@
             <a href="services.html">Services</a>
             <a href="pricing.html">Pricing</a>
             <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
         </div>
 
         <!-- Support -->
@@ -594,26 +508,52 @@ AOS.init({
     offset: 100
 });
 </script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <script>
-const themeBtn = document.getElementById("theme-btn");
-if(localStorage.getItem("theme") === "dark"){
-    document.body.classList.add("dark");
-    themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-}
-themeBtn.addEventListener("click", function(){
-    document.body.classList.toggle("dark");
+    lucide.createIcons();
+</script>
+<script>
+const themeBtn=document.getElementById("theme-btn");
+
+function updateTheme(){
+
     if(document.body.classList.contains("dark")){
-        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-        localStorage.setItem("theme","dark");
+
+        themeBtn.innerHTML='<i data-lucide="sun"></i>';
+
     }else{
-        themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        localStorage.setItem("theme","light");
+
+        themeBtn.innerHTML='<i data-lucide="moon"></i>';
+
     }
-});
-function subscribe(){
-    alert("Subscribed successfully!..");
+
+    lucide.createIcons();
 }
+
+if(localStorage.getItem("theme")=="dark"){
+
+    document.body.classList.add("dark");
+
+}
+
+updateTheme();
+
+themeBtn.addEventListener("click",function(){
+
+    document.body.classList.toggle("dark");
+
+    localStorage.setItem(
+        "theme",
+        document.body.classList.contains("dark")
+        ?"dark":"light"
+    );
+
+    updateTheme();
+
+});
 </script>
 <script src="script.js"></script>
+
+
 </body>
 </html>
