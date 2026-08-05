@@ -247,7 +247,7 @@ nav ul li a.active::after{
 
 .hero{
     width:100%;
-    min-height:500px;
+    min-height:560px;
     background:url("hero_image.jpg") center center/cover no-repeat;
     position:relative;
     display:flex;
