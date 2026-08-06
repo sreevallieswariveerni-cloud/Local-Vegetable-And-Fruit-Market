@@ -26,13 +26,13 @@
 .help-card:hover{
     transform:translateY(-10px);
 }
-
-.help-card i{
-    font-size:50px;
+.help-card svg{
+    width:50px;
+    height:50px;
+    stroke-width:2;
     color:#28a745;
     margin-bottom:20px;
 }
-
 .help-card h3{
     color:#222;
     margin-bottom:15px;

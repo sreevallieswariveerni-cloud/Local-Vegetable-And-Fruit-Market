@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenGrove | Shop</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="products.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -23,7 +23,7 @@
     <nav>
         <ul>
             <li class="dropdown">
-                <a href="#" class="active">Home <i data-lucide="chevron-down"></i></a>
+                <a href="#">Home <i data-lucide="chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="homepage1.html">Home 1</a></li>
                     <li><a href="homepage2.html">Home 2</a></li>
@@ -31,7 +31,7 @@
             </li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html" class="mobile-login">Login</a></li>
@@ -42,10 +42,10 @@
         <button id="theme-btn">
             <i data-lucide="moon"></i>
         </button>
-        <a href="cart.html" class="cart-icon">
+        <!-- <a href="cart.html" class="cart-icon">
         <i data-lucide="shopping-cart"></i>
         <span class="cart-count" id="cart-count">0</span>
-        </a>
+        </a> -->
         <a href="login.html" class="login-btn">Login</a>
         <div class="menu" id="menu-btn">
             <i data-lucide="menu"></i>
@@ -413,7 +413,7 @@
                         <option value="30">1 - ₹30</option>
                         <option value="60">2 - ₹60</option>
                         <option value="90" selected>3 - ₹90</option>
-                    </select>>
+                    </select>
                     <!-- <p class="price" data-price="40">₹40</p> -->
                      <p class="price">₹<span class="price-value">90</span></p>
                     <button class="add-btn">ADD</button>
@@ -703,6 +703,10 @@ themeBtn.addEventListener("click", function(){
     }
 
 });
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
 </script>
 </body>
 </html>

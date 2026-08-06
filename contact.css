@@ -66,9 +66,12 @@
   transform: translateY(-5px);
 }
 
-.contact-item i {
-  color: #7cff9a;
-  font-size: 18px;
+.contact-item svg{
+    width:20px;
+    height:20px;
+    stroke-width:2;
+    color:#00C853;
+    flex-shrink:0;
 }
 
 .contact-item span {
@@ -144,11 +147,12 @@
   gap: 12px;
   color: #555;
 }
-
-.contact-info i {
-  color: #28a745;
-
-  margin-right: 10px;
+.contact-info svg{
+    width:20px;
+    height:20px;
+    stroke-width:2;
+    color:#28a745;
+    flex-shrink:0;
 }
 
 .contact-form input,
@@ -365,6 +369,20 @@
   .map-container iframe {
     height: 350px;
   }
+}
+/* ==============================
+        CONTACT LUCIDE ICONS
+============================== */
+
+.logo svg,
+.footer-logo svg,
+.contact-item svg,
+.contact-info svg{
+    width:30px;
+    height:30px;
+    stroke-width:2;
+    color:var(--secondary);
+    flex-shrink:0;
 }
 
 /*==============================

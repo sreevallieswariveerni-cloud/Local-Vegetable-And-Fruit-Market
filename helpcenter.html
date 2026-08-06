@@ -30,7 +30,7 @@
             </li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="products.html">Products</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html" class="mobile-login">Login</a></li>
@@ -41,10 +41,10 @@
         <button id="theme-btn">
             <i data-lucide="moon"></i>
         </button>
-        <a href="cart.html" class="cart-icon">
+        <!-- <a href="cart.html" class="cart-icon">
         <i data-lucide="shopping-cart"></i>
         <span class="cart-count" id="cart-count">0</span>
-        </a>
+        </a> -->
         <a href="login.html" class="login-btn">Login</a>
         <div class="menu" id="menu-btn">
             <i data-lucide="menu"></i>
@@ -63,37 +63,37 @@
     <div class="help-container">
 
         <div class="help-card">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i data-lucide="shopping-cart"></i>
             <h3>Order Help</h3>
             <p>Learn how to place, modify, or cancel your orders quickly.</p>
         </div>
 
         <div class="help-card">
-            <i class="fa-solid fa-truck-fast"></i>
+            <i data-lucide="truck"></i>
             <h3>Delivery Help</h3>
             <p>Know about delivery timings, locations, and shipping charges.</p>
         </div>
 
         <div class="help-card">
-            <i class="fa-solid fa-credit-card"></i>
+            <i data-lucide="credit-card"></i>
             <h3>Payment Help</h3>
             <p>Information about online payments, UPI, cards, and Cash on Delivery.</p>
         </div>
 
         <div class="help-card">
-            <i class="fa-solid fa-rotate-left"></i>
+           <i data-lucide="rotate-ccw"></i>
             <h3>Returns & Refunds</h3>
             <p>Understand our return process and refund timelines.</p>
         </div>
 
         <div class="help-card">
-            <i class="fa-solid fa-box"></i>
+            <i data-lucide="package-check"></i>
             <h3>Product Quality</h3>
             <p>Freshness guarantee and quality standards for every order.</p>
         </div>
 
         <div class="help-card">
-            <i class="fa-solid fa-headset"></i>
+            <i data-lucide="headset"></i>
             <h3>Contact Support</h3>
             <p>Email: support@greengrove.com<br>
                Phone: +91 98765 43210</p>
@@ -184,6 +184,35 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+<script>
+const themeBtn=document.getElementById("theme-btn");
+function updateTheme(){
+    if(document.body.classList.contains("dark")){
+        themeBtn.innerHTML='<i data-lucide="sun"></i>';
+    }else{
+        themeBtn.innerHTML='<i data-lucide="moon"></i>';
 
+    }
+    lucide.createIcons();
+}
+if(localStorage.getItem("theme")=="dark"){
+    document.body.classList.add("dark");
+}
+updateTheme();
+themeBtn.addEventListener("click",function(){
+    document.body.classList.toggle("dark");
+    localStorage.setItem(
+        "theme",
+        document.body.classList.contains("dark")
+        ?"dark":"light"
+    );
+    updateTheme();
+});
+</script>
+<script src="script.js"></script>
 </body>
 </html>

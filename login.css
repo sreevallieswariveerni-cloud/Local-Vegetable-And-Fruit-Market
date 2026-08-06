@@ -1,11 +1,9 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:'Outfit',sans-serif;
 }
 
 body{
@@ -38,6 +36,20 @@ body{
     cursor: pointer;
     font-weight: 600;
     box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+.social-login{
+    display:flex;
+    gap:12px;
+    margin-top:15px;
+}
+
+.social-login .google{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    height:42px;
 }
 @media(max-width:768px){
 
@@ -168,7 +180,7 @@ form p{
     display:block;
     font-size:12px;
     font-weight:600;
-    color:#888;
+     color:#ffffff;
     text-transform:uppercase;
     letter-spacing:1px;
     margin-bottom:8px;
@@ -417,14 +429,12 @@ h2{
 
 }
 .social-login{
-    display:flex;
-    gap:12px;
+    flex-direction:column;
 }
 
 .social-login .google{
-    width:50%;
-}
-.options{
+    width:100%;
+}.options{
 
     flex-direction:column;
     align-items:flex-start;
@@ -445,7 +455,7 @@ h2{
     display:block;
     font-size:12px;
     font-weight:600;
-    color:#888;
+    color:#555;
     letter-spacing:1px;
     text-transform:uppercase;
     margin-bottom:8px;
@@ -479,7 +489,10 @@ body.dark h2,
 body.dark p{
     color:#fff;
 }
-
+body.dark .form-group label,
+body.dark .password-field label{
+    color:#ffffff;
+}
 body.dark .tab-box{
     background:#2b2b2b;
 }
@@ -488,6 +501,13 @@ body.dark .input-box input{
     background:#2b2b2b;
     color:#fff;
     border-color:#444;
+}
+body.dark .options label{
+    color:#ffffff;
+}
+
+body.dark .options a{
+    color:#16a34a;
 }
 
 body.dark .google{

@@ -1,171 +1,171 @@
 // ===================== CART =====================
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+// let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Cart Count
-const cartCount = document.getElementById("cart-count");
-if (cartCount) {
-    cartCount.innerText = cart.length;
-}
+// const cartCount = document.getElementById("cart-count");
+// if (cartCount) {
+//     cartCount.innerText = cart.length;
+// }
 
 // Add To Cart
-const buttons = document.querySelectorAll(".add-btn");
+// const buttons = document.querySelectorAll(".add-btn");
 
-buttons.forEach(function(button){
+// buttons.forEach(function(button){
 
-    button.addEventListener("click",function(){
+//     button.addEventListener("click",function(){
 
-        const card = this.closest(".product-card");
+//         const card = this.closest(".product-card");
 
-        const weight = card.querySelector(".weight-select");
+//         const weight = card.querySelector(".weight-select");
 
-const product = {
-    image: card.querySelector("img").src,
-    name: card.querySelector("h3").innerText,
-    price: Number(weight.value),
-    weight: weight.options[weight.selectedIndex].text,
-    quantity: 1
-};
-        cart.push(product);
+// const product = {
+//     image: card.querySelector("img").src,
+//     name: card.querySelector("h3").innerText,
+//     price: Number(weight.value),
+//     weight: weight.options[weight.selectedIndex].text,
+//     quantity: 1
+// };
+//         cart.push(product);
 
-        localStorage.setItem("cart",JSON.stringify(cart));
+//         localStorage.setItem("cart",JSON.stringify(cart));
 
-        if(cartCount){
-            cartCount.innerText = cart.length;
-        }
+//         if(cartCount){
+//             cartCount.innerText = cart.length;
+//         }
 
-        const popup = document.getElementById("cartPopup");
+//         const popup = document.getElementById("cartPopup");
 
-document.getElementById("popup-img").src = product.image;
-document.getElementById("popup-name").innerText = product.name;
-document.getElementById("popup-weight").innerText = product.weight;
-document.getElementById("popup-price").innerText = "₹" + product.price;
+// document.getElementById("popup-img").src = product.image;
+// document.getElementById("popup-name").innerText = product.name;
+// document.getElementById("popup-weight").innerText = product.weight;
+// document.getElementById("popup-price").innerText = "₹" + product.price;
 
-popup.classList.add("show");
+// popup.classList.add("show");
 
-setTimeout(function(){
-    popup.classList.remove("show");
-},3000);
-    });
+// setTimeout(function(){
+//     popup.classList.remove("show");
+// },3000);
+//     });
 
-});
+// });
 
 
 // ===================== CART PAGE =====================
 
-const cartItems = document.getElementById("cart-items");
+// const cartItems = document.getElementById("cart-items");
 
-if (cartItems) {
+// if (cartItems) {
 
-    let subtotal = 0;
+//     let subtotal = 0;
 
-    if (cart.length === 0) {
+//     if (cart.length === 0) {
 
-        cartItems.innerHTML = `
-            <h2 style="text-align:center;color:#2e8b57;">
-                Your Cart is Empty 🛒
-            </h2>
-        `;
+//         cartItems.innerHTML = `
+//             <h2 style="text-align:center;color:#2e8b57;">
+//                 Your Cart is Empty 🛒
+//             </h2>
+//         `;
 
-    } else {
+//     } else {
 
-        cart.forEach(function(product,index){
+//         cart.forEach(function(product,index){
 
-            const quantity = product.quantity || 1;
-            const total = product.price * quantity;
+//             const quantity = product.quantity || 1;
+//             const total = product.price * quantity;
 
-            subtotal += total;
+//             subtotal += total;
 
-            cartItems.innerHTML += `
+//             cartItems.innerHTML += `
 
-            <div class="cart-card">
+//             <div class="cart-card">
 
-                <img src="${product.image}" class="cart-img">
+//                 <img src="${product.image}" class="cart-img">
 
-                <div class="cart-info">
+//                 <div class="cart-info">
 
-                    <h2>${product.name}</h2>
+//                     <h2>${product.name}</h2>
 
-                    <p>${product.weight}</p>
+//                     <p>${product.weight}</p>
 
-                    <div class="price-row">
+//                     <div class="price-row">
 
-                        <span class="price">₹${product.price}</span>
+//                         <span class="price">₹${product.price}</span>
 
-                        <div class="qty-box">
+//                         <div class="qty-box">
 
-                            <button onclick="decreaseQty(${index})">-</button>
+//                             <button onclick="decreaseQty(${index})">-</button>
 
-                            <span>${quantity}</span>
+//                             <span>${quantity}</span>
 
-                            <button onclick="increaseQty(${index})">+</button>
+//                             <button onclick="increaseQty(${index})">+</button>
 
-                        </div>
+//                         </div>
 
-                    </div>
+//                     </div>
 
-                </div>
+//                 </div>
 
-                <button class="delete-btn" onclick="removeItem(${index})">
-                    🗑
-                </button>
+//                 <button class="delete-btn" onclick="removeItem(${index})">
+//                     🗑
+//                 </button>
 
-            </div>
+//             </div>
 
-            `;
+//             `;
 
-        });
+//         });
 
-        document.getElementById("subtotal").innerText = "₹" + subtotal;
-        document.getElementById("total").innerText = "₹" + subtotal;
+//         document.getElementById("subtotal").innerText = "₹" + subtotal;
+//         document.getElementById("total").innerText = "₹" + subtotal;
 
-    }
+//     }
 
-}
+// }
 
 // Increase
 
-function increaseQty(index){
+// function increaseQty(index){
 
-    cart[index].quantity++;
+//     cart[index].quantity++;
 
-    localStorage.setItem("cart",JSON.stringify(cart));
+//     localStorage.setItem("cart",JSON.stringify(cart));
 
-    location.reload();
+//     location.reload();
 
-}
+// }
 
 // Decrease
 
-function decreaseQty(index){
+// function decreaseQty(index){
 
-    if(cart[index].quantity > 1){
+//     if(cart[index].quantity > 1){
 
-        cart[index].quantity--;
+//         cart[index].quantity--;
 
-    }else{
+//     }else{
 
-        cart.splice(index,1);
+//         cart.splice(index,1);
 
-    }
+//     }
 
-    localStorage.setItem("cart",JSON.stringify(cart));
+//     localStorage.setItem("cart",JSON.stringify(cart));
 
-    location.reload();
+//     location.reload();
 
-}
+// }
 
 // Remove
 
-function removeItem(index){
+// function removeItem(index){
 
-    cart.splice(index,1);
+//     cart.splice(index,1);
 
-    localStorage.setItem("cart",JSON.stringify(cart));
+//     localStorage.setItem("cart",JSON.stringify(cart));
 
-    location.reload();
+//     location.reload();
 
-}
+// }
 
 
 

@@ -53,8 +53,10 @@
     border-radius:15px;
 }
 
-.status-card i{
-    font-size:40px;
+.status-card svg{
+    width:40px;
+    height:40px;
+    stroke-width:2;
     color:#28a745;
     margin-bottom:15px;
 }

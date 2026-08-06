@@ -27,12 +27,13 @@
     transform:translateY(-10px);
 }
 
-.shipping-card i{
-    font-size:45px;
+.shipping-card svg{
+    width:45px;
+    height:45px;
+    stroke-width:2;
     color:#28a745;
     margin-bottom:20px;
 }
-
 .shipping-card h3{
     color:#222;
     margin-bottom:15px;
