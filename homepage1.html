@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenGrove</title>
-<link rel="icon" type="images/png" sizes="184x184" href="images/logo.png">
+    <link rel="icon" type="images/png" sizes="184x184" href="images/logo.png">
     <link rel="stylesheet" href="variables.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
      <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
      <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
 <header>
@@ -35,7 +34,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             </li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html" >Products</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html" class="mobile-login">Login</a></li>
@@ -70,7 +69,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 Handpicked directly from farms. Fresh vegetables, fruits and groceries delivered to your doorstep with premium quality and affordable prices.
             </p>
             <div class="hero-buttons">
-                <a href="shop.html" class="shop-btn">Shop Now</a>
+                <a href="products.html" class="shop-btn">Shop Now</a>
                 <a href="explore.html" class="explore-btn">Explore Products</a>
             </div>
         </div>
@@ -319,11 +318,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             <h3>Rahul Kumar</h3>
             <span>Rajahmundry</span>
             <div class="stars">
-                ★★★★★
+                ★★★★★ 
             </div>
             <p>
-                The vegetables are always fresh and delivered on time.
-                The quality is excellent, and the prices are very reasonable.
+                The vegetables are fresh and delivered on time.
+                The quality is excellent, and reasonable prices.
             </p>
         </div>
         <div class="testimonial-card" data-aos="fade-up">
@@ -425,7 +424,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         <!-- Logo -->
         <div class="footer-col">
             <div class="footer-logo">
-                    <i class="fa-solid fa-leaf"></i>
+                <i class="fa-solid fa-leaf"></i>
                 <h2>
                     <span class="green">Green</span><span class="grove">Grove</span>
                 </h2>
@@ -516,42 +515,27 @@ AOS.init({
 </script>
 <script>
 const themeBtn=document.getElementById("theme-btn");
-
 function updateTheme(){
-
     if(document.body.classList.contains("dark")){
-
         themeBtn.innerHTML='<i data-lucide="sun"></i>';
-
     }else{
-
         themeBtn.innerHTML='<i data-lucide="moon"></i>';
 
     }
-
     lucide.createIcons();
 }
-
 if(localStorage.getItem("theme")=="dark"){
-
     document.body.classList.add("dark");
-
 }
-
 updateTheme();
-
 themeBtn.addEventListener("click",function(){
-
     document.body.classList.toggle("dark");
-
     localStorage.setItem(
         "theme",
         document.body.classList.contains("dark")
         ?"dark":"light"
     );
-
     updateTheme();
-
 });
 </script>
 <script src="script.js"></script>
