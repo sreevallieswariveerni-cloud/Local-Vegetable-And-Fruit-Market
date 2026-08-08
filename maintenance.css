@@ -27,7 +27,7 @@ body{
     border:none;
     border-radius:50%;
     background:#2e7d32;
-    color:#fff;
+    color:#ffffff;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -42,7 +42,7 @@ body{
 .maintenance-container{
     width:90%;
     max-width:650px;
-    background:#fff;
+    background:#ffffff;
     padding:60px 40px;
     text-align:center;
     border-radius:20px;
@@ -105,7 +105,7 @@ p{
 
 .home-btn{
     background:#2e7d32;
-    color:#fff;
+    color:#ffffff;
 }
 
 .contact-btn{
@@ -120,7 +120,7 @@ p{
 
 .contact-btn:hover{
     background:#2e7d32;
-    color:#fff;
+    color:#ffffff;
     transform:translateY(-5px);
 }
 
@@ -148,7 +148,7 @@ body.dark .icon{
 }
 
 body.dark h1{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark p{
@@ -156,10 +156,10 @@ body.dark p{
 }
 
 body.dark .status{
-    color:#28a745;
+    color:var(--primary-color);
 }
 
 body.dark .contact-btn{
-    border-color:#28a745;
-    color:#fff;
+    border-color:var(--primary-color);
+    color:#ffffff;
 }

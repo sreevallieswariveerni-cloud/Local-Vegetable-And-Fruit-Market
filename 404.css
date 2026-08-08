@@ -26,8 +26,8 @@ body{
     height:45px;
     border:none;
     border-radius:50%;
-    background:#28a745;
-    color:#fff;
+    background:var(--primary-color);
+    color:#ffffff;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -36,7 +36,7 @@ body{
 }
 
 .page-controls button:hover{
-    background:#166534;
+    background:var(--secondary-color);
 }
 
 #rtl-btn{
@@ -48,7 +48,7 @@ body{
 .error-container{
     width:90%;
     max-width:600px;
-    background:#fff;
+    background:#ffffff;
     padding:60px 40px;
     border-radius:20px;
     text-align:center;
@@ -109,12 +109,12 @@ p{
 
 .home-btn{
     background:#2e7d32;
-    color:#fff;
+    color:#ffffff;
 }
 
 .shop-btn{
     border:2px solid #2e7d32;
-    color: #fff;
+    color: #ffffff;
 }
 
 .home-btn:hover{
@@ -124,7 +124,7 @@ p{
 
 .shop-btn:hover{
     background:#2e7d32;
-    color:#fff;
+    color:#ffffff;
     transform:translateY(-5px);
 }
 
@@ -145,7 +145,7 @@ p{
 .icon svg{
     width:50px;
     height:50px;
-    color:#28a745;
+    color:var(--primary-color);
 }
 
 .buttons a svg{
@@ -164,7 +164,7 @@ body.dark .error-container{
 
 body.dark h1,
 body.dark h2{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark p{

@@ -1,0 +1,47 @@
+:root {
+
+
+    --primary-color: #28a745;
+    --secondary-color: #166534;
+    --logo-icon-color: #16a34a;
+
+    --white: #ffffff;
+    --light-bg: #f8fff8;
+    --card-bg: #ffffff;
+
+    --dark-bg: #181818;
+    --dark-card-bg: #2a2a2a;
+
+    --heading-color: #222;
+    --text-color: #333333;
+    --paragraph-color: #666;
+    --muted-text: #777;
+    --light-text: #d1d5db;
+
+    --border-color: #dddddd;
+
+    --radius-small: 10px;
+    --radius-medium: 15px;
+    --radius-large: 20px;
+    --radius-round: 50px;
+    --radius-circle: 50%;
+
+    --shadow-small: 0 8px 20px rgba(0,0,0,.08);
+    --shadow-medium: 0 10px 30px rgba(0,0,0,.08);
+    --shadow-large: 0 15px 35px rgba(0,0,0,.15);
+
+    --transition: .3s ease;
+
+    --font-family: "Outfit", sans-serif;
+
+    --font-small: 14px;
+    --font-base: 16px;
+    --font-medium: 18px;
+    --font-large: 22px;
+    --font-title: 42px;
+
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+}

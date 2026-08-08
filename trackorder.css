@@ -10,7 +10,7 @@
 .track-box{
     max-width:700px;
     margin:50px auto 0;
-    background:#fff;
+    background:#ffffff;
     padding:40px;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
@@ -27,8 +27,8 @@
 }
 
 .track-box button{
-    background:#28a745;
-    color:#fff;
+    background:var(--primary-color);
+    color:#ffffff;
     padding:14px 35px;
     border:none;
     border-radius:30px;
@@ -57,7 +57,7 @@
     width:40px;
     height:40px;
     stroke-width:2;
-    color:#28a745;
+    color:var(--primary-color);
     margin-bottom:15px;
 }
 
@@ -88,7 +88,7 @@ body.dark .track-box{
 
 body.dark .track-box input{
     background:#1f1f1f;
-    color:#ffffff;
+    color:#fffffffff;
     border:1px solid #444;
 }
 
@@ -101,15 +101,15 @@ body.dark .status-card{
 }
 
 body.dark .status-card h3{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .status-card i{
-    color:#28a745;
+    color:var(--primary-color);
 }
 
 body.dark .track-order .section-heading h2{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .track-order .section-heading p{
@@ -117,5 +117,5 @@ body.dark .track-order .section-heading p{
 }
 
 body.dark .track-order .section-heading span{
-    color:#28a745;
+    color:var(--primary-color);
 }

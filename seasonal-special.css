@@ -17,7 +17,7 @@ body{
 
 .season-hero{
     background:linear-gradient(135deg,#2e7d32,#4caf50);
-    color:#fff;
+    color:#ffffff;
     text-align:center;
     padding:90px 20px;
 }
@@ -49,7 +49,7 @@ body{
 }
 
 .product-card{
-    background:#fff;
+    background:#ffffff;
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
@@ -102,12 +102,12 @@ body{
 
 body.dark{
     background:#0f172a;
-    color:#fff;
+    color:#ffffff;
 }
 
 /* Hero */
 body.dark .season-hero{
-    background:linear-gradient(135deg,#14532d,#166534);
+    background:linear-gradient(135deg,#14532d,var(--secondary-color));
 }
 
 /* Sections */

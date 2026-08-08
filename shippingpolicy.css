@@ -15,7 +15,7 @@
 }
 
 .shipping-card{
-    background:#fff;
+    background:#ffffff;
     padding:35px 25px;
     text-align:center;
     border-radius:20px;
@@ -31,7 +31,7 @@
     width:45px;
     height:45px;
     stroke-width:2;
-    color:#28a745;
+    color:var(--primary-color);
     margin-bottom:20px;
 }
 .shipping-card h3{
@@ -74,7 +74,7 @@ body.dark .shipping-card{
 }
 
 body.dark .shipping-card h3{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .shipping-card p{
@@ -82,11 +82,11 @@ body.dark .shipping-card p{
 }
 
 body.dark .shipping-card svg{
-    color:#28a745;
+    color:var(--primary-color);
 }
 
 body.dark .shipping .section-heading h2{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .shipping .section-heading p{
@@ -94,5 +94,5 @@ body.dark .shipping .section-heading p{
 }
 
 body.dark .shipping .section-heading span{
-    color:#28a745;
+    color:var(--primary-color);
 }

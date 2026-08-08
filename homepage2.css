@@ -5,9 +5,9 @@
 
 :root{
 
-    --primary:#28a745;
-    --secondary:#166534;
-    --white:#ffffff;
+    --primary:var(--primary-color);
+    --secondary:var(--secondary-color);
+    --white:#fffffffff;
     --light:#F8FFF8;
     --text:#666;
     --heading:#222;
@@ -146,7 +146,7 @@ section{
 
 .hero-left{
 
-    color:#fff;
+    color:#ffffff;
 
 }
 
@@ -217,7 +217,7 @@ color:#A5D6A7;
 
 .hero-primary{
 
-    background:#fff;
+    background:#ffffff;
 
     color:var(--primary);
 
@@ -227,21 +227,21 @@ color:#A5D6A7;
 
     background:var(--secondary);
 
-    color:#fff;
+    color:#ffffff;
 
 }
 
 .hero-secondary{
 
-    border:2px solid #fff;
+    border:2px solid #ffffff;
 
-    color:#fff;
+    color:#ffffff;
 
 }
 
 .hero-secondary:hover{
 
-    background:#fff;
+    background:#ffffff;
 
     color:var(--primary);
 
@@ -335,7 +335,7 @@ color:#A5D6A7;
 
     bottom:18px;
 
-    color:#fff;
+    color:#ffffff;
 
 }
 
@@ -371,7 +371,7 @@ color:#A5D6A7;
 
     margin:auto;
 
-    background:#fff;
+    background:#ffffff;
 
     border-radius:22px;
 
@@ -594,7 +594,7 @@ grid-template-columns:1fr;
 
 .farm-features div{
 
-    background:#fff;
+    background:#ffffff;
 
     border-radius:18px;
 
@@ -657,7 +657,7 @@ background:rgba(76,175,80,.12);
 
     background:var(--primary);
 
-    color:#fff;
+    color:#ffffff;
 
     padding:15px 34px;
 
@@ -748,7 +748,7 @@ grid-template-columns:1fr;
 
 .journey{
 
-    background:#fff;
+    background:#ffffff;
 
     position:relative;
 
@@ -812,7 +812,7 @@ grid-template-columns:1fr;
 }
 .timeline-card{
 
-    background:#fff;
+    background:#ffffff;
 
     padding:28px;
 
@@ -884,7 +884,7 @@ grid-template-columns:1fr;
 
     background:var(--secondary);
 
-    border:5px solid #fff;
+    border:5px solid #ffffff;
 
     border-radius:50%;
 
@@ -907,7 +907,7 @@ box-shadow:0 0 0 4px rgba(76,175,80,.20);
 
     background:var(--primary);
 
-    border:5px solid #fff;
+    border:5px solid #ffffff;
 
     border-radius:50%;
 
@@ -939,7 +939,7 @@ box-shadow:0 0 0 4px rgba(76,175,80,.20);
 
 .journey-box{
 
-    background:#fff;
+    background:#ffffff;
 
     padding:35px 25px;
 
@@ -1088,7 +1088,7 @@ font-size:21px;
     grid-template-columns:1fr 1fr;
     align-items:center;
     gap:70px;
-    background:#fff;
+    background:#ffffff;
 
 }
 
@@ -1191,7 +1191,7 @@ font-size:21px;
 
 .delivery-card{
 
-    background:#fff;
+    background:#ffffff;
     border-radius:22px;
     padding:35px 30px;
     text-align:center;
@@ -1240,7 +1240,7 @@ background:rgba(76,175,80,.12);
 
 .seasonal-picks{
 
-    background:#fff;
+    background:#ffffff;
 
 }
 
@@ -1256,7 +1256,7 @@ background:rgba(76,175,80,.12);
 
     overflow:hidden;
     border-radius:22px;
-    background:#fff;
+    background:#ffffff;
     transition:.4s;
     box-shadow:0 15px 35px rgba(0,0,0,.08);
 
@@ -1309,7 +1309,7 @@ background:rgba(76,175,80,.12);
     display:inline-block;
     padding:13px 28px;
     background:var(--primary);
-    color:#fff;
+    color:#ffffff;
     border-radius:40px;
     transition:.4s;
     font-weight:600;
@@ -1375,7 +1375,7 @@ height:190px;
 
 .testimonials{
 
-    background:#fff;
+    background:#ffffff;
 
 }
 
@@ -1389,7 +1389,7 @@ height:190px;
 
 .testimonial-card{
 
-    background:#fff;
+    background:#ffffff;
     padding:35px;
     border-radius:22px;
     box-shadow:0 15px 35px rgba(0,0,0,.08);
@@ -1505,7 +1505,7 @@ height:190px;
 
     padding:50px 8%;
     background:linear-gradient(135deg,var(--primary),var(--secondary));
-    color:#fff;
+    color:#ffffff;
     text-align:center;
     border-radius:30px;
     width:84%;
@@ -1533,7 +1533,7 @@ height:190px;
 
     display:inline-block;
     padding:16px 40px;
-    background:#fff;
+    background:#ffffff;
     color:var(--primary);
     border-radius:40px;
     font-weight:600;
@@ -1544,7 +1544,7 @@ height:190px;
 .cta-btn:hover{
 
     background:#4CAF50;
-color:#fff;
+color:#ffffff;
 
 }
 @media (max-width:360px){
@@ -1648,7 +1648,7 @@ body.dark h1,
 body.dark h2,
 body.dark h3,
 body.dark h4{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark p,
@@ -1660,7 +1660,7 @@ body.dark li{
 body.dark .section-heading h2,
 body.dark .farm-content h2,
 body.dark .why-content h2{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .premium-cta{
@@ -1676,6 +1676,6 @@ body.dark .premium-cta{
     width:30px;
     height:30px;
     stroke-width:2;
-    color:#00C853;
+    color:var(--primary-color);
     flex-shrink:0;
 }

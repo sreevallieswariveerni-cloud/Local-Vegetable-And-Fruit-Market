@@ -15,7 +15,7 @@
 }
 
 .help-card{
-    background:#fff;
+    background:#ffffff;
     padding:35px 25px;
     text-align:center;
     border-radius:20px;
@@ -30,7 +30,7 @@
     width:50px;
     height:50px;
     stroke-width:2;
-    color:#28a745;
+    color:var(--primary-color);
     margin-bottom:20px;
 }
 .help-card h3{
@@ -76,7 +76,7 @@ body.dark .help-card{
 }
 
 body.dark .help-card h3{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .help-card p{
@@ -84,11 +84,11 @@ body.dark .help-card p{
 }
 
 body.dark .help-card svg{
-        color:#28a745;
+        color:var(--primary-color);
 }
 
 body.dark .help-center .section-heading h2{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .help-center .section-heading p{
@@ -96,5 +96,5 @@ body.dark .help-center .section-heading p{
 }
 
 body.dark .help-center .section-heading span{
-    color:#28a745;
+    color:var(--primary-color);
 }

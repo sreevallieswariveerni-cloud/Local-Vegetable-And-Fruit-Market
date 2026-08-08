@@ -28,7 +28,7 @@
     max-width:1000px;
     margin:auto;
     text-align:center;
-    color:#fff;
+    color:#ffffff;
 }
 
 .services-overlay h1{
@@ -57,7 +57,7 @@
 }
 
 .tag:hover{
-    background:#28a745;
+    background:var(--primary-color);
     transform:translateY(-5px);
 }
 
@@ -67,7 +67,7 @@
 }
 
 .tag span{
-    color:#fff;
+    color:#ffffff;
     font-size:16px;
     font-weight:500;
 }
@@ -108,7 +108,7 @@
 .featured-services{
 
     padding:60px 8%;
-    background:#fff;
+    background:#ffffff;
 
 }
 
@@ -162,8 +162,8 @@
     line-height:60px;
     text-align:center;
     border-radius:50%;
-    background:#28a745;
-    color:#fff;
+    background:var(--primary-color);
+    color:#ffffff;
     font-size:22px;
     font-weight:bold;
     margin-bottom:20px;
@@ -203,7 +203,7 @@
     width: 18px;
     height: 18px;
     flex-shrink: 0;
-    color: #28a745;
+    color: var(--primary-color);
     position: relative;
     top: 1px; /* 1px or 2px adjust chesi chudu */
 }
@@ -213,8 +213,8 @@
     display:inline-block;
     margin-top:25px;
     padding:15px 35px;
-    background:#28a745;
-    color:#fff;
+    background:var(--primary-color);
+    color:#ffffff;
     border-radius:50px;
     text-decoration:none;
     transition:.4s;
@@ -258,7 +258,7 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:30px;
 padding:80px 8%;
-background:#28a745;
+background:var(--primary-color);
 
 }
 
@@ -275,14 +275,14 @@ backdrop-filter:blur(8px);
 .stat-box h2{
 
 font-size:48px;
-color:#fff;
+color:#ffffff;
 margin-bottom:10px;
 
 }
 
 .stat-box p{
 
-color:#fff;
+color:#ffffff;
 
 }
 /*=========================
@@ -312,7 +312,7 @@ left:50%;
 top:0;
 width:4px;
 height:100%;
-background:#28a745;
+background:var(--primary-color);
 transform:translateX(-50%);
 
 }
@@ -340,7 +340,7 @@ left:50%;
 
 .timeline-content{
 
-background:#fff;
+background:#ffffff;
 padding:30px;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -369,8 +369,8 @@ right:-25px;
 width:55px;
 height:55px;
 
-background:#28a745;
-color:#fff;
+background:var(--primary-color);
+color:#ffffff;
 
 border-radius:50%;
 
@@ -423,7 +423,7 @@ right:auto;
 
     padding:100px 8%;
 
-    background:#ffffff;
+    background:#fffffffff;
 
 }
 
@@ -479,7 +479,7 @@ right:auto;
 
 .faq-question i{
 
-    color:#28a745;
+    color:var(--primary-color);
 
     transition:.3s;
 
@@ -493,7 +493,7 @@ right:auto;
 
     transition:max-height .4s ease;
 
-    background:#fff;
+    background:#ffffff;
 
 }
 
@@ -551,7 +551,7 @@ right:auto;
 
     margin:auto;
 
-    color:#fff;
+    color:#ffffff;
 
 }
 
@@ -619,9 +619,9 @@ right:auto;
 
 .btn-primary{
 
-    background:#28a745;
+    background:var(--primary-color);
 
-    color:#fff;
+    color:#ffffff;
 
 }
 
@@ -637,17 +637,17 @@ right:auto;
 
 .btn-secondary{
 
-    border:2px solid #fff;
+    border:2px solid #ffffff;
 
-    color:#fff;
+    color:#ffffff;
 
 }
 
 .btn-secondary:hover{
 
-    background:#fff;
+    background:#ffffff;
 
-    color:#28a745;
+    color:var(--primary-color);
 
     transform:translateY(-5px);
 
@@ -678,7 +678,7 @@ right:auto;
 }
 body.dark{
     background:#121212;
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark header{
@@ -705,7 +705,7 @@ body.dark .work-card h3,
 body.dark .process-card h3,
 body.dark .feature-box h4,
 body.dark .faq-question{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .service-card p,
@@ -718,7 +718,7 @@ body.dark .why-content p{
 }
 
 body.dark .why-content h2{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark footer{
@@ -730,7 +730,7 @@ body.dark h1,
 body.dark h2,
 body.dark h3,
 body.dark p{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .card,
@@ -739,7 +739,7 @@ body.dark .service-card,
 body.dark .blog-card,
 body.dark .pricing-card{
     background:#2b2b2b;
-    color:#fff;
+    color:#ffffff;
 }
 
 /*====================================
@@ -751,7 +751,7 @@ body.dark .featured-services{
 }
 
 body.dark .service-content h2{
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .service-content p{
@@ -763,12 +763,12 @@ body.dark .service-content li{
 }
 
 body.dark .service-content span{
-    background:#28a745;
+    background:var(--primary-color);
 }
 
 body.dark .service-btn{
-    background:#28a745;
-    color:#fff;
+    background:var(--primary-color);
+    color:#ffffff;
 }
 
 body.dark .service-btn:hover{
@@ -794,7 +794,7 @@ body.dark .stat-box{
 
 body.dark .stat-box h2,
 body.dark .stat-box p{
-    color:#fff;
+    color:#ffffff;
 }
 
 /*====================================
@@ -806,7 +806,7 @@ body.dark .delivery-banner{
 }
 
 body.dark .delivery-content h2{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .delivery-content p{
@@ -822,7 +822,7 @@ body.dark .why-us-new{
 }
 
 body.dark .why-left h2{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .why-left p{
@@ -830,7 +830,7 @@ body.dark .why-left p{
 }
 
 body.dark .check-grid div{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .floating-card{
@@ -839,7 +839,7 @@ body.dark .floating-card{
 }
 
 body.dark .floating-card h3{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .floating-card p{
@@ -855,7 +855,7 @@ body.dark .journey{
 }
 
 body.dark .timeline::before{
-    background:#28a745;
+    background:var(--primary-color);
 }
 
 body.dark .timeline-content{
@@ -864,7 +864,7 @@ body.dark .timeline-content{
 }
 
 body.dark .timeline-content h3{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .timeline-content p{
@@ -872,7 +872,7 @@ body.dark .timeline-content p{
 }
 
 body.dark .timeline-icon{
-    background:#28a745;
+    background:var(--primary-color);
 }
 
 /*====================================
@@ -889,7 +889,7 @@ body.dark .faq-item{
 }
 
 body.dark .faq-question{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .faq-answer{
@@ -905,7 +905,7 @@ body.dark .faq-answer p{
 ====================================*/
 
 body.dark .section-title h2{
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .section-title p{
@@ -956,7 +956,7 @@ body.dark .section-title span{
 .service-content li svg{
     width:18px;
     height:18px;
-    color:#28a745;
+    color:var(--primary-color);
     margin-right:10px;
 }
 
@@ -964,7 +964,7 @@ body.dark .section-title span{
 .timeline-icon svg{
     width:24px;
     height:24px;
-    color:#fff;
+    color:#ffffff;
 }
 
 /* Header & Footer Logo */

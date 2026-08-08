@@ -64,7 +64,7 @@ body{
 
 .product-card{
     width:170px;
-    background:#fff;
+    background:#ffffff;
     border:1px solid #e8e8e8;
     border-radius:12px;
     overflow:hidden;
@@ -133,7 +133,7 @@ body{
 =========================*/
 
 .price{
-    color:#16A34A;
+    color:var(--logo-icon-color);
     font-weight:700;
     margin-bottom:8px;
     height:24px;
@@ -151,7 +151,7 @@ body{
     height:34px;
     border:1px solid #dcdcdc;
     border-radius:6px;
-    background:#fff;
+    background:#ffffff;
     font-size:13px;
     color:#444;
     padding:0 8px;
@@ -163,7 +163,7 @@ body{
 
 .weight-select:hover,
 .weight-select:focus{
-    border-color:#16A34A;
+    border-color:var(--logo-icon-color);
 }
 /*=========================
         ADD BUTTON
@@ -172,9 +172,9 @@ body{
 .add-btn{
     width:100%;
     height:34px;
-    border:2px solid #16A34A;
-    background:#fff;
-    color:#16A34A;
+    border:2px solid var(--logo-icon-color);
+    background:#ffffff;
+    color:var(--logo-icon-color);
     border-radius:8px;
     font-size:13px;
     font-weight:600;
@@ -183,8 +183,8 @@ body{
 }
 
 .add-btn:hover{
-    background:#16A34A;
-    color:#fff;
+    background:var(--logo-icon-color);
+    color:#ffffff;
 }
 
 /*=========================
@@ -196,9 +196,9 @@ body{
     width:100%;
     height:36px;
     margin-top:8px;
-    border:2px solid #16A34A;
+    border:2px solid var(--logo-icon-color);
     border-radius:8px;
-    background:#16A34A;
+    background:var(--logo-icon-color);
 
     justify-content:space-between;
     align-items:center;
@@ -210,8 +210,8 @@ body{
     width:24px;
     height:24px;
     border:none;
-    background:#fff;
-    color:#16A34A;
+    background:#ffffff;
+    color:var(--logo-icon-color);
     border-radius:50%;
     font-size:16px;
     font-weight:bold;
@@ -225,7 +225,7 @@ body{
 }
 
 .count{
-    color:#fff;
+    color:#ffffff;
     font-size:15px;
     font-weight:600;
 }
@@ -331,8 +331,8 @@ body{
     top: 20px;
     right: -420px;
     width: 360px;
-    background: #fff;
-    border-radius: 15px;
+    background: #ffffff;
+    border-radius: 20px;
     padding: 20px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     z-index: 9999;
@@ -405,7 +405,7 @@ body{
 
 body.dark{
     background:#181818;
-    color:#ffffff;
+    color:#fffffffff;
 }
 
 body.dark .shop{
@@ -424,7 +424,7 @@ body.dark .product-card{
 
 body.dark .weight-select{
     background:#2f2f2f;
-    color:#fff;
+    color:#ffffff;
     border:1px solid #555;
 }
 
@@ -456,9 +456,9 @@ body.dark .price{
 
 /* ADD Button */
 body.dark .add-btn{
-    background:#16a34a;
-    color:#fff;
-    border-color:#16a34a;
+    background:var(--logo-icon-color);
+    color:#ffffff;
+    border-color:var(--logo-icon-color);
 }
 
 body.dark .add-btn:hover{
@@ -472,14 +472,14 @@ body.dark .quantity-box{
 
 body.dark .minus,
 body.dark .plus{
-    background:#fff;
+    background:#ffffff;
     color:#15803d;
 }
 
 /* Cart Popup */
 body.dark .cart-popup{
     background:#1e293b;
-    color:#fff;
+    color:#ffffff;
 }
 
 body.dark .popup-body p{
@@ -487,7 +487,7 @@ body.dark .popup-body p{
 }
 
 body.dark #go-cart-btn{
-    background:#16a34a;
+    background:var(--logo-icon-color);
 }
 
 /* Footer */
@@ -511,19 +511,19 @@ body.dark .product-details *{
 }
 
 body.dark .product-details h3{
-    color:#ffffff !important;
+    color:#fffffffff !important;
 }
 
 body.dark .price,
 body.dark .price span{
-    color:#ffffff !important;
+    color:#fffffffff !important;
 }
 
 body.dark .weight-select{
-    color:#ffffff !important;
+    color:#fffffffff !important;
 }
 
 body.dark .weight-select option{
     color:#000;
-    background:#fff;
+    background:#ffffff;
 }
