@@ -5,13 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found | Green Grove</title>
+    <link rel="icon" type="images/png" sizes="184x184" href="images/logo.png">
+
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="404.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div class="page-controls">
+    <button class="rtl-btn" id="rtl-btn">RTL</button>
+
+    <button id="theme-btn">
+        <i data-lucide="moon"></i>
+    </button>
+</div>
     <div class="error-container">
         <div class="icon">
-            <i class="fa-solid fa-seedling"></i>
+             <i data-lucide="file-warning"></i>
         </div>
         <h1>404</h1>
         <h2>Oops! Page Not Found</h2>
@@ -21,14 +31,44 @@
         </p>
         <div class="buttons">
             <a href="index.html" class="home-btn">
-                <i class="fa-solid fa-house"></i>
+                   <i data-lucide="house"></i>
                 Back to Home
             </a>
-            <a href="shop.html" class="shop-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
+            <a href="products.html" class="shop-btn">
+                 <i data-lucide="shopping-cart"></i>
                 Continue Shopping
             </a>
         </div>
     </div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+<script>
+const themeBtn=document.getElementById("theme-btn");
+function updateTheme(){
+    if(document.body.classList.contains("dark")){
+        themeBtn.innerHTML='<i data-lucide="sun"></i>';
+    }else{
+        themeBtn.innerHTML='<i data-lucide="moon"></i>';
+
+    }
+    lucide.createIcons();
+}
+if(localStorage.getItem("theme")=="dark"){
+    document.body.classList.add("dark");
+}
+updateTheme();
+themeBtn.addEventListener("click",function(){
+    document.body.classList.toggle("dark");
+    localStorage.setItem(
+        "theme",
+        document.body.classList.contains("dark")
+        ?"dark":"light"
+    );
+    updateTheme();
+});
+</script>
+<script src="script.js"></script>
 </body>
 </html>

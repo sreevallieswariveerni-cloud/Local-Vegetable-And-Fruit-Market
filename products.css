@@ -257,9 +257,16 @@ body{
     }
 
     .product-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:14px;
-    }
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    justify-items:center;
+}
+
+.product-card{
+    width:100%;
+    max-width:170px;
+}
 
     .product-image{
         height:100px;
@@ -397,19 +404,28 @@ body{
 =========================*/
 
 body.dark{
-    background:#0f172a;
-    color:#f8fafc;
+    background:#181818;
+    color:#ffffff;
 }
 
-/* Shop Section */
 body.dark .shop{
-    background:#0f172a;
+    background:#181818;
 }
-
 /* Header */
 body.dark header{
-    background:#111827;
-    border-bottom:1px solid #374151;
+    background:#181818;
+    border-bottom:1px solid #333;
+}
+
+body.dark .product-card{
+    background:#242424;
+    border:1px solid #3a3a3a;
+}
+
+body.dark .weight-select{
+    background:#2f2f2f;
+    color:#fff;
+    border:1px solid #555;
 }
 
 /* Shop Heading */
@@ -421,11 +437,7 @@ body.dark .shop-header p{
     color:#cbd5e1;
 }
 
-/* Product Card */
-body.dark .product-card{
-    background:#1e293b;
-    border:1px solid #334155;
-}
+
 
 body.dark .product-card:hover{
     box-shadow:0 10px 25px rgba(0,0,0,.45);
@@ -441,12 +453,6 @@ body.dark .price{
     color:#4ade80;
 }
 
-/* Weight Dropdown */
-body.dark .weight-select{
-    background:#334155;
-    color:#fff;
-    border-color:#475569;
-}
 
 /* ADD Button */
 body.dark .add-btn{
@@ -497,25 +503,27 @@ body.dark .footer a{
 body.dark .footer h3{
     color:#22c55e;
 }
-/* Product Name */
+/* Force Product Text in Dark Mode */
+
+body.dark .product-details,
+body.dark .product-details *{
+    opacity: 1 !important;
+}
+
 body.dark .product-details h3{
     color:#ffffff !important;
 }
 
-/* Price */
-body.dark .price{
-    color:#4ade80 !important;
+body.dark .price,
+body.dark .price span{
+    color:#ffffff !important;
 }
 
-/* Dropdown */
 body.dark .weight-select{
-    background:#334155;
-    color:#ffffff;
-    border:1px solid #475569;
+    color:#ffffff !important;
 }
 
-/* Product Card */
-body.dark .product-card{
-    background:#1e293b;
-    border-color:#334155;
+body.dark .weight-select option{
+    color:#000;
+    background:#fff;
 }

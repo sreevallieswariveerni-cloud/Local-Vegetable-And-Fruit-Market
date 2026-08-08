@@ -472,6 +472,38 @@
         font-size: 15px;
         line-height: 1.8;
     }
+    .our-values{
+        padding:60px 20px;
+    }
+
+     .values-container{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        gap:20px !important;
+    }
+
+    .value-card{
+        width:100% !important;
+        max-width:100% !important;
+    }
+
+    .value-card h3{
+        font-size:28px;
+    }
+
+    .value-card p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .value-card svg{
+        width:28px;
+        height:28px;
+        padding:16px;
+    }
+     section{
+        padding:50px 15px;
+    }
 
 }
 
@@ -571,9 +603,6 @@ body {
     overflow-x: hidden;
 }
 
-* {
-    max-width: 100%;
-}
 /* About Page Lucide Icons */
 .choose-item svg{
     width:20px;

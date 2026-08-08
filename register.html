@@ -50,7 +50,7 @@
     <label>FULL NAME</label>
 
     <div class="input-box">
-        <i class="fa-solid fa-user"></i>
+        <i data-lucide="user"></i>
         <input type="text" placeholder="Full Name" required>
     </div>
 
@@ -61,7 +61,7 @@
     <label>EMAIL ADDRESS</label>
 
     <div class="input-box">
-        <i class="fa-solid fa-envelope"></i>
+        <i data-lucide="mail"></i>
         <input type="email" placeholder="Email Address" required>
     </div>
 
@@ -75,16 +75,16 @@
         <label>PASSWORD</label>
 
         <div class="input-box">
-            <i class="fa-solid fa-lock"></i>
+            <i data-lucide="lock"></i>
 
             <input type="password"
                    placeholder="Password"
                    id="registerPass"
                    required>
 
-            <span class="eye" onclick="showRegisterPassword()">
-                <i class="fa-solid fa-eye"></i>
-            </span>
+            <span class="eye" onclick="showRegisterPassword(this)">
+    <i data-lucide="eye-off"></i>
+</span>
 
         </div>
 
@@ -95,12 +95,16 @@
         <label>CONFIRM PASSWORD</label>
 
         <div class="input-box">
-            <i class="fa-solid fa-lock"></i>
+            <i data-lucide="lock"></i>
 
-            <input type="password"
-                   placeholder="Confirm Password"
-                   required>
-
+            <input
+type="password"
+id="confirmPass"
+placeholder="Confirm Password"
+required>
+            <span class="eye" onclick="showConfirmPassword(this)">
+    <i data-lucide="eye-off"></i>
+</span>
         </div>
 
     </div>
@@ -124,12 +128,12 @@
 
                     <button type="button" class="google">
                         <i class="fa-brands fa-google"></i>
-                        Continue with Google
+                         <span>Google</span>
                     </button>
 
                     <button type="button" class="google">
-                        <i class="fa-brands fa-apple"></i>
-                        Continue with Apple
+                        <i data-lucide="apple"></i>
+                         <span>Apple</span>
                     </button>
 
                 </div>
@@ -141,7 +145,10 @@
     </div>
 
     <script src="login.js"></script>
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 
 </html>

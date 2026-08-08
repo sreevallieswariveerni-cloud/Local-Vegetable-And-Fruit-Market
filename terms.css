@@ -65,3 +65,32 @@
     }
 
 }
+/* Terms Page - Dark Mode */
+
+body.dark .terms{
+    background: #181818;
+}
+
+body.dark .terms-card{
+    background: #2a2a2a;
+}
+
+body.dark .terms-card h3{
+    color: #ffffff;
+}
+
+body.dark .terms-card p{
+    color: #d1d5db;
+}
+
+body.dark .section-heading h2{
+    color: #ffffff;
+}
+
+body.dark .section-heading p{
+    color: #d1d5db;
+}
+
+body.dark .section-heading span{
+    color: var(--primary-color);
+}

@@ -222,11 +222,24 @@ function toggleVision() {
 
 const menuBtn = document.getElementById("menu-btn");
 const nav = document.querySelector("nav");
+const overlay = document.querySelector(".menu-overlay");
 
-if (menuBtn && nav) {
+if (menuBtn && nav && overlay) {
+
     menuBtn.addEventListener("click", function () {
+
         nav.classList.toggle("active");
+        overlay.classList.toggle("active");
+
     });
+
+    overlay.addEventListener("click", function () {
+
+        nav.classList.remove("active");
+        overlay.classList.remove("active");
+
+    });
+
 }
 
 // Mobile Dropdown

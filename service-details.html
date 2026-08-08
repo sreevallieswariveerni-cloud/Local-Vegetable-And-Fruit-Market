@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Green Grove</title>
+    <link rel="icon" type="images/png" sizes="184x184" href="images/logo.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="service-details.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
 <header>
@@ -52,6 +54,7 @@
         </div>
     </div>
 </header>
+<div class="menu-overlay"></div>
 <section class="service-hero">
 
     <div class="service-overlay"></div>
@@ -93,7 +96,7 @@
         <div class="farm-content">
 
             <div class="feature-card">
-                <i class="fa-solid fa-seedling"></i>
+                <i data-lucide="sprout"></i>
 
                 <div>
                     <h3>100% Farm Fresh</h3>
@@ -104,7 +107,7 @@
             </div>
 
             <div class="feature-card">
-                <i class="fa-solid fa-tractor"></i>
+                <i data-lucide="tractor"></i>
 
                 <div>
                     <h3>Direct From Farmers</h3>
@@ -115,7 +118,7 @@
             </div>
 
             <div class="feature-card">
-                <i class="fa-solid fa-box-open"></i>
+                <i data-lucide="package-open"></i>
 
                 <div>
                     <h3>Safe Packaging</h3>
@@ -126,7 +129,7 @@
             </div>
 
             <div class="feature-card">
-                <i class="fa-solid fa-award"></i>
+               <i data-lucide="award"></i>
 
                 <div>
                     <h3>Premium Quality</h3>
@@ -151,34 +154,34 @@
     <div class="process-container">
 
         <div class="step">
-            <i class="fa-solid fa-tractor"></i>
+            <i data-lucide="tractor"></i>
             <h3>Farm</h3>
         </div>
 
         <div class="arrow">
-            <i class="fa-solid fa-arrow-right"></i>
+            <i data-lucide="arrow-right"></i>
         </div>
 
         <div class="step">
-            <i class="fa-solid fa-scissors"></i>
+            <i data-lucide="scissors"></i>
             <h3>Harvest</h3>
         </div>
 
         <div class="arrow">
-            <i class="fa-solid fa-arrow-right"></i>
+            <i data-lucide="arrow-right"></i>
         </div>
 
         <div class="step">
-            <i class="fa-solid fa-box-open"></i>
+            <i data-lucide="package-open"></i>
             <h3>Pack</h3>
         </div>
 
         <div class="arrow">
-            <i class="fa-solid fa-arrow-right"></i>
+            <i data-lucide="arrow-right"></i>
         </div>
 
         <div class="step">
-            <i class="fa-solid fa-truck-fast"></i>
+           <i data-lucide="truck"></i>
             <h3>Deliver</h3>
         </div>
 
@@ -194,25 +197,25 @@
     <div class="benefit-grid">
 
         <div class="benefit-card">
-            <i class="fa-solid fa-leaf"></i>
+            <i data-lucide="leaf"></i>
             <h3>Natural Freshness</h3>
             <p>Healthy produce with exceptional taste and nutrition.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-heart"></i>
+            <i data-lucide="heart"></i>
             <h3>Healthy Lifestyle</h3>
             <p>Nutritious vegetables and fruits for your family.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-tags"></i>
+            <i data-lucide="badge-percent"></i>
             <h3>Affordable Prices</h3>
             <p>Premium quality at budget-friendly prices.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-handshake"></i>
+            <i data-lucide="handshake"></i>
             <h3>Trusted Farmers</h3>
             <p>Building strong relationships with local farming communities.</p>
         </div>
@@ -234,7 +237,7 @@
     <div class="delivery-container">
 
         <div class="delivery-card">
-            <i class="fa-solid fa-truck-fast"></i>
+            <i data-lucide="truck"></i>
             <h3>30–60 Min Delivery</h3>
             <p>
                 Receive your groceries within 30–60 minutes in selected service areas.
@@ -242,7 +245,7 @@
         </div>
 
         <div class="delivery-card">
-            <i class="fa-solid fa-location-dot"></i>
+           <i data-lucide="map-pin"></i>
             <h3>Live Order Tracking</h3>
             <p>
                 Stay updated with your order status from dispatch to delivery.
@@ -250,7 +253,7 @@
         </div>
 
         <div class="delivery-card">
-            <i class="fa-solid fa-box"></i>
+            <i data-lucide="package"></i>
             <h3>Safe Packaging</h3>
             <p>
                 Every order is securely packed to maintain freshness and quality.
@@ -258,7 +261,7 @@
         </div>
 
         <div class="delivery-card">
-            <i class="fa-solid fa-credit-card"></i>
+            <i data-lucide="credit-card"></i>
             <h3>Easy Payments</h3>
             <p>
                 Pay using UPI, Cards, Net Banking or Cash on Delivery.
@@ -278,28 +281,31 @@
     <div class="timeline">
 
         <div class="timeline-item">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i data-lucide="shopping-cart"></i>
+
             <h3>Place Order</h3>
         </div>
 
         <div class="timeline-line"></div>
 
         <div class="timeline-item">
-            <i class="fa-solid fa-box-open"></i>
+            <i data-lucide="package-open"></i>
             <h3>Packing</h3>
         </div>
 
         <div class="timeline-line"></div>
 
         <div class="timeline-item">
-            <i class="fa-solid fa-motorcycle"></i>
+            <i data-lucide="bike"></i>
+
             <h3>Out For Delivery</h3>
         </div>
 
         <div class="timeline-line"></div>
 
         <div class="timeline-item">
-            <i class="fa-solid fa-house"></i>
+            <i data-lucide="house"></i>
+
             <h3>Delivered</h3>
         </div>
 
@@ -315,25 +321,25 @@
     <div class="benefit-grid">
 
         <div class="benefit-card">
-            <i class="fa-regular fa-clock"></i>
+           <i data-lucide="clock-3"></i>
             <h3>On-Time Delivery</h3>
             <p>Your groceries arrive exactly when promised.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-shield-heart"></i>
+            <i data-lucide="shield-check"></i>
             <h3>Freshness Guaranteed</h3>
             <p>Quality maintained throughout the delivery process.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-headset"></i>
+           <i data-lucide="headset"></i>
             <h3>Customer Support</h3>
             <p>Our support team is ready to help with your orders.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-mobile-screen-button"></i>
+           <i data-lucide="smartphone"></i>
             <h3>Easy Online Ordering</h3>
             <p>Place your order anytime using our website.</p>
         </div>
@@ -362,7 +368,7 @@
         <div class="bulk-content">
 
             <div class="business-card">
-                <i class="fa-solid fa-hotel"></i>
+                <i data-lucide="hotel"></i>
 
                 <div>
                     <h3>Hotels & Resorts</h3>
@@ -374,7 +380,7 @@
             </div>
 
             <div class="business-card">
-                <i class="fa-solid fa-utensils"></i>
+                <i data-lucide="utensils-crossed"></i>
 
                 <div>
                     <h3>Restaurants</h3>
@@ -385,7 +391,7 @@
             </div>
 
             <div class="business-card">
-                <i class="fa-solid fa-store"></i>
+                <i data-lucide="store"></i>
 
                 <div>
                     <h3>Supermarkets</h3>
@@ -396,7 +402,7 @@
             </div>
 
             <div class="business-card">
-                <i class="fa-solid fa-bell-concierge"></i>
+                <i data-lucide="concierge-bell"></i>
 
                 <div>
                     <h3>Catering Services</h3>
@@ -420,25 +426,25 @@
     <div class="benefit-grid">
 
         <div class="benefit-card">
-            <i class="fa-solid fa-tags"></i>
+            <i data-lucide="badge-percent"></i>
             <h3>Wholesale Pricing</h3>
             <p>Special pricing for bulk and recurring orders.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-calendar-check"></i>
+            <i data-lucide="calendar-check-2"></i>
             <h3>Scheduled Deliveries</h3>
             <p>Daily, weekly and custom delivery schedules.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-boxes-stacked"></i>
+            <i data-lucide="boxes"></i>
             <h3>Large Quantity Supply</h3>
             <p>Bulk quantities available without compromising quality.</p>
         </div>
 
         <div class="benefit-card">
-            <i class="fa-solid fa-headset"></i>
+            <i data-lucide="headset"></i>
             <h3>Dedicated Support</h3>
             <p>Priority assistance for all business customers.</p>
         </div>
@@ -456,14 +462,11 @@
     </p>
 
     <a href="contact.html" class="btn">
-        <i class="fa-solid fa-paper-plane"></i>
+        <i data-lucide="send"></i>
         Request a Quote
     </a>
 
 </section>
-
-
-
 
 <footer class="footer">
     <div class="footer-container">
@@ -496,7 +499,7 @@
             <a href="homepage1.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="pricing.html">Pricing</a>
+            <a href="products.html">Products</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
         </div>

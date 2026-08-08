@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | GreenGrove</title>
+    <link rel="icon" type="images/png" sizes="184x184" href="images/logo.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="privacy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -22,7 +24,7 @@
     <nav>
         <ul>
             <li class="dropdown">
-                <a href="#" class="active">Home <i data-lucide="chevron-down"></i></a>
+                <a href="#">Home <i data-lucide="chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="homepage1.html">Home 1</a></li>
                     <li><a href="homepage2.html">Home 2</a></li>
@@ -51,6 +53,7 @@
         </div>
     </div>
 </header>
+<div class="menu-overlay"></div>
 <section class="privacy">
 
     <div class="section-heading">
@@ -196,5 +199,35 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+<script>
+const themeBtn=document.getElementById("theme-btn");
+function updateTheme(){
+    if(document.body.classList.contains("dark")){
+        themeBtn.innerHTML='<i data-lucide="sun"></i>';
+    }else{
+        themeBtn.innerHTML='<i data-lucide="moon"></i>';
+
+    }
+    lucide.createIcons();
+}
+if(localStorage.getItem("theme")=="dark"){
+    document.body.classList.add("dark");
+}
+updateTheme();
+themeBtn.addEventListener("click",function(){
+    document.body.classList.toggle("dark");
+    localStorage.setItem(
+        "theme",
+        document.body.classList.contains("dark")
+        ?"dark":"light"
+    );
+    updateTheme();
+});
+</script>
+<script src="script.js"></script>
 </body>
 </html>

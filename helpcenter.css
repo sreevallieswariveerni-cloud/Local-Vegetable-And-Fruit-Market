@@ -65,3 +65,36 @@
     }
 
 }
+/* Help Center - Dark Mode */
+
+body.dark .help-center{
+    background:#181818;
+}
+
+body.dark .help-card{
+    background:#2a2a2a;
+}
+
+body.dark .help-card h3{
+    color:#ffffff;
+}
+
+body.dark .help-card p{
+    color:#d1d5db;
+}
+
+body.dark .help-card svg{
+        color:#28a745;
+}
+
+body.dark .help-center .section-heading h2{
+    color:#ffffff;
+}
+
+body.dark .help-center .section-heading p{
+    color:#d1d5db;
+}
+
+body.dark .help-center .section-heading span{
+    color:#28a745;
+}

@@ -76,3 +76,46 @@
     }
 
 }
+/* Track Order - Dark Mode */
+
+body.dark .track-order{
+    background:#181818;
+}
+
+body.dark .track-box{
+    background:#2a2a2a;
+}
+
+body.dark .track-box input{
+    background:#1f1f1f;
+    color:#ffffff;
+    border:1px solid #444;
+}
+
+body.dark .track-box input::placeholder{
+    color:#bdbdbd;
+}
+
+body.dark .status-card{
+    background:#333333;
+}
+
+body.dark .status-card h3{
+    color:#ffffff;
+}
+
+body.dark .status-card i{
+    color:#28a745;
+}
+
+body.dark .track-order .section-heading h2{
+    color:#ffffff;
+}
+
+body.dark .track-order .section-heading p{
+    color:#d1d5db;
+}
+
+body.dark .track-order .section-heading span{
+    color:#28a745;
+}

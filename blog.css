@@ -674,3 +674,43 @@ body.dark .pricing-card{
 .category-card svg{
     flex-shrink:0;
 }
+@media (max-width:360px){
+
+    .featured-blog{
+        padding:60px 15px;
+    }
+
+    .featured-container{
+        display:grid;
+        grid-template-columns:1fr !important;
+        gap:25px;
+    }
+
+    .featured-content{
+        width:100%;
+    }
+
+    .featured-content h2{
+        font-size:22px;
+        line-height:1.35;
+        margin:15px 0;
+        word-break:break-word;
+    }
+
+    .featured-content p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .featured-image img{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+    }
+
+    .read-btn{
+        display:inline-block;
+        padding:12px 28px;
+        font-size:14px;
+    }
+}

@@ -191,19 +191,21 @@
     padding:0;
 
 }
-
 .service-content li{
-
-    margin-bottom:15px;
-    font-size:17px;
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
 }
 
-.service-content i{
-
-    color:#28a745;
-    margin-right:10px;
-
+.service-content li svg{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #28a745;
+    position: relative;
+    top: 1px; /* 1px or 2px adjust chesi chudu */
 }
 
 .service-btn{
