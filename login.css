@@ -274,7 +274,7 @@ form p{
     height:50px;
     border:none;
     border-radius:10px;
-    background:var(--primary-color)
+    background:var(--primary-color);
     color:#ffffff;
     font-size:17px;
     font-weight:600;
